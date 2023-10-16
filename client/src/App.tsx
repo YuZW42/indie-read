@@ -2,14 +2,14 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css' */
-// import Heading from "./components/Heading"
+import Heading from "./components/Heading"
 import Resources from "./components/Resources"
 function App() {
   //const [count, setCount] = useState(0)
 
   return (
     <>
-      {/* <Heading title={"Hi"}/> */}
+      <Heading/>
       <Resources/>
     </>
   )
