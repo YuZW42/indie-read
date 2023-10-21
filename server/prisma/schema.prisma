@@ -17,17 +17,31 @@ model User {
   isCreator    Boolean
   createdAt    DateTime
   preference   Json
-  writtenPosts Post[] @relation("WrittenPosts")
-  favPosts     Post[]@relation("FavPosts")
+  writtenPosts Post[]   @relation("WrittenPosts")
+  favPosts     Post[]   @relation("FavPosts")
 }
 
 model Post {
-  id          String @id @default(uuid())
+  id          String  @id @default(uuid())
   location    String
   date        String
   description String
-  author      User   @relation("WrittenPosts",fields: [authorId], references: [id])
-  favBy       User?   @relation("FavPosts",fields: [favId], references: [id])
-    authorId    String
-  favId       String ?
+  author      User    @relation("WrittenPosts", fields: [authorId], references: [id])
+  favBy       User?   @relation("FavPosts", fields: [favId], references: [id])
+  authorId    String
+  favId       String?
+}
+
+model Book {
+  id         String   @id @default(uuid())
+  title      String
+  author     String
+  price      Decimal
+  dimensions String[]
+  Pages      Int?
+  materials  String?
+  publisher String?
+  description String
+  reference String?
+  inner_page_photo String?
 }
