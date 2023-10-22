@@ -11,37 +11,66 @@ datasource db {
 }
 
 model User {
-  id           String   @id @default(uuid())
-  name         String
-  email        String?
-  isCreator    Boolean
-  createdAt    DateTime
-  preference   Json
-  writtenPosts Post[]   @relation("WrittenPosts")
-  favPosts     Post[]   @relation("FavPosts")
+  id             String          @id @default(uuid())
+  name           String
+  email          String
+  isCreator      Boolean
+  createdAt      DateTime
+  role           Role            @default(BASIC)
+  preference     Json?
+  writtenPosts   Post[]          @relation("WrittenPosts")
+  favPosts       Post[]          @relation("FavPosts")
+  userPreference UserPreference?
+
+  @@unique([name, email])
+  @@index([email])
+}
+
+model UserPreference {
+  id           String  @id @default(uuid())
+  emailUpdates Boolean
+  user         User    @relation(fields: [userId], references: [id])
+  userId       String  @unique
 }
 
 model Post {
-  id          String  @id @default(uuid())
+  id          String     @id @default(uuid())
+  title       String
   location    String
   date        String
   description String
-  author      User    @relation("WrittenPosts", fields: [authorId], references: [id])
-  favBy       User?   @relation("FavPosts", fields: [favId], references: [id])
+  author      User       @relation("WrittenPosts", fields: [authorId], references: [id])
+  favBy       User?      @relation("FavPosts", fields: [favId], references: [id])
   authorId    String
   favId       String?
+  categories  Category[]
+  updatedAt   DateTime   @updatedAt
+  createdAt   DateTime   @default(now())
+
+  //@@id([title,authorId])
+}
+
+model Category {
+  id    String @id @default(uuid())
+  posts Post[]
+}
+
+enum Role {
+  BASIC
+  ADMIN
+  CREATOR
 }
 
 model Book {
-  id         String   @id @default(uuid())
-  title      String
-  author     String
-  price      Decimal
-  dimensions String[]
-  Pages      Int?
-  materials  String?
-  publisher String?
-  description String
-  reference String?
+  id               String   @id @default(uuid())
+  title            String
+  author           String
+  price            Decimal
+  dimensions       String[]
+  Pages            Int?
+  materials        String?
+  publisher        String?
+  description      String
+  reference        String?
   inner_page_photo String?
 }
