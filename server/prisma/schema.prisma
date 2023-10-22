@@ -11,16 +11,18 @@ datasource db {
 }
 
 model User {
-  id             String          @id @default(uuid())
-  name           String
-  email          String
-  isCreator      Boolean
-  createdAt      DateTime
-  role           Role            @default(BASIC)
-  preference     Json?
-  writtenPosts   Post[]          @relation("WrittenPosts")
-  favPosts       Post[]          @relation("FavPosts")
-  userPreference UserPreference?
+  id           String    @id @default(uuid())
+  name         String
+  email        String
+  isCreator    Boolean?
+  createdAt    DateTime?
+  role         Role      @default(BASIC)
+  preference   Json?
+  writtenPosts Post[]    @relation("WrittenPosts")
+  favPosts     Post[]    @relation("FavPosts")
+
+  userPreference   UserPreference? @relation(fields: [userPreferenceId], references: [id])
+  userPreferenceId String?         @unique
 
   @@unique([name, email])
   @@index([email])
@@ -29,8 +31,7 @@ model User {
 model UserPreference {
   id           String  @id @default(uuid())
   emailUpdates Boolean
-  user         User    @relation(fields: [userId], references: [id])
-  userId       String  @unique
+  user         User?
 }
 
 model Post {
