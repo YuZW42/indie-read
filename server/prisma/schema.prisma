@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -11,18 +8,17 @@ datasource db {
 }
 
 model User {
-  id           String    @id @default(uuid())
-  name         String
-  email        String
-  isCreator    Boolean?
-  createdAt    DateTime?
-  role         Role      @default(BASIC)
-  preference   Json?
-  writtenPosts Post[]    @relation("WrittenPosts")
-  favPosts     Post[]    @relation("FavPosts")
-
-  userPreference   UserPreference? @relation(fields: [userPreferenceId], references: [id])
+  id               String          @id @default(uuid())
+  name             String
+  createdAt        DateTime?       @updatedAt
+  email            String
+  isCreator        Boolean?
+  preference       Json?
+  role             Role            @default(BASIC)
   userPreferenceId String?         @unique
+  writtenPosts     Post[]          @relation("WrittenPosts")
+  favPosts         Post[]          @relation("FavPosts")
+  userPreference   UserPreference? @relation(fields: [userPreferenceId], references: [id])
 
   @@unique([name, email])
   @@index([email])
@@ -40,26 +36,18 @@ model Post {
   location    String
   date        String
   description String
-  author      User       @relation("WrittenPosts", fields: [authorId], references: [id])
-  favBy       User?      @relation("FavPosts", fields: [favId], references: [id])
   authorId    String
   favId       String?
-  categories  Category[]
   updatedAt   DateTime   @updatedAt
   createdAt   DateTime   @default(now())
-
-  //@@id([title,authorId])
+  author      User       @relation("WrittenPosts", fields: [authorId], references: [id])
+  favBy       User?      @relation("FavPosts", fields: [favId], references: [id])
+  categories  Category[] @relation("CategoryToPost")
 }
 
 model Category {
   id    String @id @default(uuid())
-  posts Post[]
-}
-
-enum Role {
-  BASIC
-  ADMIN
-  CREATOR
+  posts Post[] @relation("CategoryToPost")
 }
 
 model Book {
@@ -74,4 +62,10 @@ model Book {
   description      String
   reference        String?
   inner_page_photo String?
+}
+
+enum Role {
+  BASIC
+  ADMIN
+  CREATOR
 }
