@@ -19,7 +19,7 @@ def get_product_description(url):
 
 def init_scrape(url):
     response = requests.get(url)
-    products = {}
+    products = []
 
     page = 1
     while True:
@@ -46,13 +46,14 @@ def init_scrape(url):
                 
                 # Store product data in a dictionary
                 product_data = {
+                    "title": title,
                     "cost": cost,
                     "img_url": image_url,
                     "link": link,
                     "desc": get_product_description(link)
                 }
 
-                products[title] = product_data           
+                products.append(product_data)   
 
                 with open("./outputs/products.md", "a", encoding="utf-8") as file:
                     file.write(f'# {title} - {cost}\n\n')
