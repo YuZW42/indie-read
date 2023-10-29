@@ -1,10 +1,14 @@
-import React from 'react'
+// import React from 'react'
+import { DisplayArtwork } from "../components/home/DisplayArt"
+import { Header } from "../components/shared/Header"
+import NavBar from "../components/shared/NavBar"
 
 export const Home = () => {
   return (
     <>
-      <h1>Hello</h1>
-      <img src="../images/planet.avif" alt="" />
+      <Header/>
+      <NavBar/>
+      <DisplayArtwork/>
     </>
   )
 }
