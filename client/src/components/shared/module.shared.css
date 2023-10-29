@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER SECTION */
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.pfp {
+    width: 65px;
+    height: 65px;
+    background-color: rgb(71, 71, 71);
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+/* NAVIGATION BAR */
