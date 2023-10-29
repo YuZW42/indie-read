@@ -4,8 +4,8 @@ import get_user from "../src/database/user"
 //{log:["query"]}
 
 async function main () {
-  //await prisma.user.deleteMany()
-  /*const user = await prisma.book.create({
+  await prisma.user.deleteMany()
+  const user = await prisma.book.create({
    data:{
     title:"Kick Activist",
     author:"Laura Nova",
@@ -19,8 +19,8 @@ async function main () {
     inner_page_photo :"https://centerforbookarts.org/wp-content/uploads/2023/09/LauraNova_KickCards.png",
 
       },
-  }) */
-  //console.log(user)
+  }) 
+  console.log(user)
 
   
 }
@@ -50,8 +50,8 @@ async function create (){
       },
   })
 */
-main()
-//get_user()
+//main()
+get_user()
 .catch(e=>{
   console.error(e.message)
 

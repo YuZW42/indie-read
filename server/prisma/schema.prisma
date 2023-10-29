@@ -69,3 +69,13 @@ enum Role {
   ADMIN
   CREATOR
 }
+
+enum GENRES {
+  Other
+}
+
+enum TYPE {
+  Magazines
+  Zines
+  Type_Specimens_ @map("Type Specimens ")
+}
