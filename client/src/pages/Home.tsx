@@ -1,9 +1,10 @@
-import Navbar from "../components/shared/NavBar.tsx"
+import React from 'react'
 
 export const Home = () => {
   return (
-    <div>
-        <Navbar/>
-    </div>
+    <>
+      <h1>Hello</h1>
+      <img src="../images/planet.avif" alt="" />
+    </>
   )
 }

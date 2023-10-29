@@ -1,5 +1,7 @@
 import requests
+from tqdm import tqdm
 from bs4 import BeautifulSoup
+import json
 
 def get_product_description(url):
     response = requests.get(url)
@@ -17,6 +19,9 @@ def get_product_description(url):
 
 def init_scrape(url):
     response = requests.get(url)
+    products = {}
+
+    page = 1
     while True:
         if response.status_code == 200:
             soup = BeautifulSoup(response.text, 'html.parser')
@@ -24,7 +29,8 @@ def init_scrape(url):
             product_list = soup.find(class_="product-list")
             product_blocks = product_list.find_all(class_="product-block")
         
-            for product in product_blocks:
+            print(f"SCRAPING PAGE {page} . . . .")
+            for product in tqdm(product_blocks):
                 ART_TITLE = product.find("div", class_="block-inner").find("div", class_="inner").find("div", class_="innerer").find("div", class_="title")
                 ART_COST = product.find("div", class_="block-inner").find("div", class_="inner").find("div", class_="innerer").find("span", class_="price")
                 ART_IMAGE = product.find("div", class_="block-inner").find("div", class_="image-label-wrap").find("img")
@@ -33,23 +39,31 @@ def init_scrape(url):
                 title = ART_TITLE.text.strip()
                 cost = ART_COST.text.strip()
                 image_url = "https:" + ART_IMAGE["src"] if ART_IMAGE else "Image not found"
-                image_url = image_url.replace('480', '180') # resize image just to fit MD file
+                image_url = image_url.replace('480', '180') # resize image just to fit MD file (not optimal)
                 link = 'https://draw-down.com' + ART_LINK['href']
 
                 desc = get_product_description(link)
+                
+                # Store product data in a dictionary
+                product_data = {
+                    "cost": cost,
+                    "img_url": image_url,
+                    "link": link,
+                    "desc": get_product_description(link)
+                }
 
-                with open("output.md", "a", encoding="utf-8") as file:
+                products[title] = product_data           
+
+                with open("./outputs/products.md", "a", encoding="utf-8") as file:
                     file.write(f'# {title} - {cost}\n\n')
                     file.write(f'![Image]({image_url})\n\n')
                     file.write(f'{desc}\n\n')
                     file.write(f'{link}\n\n')
                     file.write('---\n\n')
 
-                print("successfully retrieved art data")
 
-            print()
-            print("all art has been retrieved for this page, i think")
-            print()
+            print(f"\nPAGE {page} SCRAPED\n")
+            page += 1
 
             next_button = soup.find('div', class_="pagination").find('a', class_="next")
             if next_button:
@@ -59,11 +73,15 @@ def init_scrape(url):
 
             response = requests.get(url)  
         else:
-            print("failed :(", response.status_code)
+            print("Data retreival failed, error code:", response.status_code)
             break
+    
+    # Save the product data to a JSON file
+    with open("./outputs/products.json", "w", encoding="utf-8") as json_file:
+        json.dump(products, json_file, ensure_ascii=False, indent=4)
 
 if __name__ == '__main__':
     url = "https://draw-down.com/collections/zines"
-    with open("output.md", "w", encoding="utf-8") as file:  
+    with open("./outputs/products.md", "w", encoding="utf-8") as file:  
         pass  
     init_scrape(url)
