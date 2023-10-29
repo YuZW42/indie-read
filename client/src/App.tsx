@@ -1,11 +1,12 @@
 import { Home } from "./pages/Home.tsx"
-
+import {Resource} from "./pages/Resources.tsx"
 function App() {
   return (
     <>
-      <Home/>
-    </>
-  )
-}
+    
+      <Resource/>
+    
+  </>
+)}
 
 export default App

@@ -1,4 +1,8 @@
 import React from 'react';
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import"bootstrap/dist/css/bootstrap.min.css";
+import Accordion from 'react-bootstrap/Accordion';
 
 interface Resource {
   type: string;
@@ -40,8 +44,10 @@ const resources: Resource[] = [
   },
 ];
 
+
 const ResourceList: React.FC = () => {
   return (
+    <Accordion defaultActiveKey="0" flush> 
     <div>
       {resources.map((resource, index) => (
         <div key={index}>
@@ -54,7 +60,12 @@ const ResourceList: React.FC = () => {
 
       <button>News Feed</button> 
     </div>
+    </Accordion>
   );
 };
+
+import Accordion from 'react-bootstrap/Accordion';
+
+
 
 export default ResourceList;
