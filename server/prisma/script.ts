@@ -7,11 +7,11 @@ async function main () {
   await prisma.user.deleteMany()
   const user = await prisma.book.create({
    data:{
-    title:"Kick Activist",
+    title:"Kick Activist1",
     author:"Laura Nova",
     price:"200",
     dimensions:["5 × 7 in , 12.7 × 17.8 cm"],
-    Pages: 0,
+    pages: 0,
     materials:"Digital Printing, Offset, Giant size card deck with custom tuck case",
     publisher:"Laura Nova",
     description:"Kung Fu Master Poa Shen Wong, a nonagenarian immigrant from Hong Kong teaches her martial arts at the Little Flower Park Basketball Court in our Lower East Side neighborhood. In the documentary video, Poa describes how a meditation group attempted to take over her exercise turf, but Poa fights back and reclaims her territory in the public park, while also offering us her exercise sequence. To encourage both activist and active audience participation, Poa offers us her exercise sequence of 36 movements. In sharing her technique and her secrets of longevity, Poa hopes to plant seeds to take root for the next generation. In service of her goal, Laura Nova created these kick cards to allow audiences step-by-step guidance.",
@@ -50,8 +50,8 @@ async function create (){
       },
   })
 */
-//main()
-get_user()
+main()
+//get_user()
 .catch(e=>{
   console.error(e.message)
 

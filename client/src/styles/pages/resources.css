@@ -1,31 +1,62 @@
-.accordion-item {
-  background-color: #3a34340b;
-  margin: 5px auto;
-  max-width: 600px;
-  border-radius: 8px;
-  width: 90%;
+.selection-bar button {
+  color: black; 
+  background-color: #f0f0f0; 
+  border: none; 
+  padding: 10px 20px; 
+  margin: 5px; 
+  border-radius: 4px;
 }
+
+.selection-bar button.selected {
+  background-color: #ccc; 
+}
+
+.selection-bar h1 {
+  color: black;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: inline-block; 
+}
+
+
 .accordion-button {
-  background-color: #444242f5; /* Darker gray for closed state */
-  color: #fff; /* White text for better contrast */
+  background-color: white;
+  color: black ;
+  border-radius: 0 ;
+  border: 1px solid black;
+  margin-bottom: 30px; 
+  margin-right: 5px;
 }
 
 .accordion-header {
-  padding: 10px; /* Add padding to the header */
-  background-color: #ffffff; /* White background color for the header */
-}
-.accordion-button:not(.collapsed) {
-  color: whitesmoke;
-  background-color: gray;
-  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
-}
-strong {
-  display: block; /* Make strong elements block level for better centering */
-  margin-bottom: 5px; /* Adjust spacing between elements */
+  padding: 10px; 
+  background-color: #ffffff; 
 }
 
 
 
+.resource-item {
+  background-color: #f0f0f0; 
+  padding: 10px;
+  margin: 20px auto; 
+  max-width: 600px; 
+  border-radius: 8px; 
+  color: black; 
+}
+
+.accordion-item a {
+  color: black;
+}
 
 
-
+#topic {
+  text-align: center;
+  color: darkblue;
+}
+#news{
+  color:black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0 ;
+}

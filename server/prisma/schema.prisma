@@ -56,12 +56,12 @@ model Book {
   author           String
   price            Decimal
   dimensions       String[]
-  Pages            Int?
   materials        String?
   publisher        String?
   description      String
   reference        String?
   inner_page_photo String?
+  pages            Int?
 }
 
 enum Role {
