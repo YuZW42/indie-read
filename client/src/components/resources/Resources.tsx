@@ -1,8 +1,9 @@
 import React from 'react';
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import"bootstrap/dist/css/bootstrap.min.css";
 import Accordion from 'react-bootstrap/Accordion';
+import Stack from 'react-bootstrap/Stack';
+import "../../styles/pages/resources.css"
 
 interface Resource {
   type: string;
@@ -47,24 +48,30 @@ const resources: Resource[] = [
 
 const ResourceList: React.FC = () => {
   return (
+    
     <Accordion defaultActiveKey="0" flush> 
     <div>
+      <h1>Helpful Links</h1>
+      <Stack gap={1}>
       {resources.map((resource, index) => (
-        <div key={index}>
-          <h2>{resource.type}</h2>
-          <p><strong>Name:</strong> {resource.name}</p>
-          <p><strong>URL:</strong> <a href={resource.url}>{resource.url}</a></p>
-          <p><strong>Caption:</strong> {resource.caption}</p>
-        </div>
+        
+        <Accordion.Item eventKey={`${index}`}>
+          <Accordion.Header><strong> {resource.name}</strong></Accordion.Header>
+          <Accordion.Body>{resource.type}</Accordion.Body>
+  
+          <Accordion.Body><strong>URL:</strong> <a href={resource.url}>{resource.url}</a></Accordion.Body>
+          <Accordion.Body><strong>Caption:</strong> {resource.caption}</Accordion.Body>
+          </Accordion.Item>
       ))}
 
-      <button>News Feed</button> 
+</Stack>  
+      <Button variant="secondary">News Feed</Button>
     </div>
     </Accordion>
   );
 };
 
-import Accordion from 'react-bootstrap/Accordion';
+
 
 
 
