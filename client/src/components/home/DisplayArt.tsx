@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Pagination from 'react-bootstrap/Pagination';
-import products from '../../../../server/outputs/products.json';
+import React, { useState } from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+import Pagination from "react-bootstrap/Pagination";
+import products from "../../../../server/outputs/products.json";
+
+// import Modal from "react-bootstrap/Modal";
+
+import "./module.home.css"
 
 export const DisplayArtwork = () => {
   interface ProductInfo {
@@ -28,6 +32,11 @@ export const DisplayArtwork = () => {
     setCurrentPage(page);
   };
 
+  // const [show, setShow] = useState(false);
+
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
+
   // const getFirst30Words = (text: string) => {
   //   const words = text.split(' ');
   //   return words.slice(0, 30).join(' ') + "...";
@@ -35,7 +44,7 @@ export const DisplayArtwork = () => {
 
   return (
     <Container>
-      <h1>Artworks:</h1>
+      <h1 id="artwork-title">Artworks:</h1>
       <Row>
         {currentItems.map((product, index) => (
           <Col key={index} xs={12} sm={6} lg={2} className="product-col">
@@ -48,6 +57,16 @@ export const DisplayArtwork = () => {
                 <Card.Text>Description: {product.desc}</Card.Text>
               </Card.Body>
             </Card>
+
+            {/* <Modal show={show} onHide={handleClose} className="modal-backdrop">
+              <Modal.Header closeButton>
+                <Modal.Title>Modal heading</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quaerat perferendis nam minima iusto laudantium maiores dolores explicabo ut aspernatur obcaecati labore, fugiat est excepturi?
+              </Modal.Body>
+            </Modal> */}
+
           </Col>
         ))}
       </Row>

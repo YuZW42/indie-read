@@ -170,6 +170,11 @@
 }
 
 /********************************** DISPLAY ARTWORK **********************************/
+#artwork-title {
+    font-style: italic;
+    font-weight: 100;
+}
+
 .product-col {
     padding: 10px;
 }
