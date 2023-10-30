@@ -1,5 +1,6 @@
-import React from 'react'
+// import logo from "../../images/logo.jpg"
 import "./module.shared.css"
+import {CgProfile} from "react-icons/cg"
 
 export const Header = () => {
   return (
@@ -9,7 +10,8 @@ export const Header = () => {
         <h1>Book Arts Catalog</h1>
       </div>
       <div>
-        <div className='pfp'></div>
+        <CgProfile className="pfp"/>
+        {/* <img src={pfp} alt="Profile Picture" className="pfp"/> */}
       </div>
     </div>
   )
