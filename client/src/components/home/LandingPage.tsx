@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import "./module.home.css"
 import {BsArrowDown} from "react-icons/bs"
 
@@ -10,11 +10,11 @@ export const LandingPage = () => {
                 Welcome to
             </header>
             <main>
-                Book Art Logo
+                Indie Art Reads
             </main>
             <p>&lt;a tag line here&gt;</p>
         </div>
-        <a href=""><BsArrowDown className='hero-arrow'/></a>
+        <a href="#"><BsArrowDown className='hero-arrow'/></a>
     </div>
   )
 }

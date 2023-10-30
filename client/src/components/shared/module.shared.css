@@ -3,17 +3,20 @@
     margin: 0;
 }
 
-/* HEADER SECTION */
+/**************************** HEADER SECTION ****************************/
 
 .header-section {
     display: flex;
     justify-content: space-between;
     padding: 2em;
+    margin: 0 4em 0 4em;
 }
 
 .logo h1{
-    font-size: 36px;
+    font-size: 40px;
+    font-weight: 800;
 }
+
 
 .pfp {
     width: 65px;
@@ -24,20 +27,15 @@
     cursor: pointer;
 }
 
-.hero-arrow {
-    color: white;
-    width: 5em;
-    height: 8em;
+@media screen and (max-width: 650px) {
+    .logo h1{
+        font-size: 20px;
+        font-weight: 800;
+    }
 
-    padding-top: 2em;
-
-    animation: bounce 2s cubic-bezier(1, 0.84, 0.44, 1) infinite;
+    .pfp {
+        width: 35px;
+        height: 35px;
+    }
 }
-  
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-    40% {transform: translateY(-30px);} 
-    60% {transform: translateY(-15px);} 
- } 
-
-/* NAVIGATION BAR */
+/**************************** NAVIGATION SECTION ****************************/
