@@ -1,5 +1,6 @@
-import React from 'react'
+// import logo from "../../images/logo.jpg"
 import "./module.shared.css"
+import pfp from "../../assets/pfp.png"
 
 export const Header = () => {
   return (
@@ -9,7 +10,7 @@ export const Header = () => {
         <h1>Book Arts Catalog</h1>
       </div>
       <div>
-        <div className='pfp'></div>
+        <img src={pfp} alt="Profile Picture" className="pfp"/>
       </div>
     </div>
   )
