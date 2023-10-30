@@ -40,6 +40,10 @@
     font-weight: bold;
 }
 
+.hero-arrow {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
     .hero-info header {
         font-size: 25px;
@@ -163,4 +167,19 @@
     .mobile-desc {
         font-size: 12px;
     }
+}
+
+/********************************** DISPLAY ARTWORK **********************************/
+.product-col {
+    padding: 10px;
+}
+
+.product-item {
+border: 1px solid #ddd;
+padding: 10px;
+text-align: center;
+margin-bottom: 20px;
+height: 100%; /* Make all items the same height */
+max-height: 300px; /* Set a fixed maximum height for the cards */
+overflow: hidden; /* Hide content that exceeds the maximum height */
 }

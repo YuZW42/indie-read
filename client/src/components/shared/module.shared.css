@@ -39,3 +39,8 @@
     }
 }
 /**************************** NAVIGATION SECTION ****************************/
+.active-link {
+    text-decoration: underline;
+}
+
+/**************************** FOOTER SECTION ****************************/
