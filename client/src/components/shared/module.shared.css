@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/**************************** HEADER SECTION ****************************/
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    margin: 0 4em 0 4em;
+}
+
+.logo h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+.pfp {
+    width: 65px;
+    height: 65px;
+    /* background-color: rgb(149, 181, 199);
+    border-radius: 50%; */
+
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+    .logo h1{
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .pfp {
+        width: 35px;
+        height: 35px;
+    }
+}
+/**************************** NAVIGATION SECTION ****************************/
+.active-link {
+    text-decoration: underline;
+}
+
+/**************************** FOOTER SECTION ****************************/
