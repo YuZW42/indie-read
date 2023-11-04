@@ -3,7 +3,28 @@ import requests
 import re
 import json
 from tqdm import tqdm
-from pprint import pprint
+
+def extract_text(tag):
+    return tag.text.strip() if tag else None
+
+def clean_cost(cost):
+    return cost.replace("$", "").replace("\n", "")
+
+def extract_materials(features):
+    materials = features.find("ul", class_="list")
+    return [m.text for m in materials.find_all("li")] if materials else None
+
+def extract_img(img):
+    img_list = []
+    img = img.find_all("div", class_="swiper-slide")
+    
+    if img:
+        for i in img:
+            if i.find("img")["src"]:
+                img_list.append(i.find("img")["src"])
+    
+    return img_list if img_list else None
+
 
 def get_post_data(url):
     book_data = {}
@@ -12,52 +33,42 @@ def get_post_data(url):
     if res.status_code == 200:
         soup = BeautifulSoup(res.text, "html.parser")
 
-        title = soup.find("h1", {"class" : "hero-title"}).text
-        author = soup.find("h2", {"class" : "hero-subtitle"}).find("a").text
-        cost = soup.find("div", {"class" : "row"}).find("h3").text
+        book_data["title"] = extract_text(soup.find("h1", {"class": "hero-title"}))
+        book_data["author"] = extract_text(soup.find("h2", {"class": "hero-subtitle"}).find("a") if soup.find("h2", {"class": "hero-subtitle"}) else None)
+        book_data["price"] = clean_cost(extract_text(soup.find("div", {"class": "row"}).find("h3")))
 
-        features = soup.find("div", {"class" : "book-meta"}).text
+        features = soup.find("div", {"class": "book-meta"})
 
-        keys_to_extract = ["Edition", "Year", "Binding", "Dimensions", "Pages"]
-        pattern = r'(' + '|'.join(keys_to_extract) + r')\s*:\s*(.*?)(?=(?:' + '|'.join(keys_to_extract) + r')|$)' 
-        matches = re.findall(pattern, features)
+        keys_to_extract = ["Edition", "Year", "Binding", "Dimensions", "Pages", "ISBN"]
+        pattern = r'(' + '|'.join(keys_to_extract) + r')\s*:\s*(.*?)(?=(?:' + '|'.join(keys_to_extract) + r')|$)'
+        matches = re.findall(pattern, features.text)
         result = {key: value.strip() for key, value in matches}
 
-        book_data["title"] = title
-        book_data["author"] = author
-        book_data["cost"] = cost
-
         for key in keys_to_extract:
-            if key in result:
-                book_data[key.lower()] = result[key]
+            book_data[key.lower()] = result.get(key, None)
 
-        desc = soup.find("div", {"class" : "col"})
-        concatenate_desc = ""
-        child_divs = desc.find_all("div", class_=lambda x: x != "book-meta")
-
-        for child_div in child_divs:
-            concatenate_desc += child_div.get_text().strip() + " "
-        
-        concatenate_desc = concatenate_desc.strip()
-
-        book_data["desciption"] = concatenate_desc
+        try:
+            book_data["materials"] = extract_materials(features)
+        except Exception as e:
+            print(f"Failed to retrieve MATERIALS at Artist Book {book_data['title']}")
+            print(e)
+            
+        book_data["description"] = "No Description"
         book_data["reference"] = None
 
-
-        img = soup.find("div", {"class" : "swiper-wrapper"}).find_all("img").text
-        book_data["img"] = img
+        try:
+            image = soup.find("div", class_="swiper-wrapper")
+            book_data["images"] = extract_img(image)
+        except:
+            book_data["images"] = None
+            print(f"\nNo images found for Artist's : Book {book_data['title']}")
 
         return book_data
-    '''
-    [] description now found
-    [] img not found
-    '''
-
+    else:
+        print("Status Code 200 Failed")
+        return
 
 def init_scrape():
-    with open("./outputs/posts.txt", "w") as file:
-        pass
-
     all_post_data = []
 
     url = "https://centerforbookarts.org/book-shop"
@@ -68,18 +79,21 @@ def init_scrape():
 
     ALL_POSTS = json.loads(re.findall('(\[.*\]);', script)[0])
 
+    num_books = 1
+
     for post in tqdm(ALL_POSTS):
         post_url = post['permalink']
         book_data = get_post_data(post_url)
-        
+
         all_post_data.append(book_data)
-        break
-    
-    # Save the product data to a JSON file
+
+        num_books += 1
+
     with open("./outputs/cfba.json", "w", encoding="utf-8") as json_file:
         json.dump(all_post_data, json_file, ensure_ascii=False, indent=4)
 
 init_scrape()
+
 
 '''
 https://centerforbookarts.org/book-shop?cat=artists-books
