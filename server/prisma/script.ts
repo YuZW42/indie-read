@@ -7,7 +7,7 @@ async function main () {
   await prisma.user.deleteMany()
   const user = await prisma.book.create({
    data:{
-    title:"Kick Activist1",
+    title:"Kick Activist44",
     author:"Laura Nova",
     price:"200",
     dimensions:["5 × 7 in , 12.7 × 17.8 cm"],
