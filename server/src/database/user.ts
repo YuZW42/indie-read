@@ -21,7 +21,4 @@ export async function get_user () {
   
 }
 
-
-
-
 export default get_user 

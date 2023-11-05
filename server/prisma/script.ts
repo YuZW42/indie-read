@@ -1,11 +1,14 @@
 import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
 import get_user from "../src/database/user"
+
+// CFBA JSON FILE
 //{log:["query"]}
 
 async function main () {
   await prisma.user.deleteMany()
   const user = await prisma.book.create({
+    // for - loop --> goes through each book
    data:{
     title:"Kick Activist1",
     author:"Laura Nova",

@@ -12,7 +12,8 @@ def clean_cost(cost):
 
 def extract_materials(features):
     materials = features.find("ul", class_="list")
-    return [m.text for m in materials.find_all("li")] if materials else None
+    return [m.text.replace("\n", "") for m in materials.find_all("li")] if materials else None
+
 
 def extract_img(img):
     img_list = []
@@ -24,6 +25,24 @@ def extract_img(img):
                 img_list.append(i.find("img")["src"])
     
     return img_list if img_list else None
+
+def get_description(article):
+    cols_divs = article.find_all("div", class_="cols")
+    second_cols_div = cols_divs[1]
+    first_col_div = second_cols_div.find("div", class_="col")
+    children = first_col_div.find_all()
+
+    pattern = re.compile(r'^.+?:')
+
+    desc = []
+
+    for child in children:
+        child_text = child.get_text().strip()
+
+        if not pattern.match(child_text) and child_text and child.name not in ["ul", "li"]:            
+            desc.append(child.text)
+
+    return " ".join(desc)
 
 
 def get_post_data(url):
@@ -39,21 +58,28 @@ def get_post_data(url):
 
         features = soup.find("div", {"class": "book-meta"})
 
-        keys_to_extract = ["Edition", "Year", "Binding", "Dimensions", "Pages", "ISBN"]
-        pattern = r'(' + '|'.join(keys_to_extract) + r')\s*:\s*(.*?)(?=(?:' + '|'.join(keys_to_extract) + r')|$)'
-        matches = re.findall(pattern, features.text)
-        result = {key: value.strip() for key, value in matches}
-
-        for key in keys_to_extract:
-            book_data[key.lower()] = result.get(key, None)
+        get_features = features.find_all("p")
+        for feature in get_features:
+            match = re.match(r'([^:]+): (.+)', feature.text)  # Notice the space after the colon
+            if match:
+                key = match.group(1).strip()
+                value = match.group(2).strip()
+                book_data[key.lower()] = value
 
         try:
             book_data["materials"] = extract_materials(features)
         except Exception as e:
-            print(f"Failed to retrieve MATERIALS at Artist Book {book_data['title']}")
+            print(f"MATERIALS NOT FOUND  -->  {book_data['title']}")
             print(e)
-            
-        book_data["description"] = "No Description"
+        
+        article_div = soup.find("article", id="article")
+        try:
+            book_data["description"] = get_description(article_div).replace("\n", " ")
+        except Exception as error:
+            book_data["description"] = ""
+            print(f"\nDESCRIPTION NOT FOUND  -->  {book_data['title']}")
+            print(error)
+
         book_data["reference"] = None
 
         try:
@@ -61,7 +87,7 @@ def get_post_data(url):
             book_data["images"] = extract_img(image)
         except:
             book_data["images"] = None
-            print(f"\nNo images found for Artist's : Book {book_data['title']}")
+            print(f"\nIMAGE NOT FOUND  -->  {book_data['title']}")
 
         return book_data
     else:
@@ -79,7 +105,7 @@ def init_scrape():
 
     ALL_POSTS = json.loads(re.findall('(\[.*\]);', script)[0])
 
-    num_books = 1
+    num_books = 0
 
     for post in tqdm(ALL_POSTS):
         post_url = post['permalink']
@@ -91,6 +117,8 @@ def init_scrape():
 
     with open("./outputs/cfba.json", "w", encoding="utf-8") as json_file:
         json.dump(all_post_data, json_file, ensure_ascii=False, indent=4)
+
+    print(f"\n{num_books} BOOKS SCRAPED\n")
 
 init_scrape()
 
