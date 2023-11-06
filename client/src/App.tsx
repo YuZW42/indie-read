@@ -3,13 +3,16 @@ import { Route, Routes } from 'react-router-dom';
 
 import { Home } from "./pages/Home.tsx"
 import { Resource } from "./pages/Resources.tsx"
+import Search from "./pages/Search.tsx"
 
 function App() {
   return (
     <>
       <Routes>                
         <Route path='/' element={<Home/>}/>     
-        <Route path='/resources' element={<Resource/>}/>                   
+        <Route path='/resources' element={<Resource/>}/> 
+        <Route path='/search' element={<Search/>}/> 
+                          
       </Routes>
     </>
   )

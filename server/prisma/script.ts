@@ -5,12 +5,14 @@ import get_user from "../src/database/user"
 // CFBA JSON FILE
 //{log:["query"]}
 
+async function donothing(){}
+
 async function main () {
   await prisma.user.deleteMany()
   const user = await prisma.book.create({
     // for - loop --> goes through each book
    data:{
-    title:"Kick Activist1",
+    title:"Kick Activist44",
     author:"Laura Nova",
     price:"200",
     dimensions:["5 × 7 in , 12.7 × 17.8 cm"],
@@ -53,8 +55,10 @@ async function create (){
       },
   })
 */
-main()
+//main()
 //get_user()
+//read()
+donothing()
 .catch(e=>{
   console.error(e.message)
 
