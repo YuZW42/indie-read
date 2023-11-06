@@ -26,13 +26,12 @@ const SearchResults: React.FC<SearchResultsProps> = ({ results }) => {
           <li key={result.title}>
             <a>
               <div>
-                <h5>{result.title}</h5><small>{result.price}</small>
+                <h3>{result.title}</h3><small>${result.price}</small>
+                <h5>{result.author}</h5>
               </div>
               <p>{result.description}</p>
             </a>
-          
           </li>
-
         ))}
       </ul>
     </div>

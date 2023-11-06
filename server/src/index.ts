@@ -6,6 +6,7 @@ import search from './pages/search/searchquery'
 
 const cors = require('cors');
 const app = express();
+const port = 5002
 app.use(cors());
 app.get('/',(req,res) =>{
   res.send('Hello');
@@ -16,7 +17,6 @@ app.get('/resources_data',(req,res) =>{
 });
 
 app.get('/search_keyword', async(req,res) =>{
-  console.log("recieved")
   const keyword:string = req.query.keyword;
   try{
     const books = await search(keyword);
@@ -28,4 +28,4 @@ app.get('/search_keyword', async(req,res) =>{
   }
 })
 
-app.listen(5002,()=> console.log('server running'));
+app.listen(port,()=> console.log(`server running on port ${port}`));
