@@ -22,7 +22,7 @@ const Search: React.FC = () => {
       console.error('Error:', error);
     }
   };
-  console.log('dataa',searchResults)
+
 
   return (
     <>
