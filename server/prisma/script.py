@@ -4,14 +4,40 @@ import re
 import json
 from tqdm import tqdm
 
+from prisma import Prisma
+import asyncio
+
+# ********************************************************************************** #
+
+async def main(book_data):
+    prisma = Prisma()
+    await prisma.connect()
+
+    user = await prisma.book.create(
+        data={
+            "title": book_data['title'],
+            "author": book_data['author'],
+            "price": book_data['price'],
+            "dimensions": book_data['dimensions'],
+            "pages": book_data['pages'],
+            "materials": book_data['materials'],
+            "publisher": book_data['publisher'],
+            "description": book_data['description'],
+            "reference": book_data['reference'],
+            "inner_page_photo": book_data['images'],
+        }
+    )
+
+    await prisma.disconnect()
+
+# *********************************************************************************** #
+
+
 def extract_text(tag):
     return tag.text.strip() if tag else None
 
 def clean_cost(cost):
-    try:
-        return float(cost.replace("$", "").replace("\n", "").replace(",", ""))
-    except:
-        return
+    return cost.replace("$", "").replace("\n", "")
 
 def extract_materials(features):
     materials = features.find("ul", class_="list")
@@ -67,12 +93,7 @@ def get_post_data(url):
             if match:
                 key = match.group(1).strip()
                 value = match.group(2).strip()
-
-                try:
-                    value = int(value)
-                    book_data[key.lower()] = value
-                except:
-                    book_data[key.lower()] = 1
+                book_data[key.lower()] = value
 
         try:
             book_data["materials"] = extract_materials(features)
@@ -101,7 +122,8 @@ def get_post_data(url):
     else:
         print("Status Code 200 Failed")
         return
-    
+
+
 def init_scrape():
     all_post_data = []
 
@@ -114,14 +136,21 @@ def init_scrape():
     ALL_POSTS = json.loads(re.findall('(\[.*\]);', script)[0])
 
     num_books = 0
+    tasks = []
 
     for post in tqdm(ALL_POSTS):
         post_url = post['permalink']
         book_data = get_post_data(post_url)
 
-        all_post_data.append(book_data)
+        task = main(book_data)
+        tasks.append(task)
 
+        all_post_data.append(book_data)
         num_books += 1
+
+        break
+
+    asyncio.run(asyncio.gather(*tasks))
 
     with open("./outputs/cfba.json", "w", encoding="utf-8") as json_file:
         json.dump(all_post_data, json_file, ensure_ascii=False, indent=4)
@@ -129,27 +158,3 @@ def init_scrape():
     print(f"\n{num_books} BOOKS SCRAPED\n")
 
 init_scrape()
-
-
-'''
-    https://centerforbookarts.org/book-shop?cat=artists-books
-
-    how does this all work?
-        - the data is NOT being injected onto the site via the HTML tag
-            - instead it is through a SCRIPT tag that has all the data in JSON
-        - I specifically grab the LINK to each ARTBOOK so that I can scrape that site instead
-            - that page doesn't use a script tag so I can use normal scraping methods
-
-    how did the guy know that this was the reason?
-        - looked up a specific title and found that it was found in the script tag
-        - realized that if the HTML tag was empty BUT the page was populated then:
-            - this must mean that the data must be coming from another place thats not HTML
-
-    whats all the regex mean?
-        - the script tag that has the JSON has no ID or CLASS
-        - used regex to find all the script tags:
-            - with the word "post" inside
-
-    why does it have [0]?
-        - the data coming back was in the form of a LIST holding another LIST holding a DICTIONARY (JSON)
-'''
