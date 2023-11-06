@@ -47,7 +47,7 @@ export const DisplayArtwork = () => {
       <h1 id="artwork-title">Artworks:</h1>
       <Row>
         {currentItems.map((product, index) => (
-          <Col key={index} xs={12} sm={6} lg={2} className="product-col">
+          <Col key={index} xs={12} md={6} sm={4} lg={2} className="product-col">
             <Card className="product-item">
               <Card.Img variant="top" src={product.img_url} />
               <Card.Body>
