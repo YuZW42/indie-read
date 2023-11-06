@@ -1,5 +1,4 @@
-import { PrismaClient } from '@prisma/client'
-const prisma = new PrismaClient()
+import prisma from '../pages/shared/prismaclient'
 //{log:["query"]}
 
 export async function get_user () {

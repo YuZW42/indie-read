@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import { Home } from "./pages/Home.tsx"
 import { Resource } from "./pages/Resources.tsx"
-import {Search} from "./pages/Search.tsx"
+import Search from "./pages/Search.tsx"
 
 function App() {
   return (

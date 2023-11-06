@@ -3,6 +3,8 @@ const prisma = new PrismaClient()
 import get_user from "../src/database/user"
 //{log:["query"]}
 
+async function donothing(){}
+
 async function main () {
   await prisma.user.deleteMany()
   const user = await prisma.book.create({
@@ -50,8 +52,10 @@ async function create (){
       },
   })
 */
-main()
+//main()
 //get_user()
+//read()
+donothing()
 .catch(e=>{
   console.error(e.message)
 
