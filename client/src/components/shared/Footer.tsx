@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <div className='d-flex align-items-center justify-content-center text-center p-3' style={{height:'30vh' }}>
         &copy; {new Date().getFullYear()} Copyright: 
-        <a className='text-dark' href='https://no-website-yet.com/'> Indie Art Reads </a>
+        <a className='text-dark' href='#'> Indie Art Reads </a>
     </div>
   )
 }
