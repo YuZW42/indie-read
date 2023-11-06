@@ -6,7 +6,7 @@ import NavBar from "../components/shared/NavBar"
 import { Header } from "../components/shared/Header"
 
 const Search: React.FC = () => {
-  const [searchResults, setSearchResults] = useState<any[]>([]); // Assuming searchResults is an array of any type
+  const [searchResults, setSearchResults] = useState<any[]>([]); 
 
   const handleSearch = async (keyword: string) => {
     try {
@@ -26,7 +26,7 @@ const Search: React.FC = () => {
 
   return (
     <>
-      <Header /> {/* Assuming these are imported components */}
+      <Header /> 
       <NavBar />
       <SearchBar onSearch={handleSearch} />
       <SearchResults results={searchResults} />
