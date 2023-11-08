@@ -26,5 +26,8 @@
   - Start by running "npm i"
   - Run the back end in dev mode by entering "npm run dev"
 
-# Database visualized: 
-<img width="929" alt="Screenshot 2023-10-30 at 11 09 33 AM" src="https://github.com/YuZW42/indie-read/assets/88296782/977f847d-2ef1-492e-bfbb-1b6fffe3f23c">
+# Landing Page of Our Project
+<img width="1202" alt="Screenshot 2023-11-08 at 5 23 11 PM" src="https://github.com/YuZW42/indie-read/assets/88296782/af82f4f4-e8ca-48df-a0dd-0d90f65a744b">
+# Home Page
+<img width="1255" alt="Screenshot 2023-11-08 at 5 23 46 PM" src="https://github.com/YuZW42/indie-read/assets/88296782/82beca41-0452-48d8-99a0-94c5a9537a68">
+# More Incoming
