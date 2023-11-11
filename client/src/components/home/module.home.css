@@ -188,3 +188,8 @@ height: 100%; /* Make all items the same height */
 max-height: 300px; /* Set a fixed maximum height for the cards */
 overflow: hidden; /* Hide content that exceeds the maximum height */
 }
+
+.pagination-container {
+    max-width: 100%; /* Adjust the value as needed */
+    overflow: auto; /* Enable horizontal scrolling if necessary */
+  }

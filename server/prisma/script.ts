@@ -2,7 +2,9 @@ import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
 import get_user from "../src/database/user"
 
-// CFBA JSON FILE
+// CENTER FOR BOOK ARTS JSON FILE
+
+
 //{log:["query"]}
 
 async function donothing(){}
@@ -25,9 +27,7 @@ async function main () {
 
       },
   }) 
-  console.log(user)
-
-  
+  console.log(user)  
 }
 /*
 async function create (){
