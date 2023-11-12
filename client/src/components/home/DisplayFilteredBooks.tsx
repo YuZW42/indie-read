@@ -8,43 +8,36 @@ import "./module.home.css";
 import { PostButton } from "../shared/PostButton";
 
 export const DisplayFilteredBooks = () => {
-  interface Book {
-    title: string;
-    author: string | null;
-    price: number | null;
-    edition: string | null;
-    year: number | null | undefined;
-    binding: string | null;
-    dimensions: string | null;
-    pages: number | null;
-    materials: string | null;
-    description: string;
-    reference: string | null;
-    images: string[];
-    publisher: string | null;
-    isbn: string | null;
-  }
+  // interface Book {
+  //   title: string;
+  //   author: string | null;
+  //   price: number | null;
+  //   edition: string | null;
+  //   year: number | null | undefined;
+  //   binding: string | null;
+  //   dimensions: string | null;
+  //   pages: number | null;
+  //   materials: string | null;
+  //   description: string;
+  //   reference: string | null;
+  //   images: string[];
+  //   publisher: string | null;
+  //   isbn: string | null;
+  // }
 
-  const books: Book[] = cfba_json;
+  // const books: Book[] = cfba_json;
 
   const [yearFilter, setYearFilter] = useState<string>("All");
   const [costFilter, setCostFilter] = useState<string>("All");
 
   // Apply filtering and sorting to the entire dataset
-  // Apply filtering and sorting to the entire dataset
-  const filteredAndSortedBooks = books.filter((book) => {
+  const filteredAndSortedBooks = cfba_json.filter((book) => {
     return (
       book.price !== null && // Check for non-null prices
       (yearFilter === "All" || // Year filter conditions
-        (yearFilter === "2023" &&
-          book.year !== null &&
-          book.year !== undefined &&
-          book.year === 2023) ||
-        (yearFilter === "Past 3 Years" &&
-          book.year !== null &&
-          book.year !== undefined &&
-          book.year >= 2020 &&
-          book.year <= 2023)) &&
+        ((yearFilter === "2023" || yearFilter === "Past 3 Years") &&
+          typeof book.year === "number" &&
+          (yearFilter === "2023" || (book.year >= 2020 && book.year <= 2023)))) &&
       (costFilter === "All" || // Cost filter conditions
         (costFilter === "10" && book.price === 10) ||
         (costFilter === "10-25" && book.price >= 10 && book.price <= 25) ||
@@ -52,6 +45,7 @@ export const DisplayFilteredBooks = () => {
         (costFilter === "50+" && book.price > 50))
     );
   });
+  
 
   const itemsPerPage = 15;
 
