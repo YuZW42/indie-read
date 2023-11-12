@@ -1,6 +1,6 @@
 import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
-import get_user from "../src/database/user"
+// import get_user from "../src/database/user"
 
 // CENTER FOR BOOK ARTS JSON FILE
 
@@ -12,7 +12,6 @@ async function donothing(){}
 async function main () {
   await prisma.user.deleteMany()
   const user = await prisma.book.create({
-    // for - loop --> goes through each book
    data:{
     title:"Kick Activist44",
     author:"Laura Nova",
