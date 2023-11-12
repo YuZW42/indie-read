@@ -7,7 +7,7 @@ import "./module.home.css"
 
 function ImageSlider() {
   return (
-    <Carousel data-bs-theme="dark">
+    <Carousel data-bs-theme="dark" className="carousel-container">
       <Carousel.Item interval={2000}>
         <div className="carousel item1">
           <img

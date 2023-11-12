@@ -6,7 +6,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 function ColorSchemesExample() {
   return (
-    <>
+    <div className="nav-container">
       <Navbar collapseOnSelect expand='md'>
         <Container fluid>
           <Navbar.Toggle aria-controls='offcanvasNavbar-expand-md'/>
@@ -31,7 +31,7 @@ function ColorSchemesExample() {
           </Navbar.Offcanvas>
         </Container>
       </Navbar>
-    </>
+    </div>
   );
 }
 

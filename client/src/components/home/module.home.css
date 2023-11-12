@@ -108,6 +108,9 @@
 
 
 /********************************** IMAGE CAROUSEL **********************************/
+.carousel-container {
+    z-index: 5;
+}
 .carousel {
     display: flex;
 }
@@ -123,6 +126,7 @@
     align-items: center;
     padding: 2em 8em 2em 8em;
 
+    background-color: white;
     font-weight: 400;
 }
 
@@ -170,6 +174,9 @@
 }
 
 /********************************** DISPLAY ARTWORK **********************************/
+.display-artbooks-container {
+    position: relative;
+}
 #artwork-title {
     font-style: italic;
     font-weight: 100;
@@ -190,6 +197,33 @@ overflow: hidden; /* Hide content that exceeds the maximum height */
 }
 
 .pagination-container {
-    max-width: 100%; /* Adjust the value as needed */
-    overflow: auto; /* Enable horizontal scrolling if necessary */
-  }
+    max-width: 100%;
+    overflow: auto; 
+}
+
+  /**************************** POST BUTTON SECTION ****************************/
+.btn-container {
+    z-index: 5;
+}
+
+.post-btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    background-color: var(--indie-blue);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 75px;
+    font-weight: lighter;
+    color: white;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    margin-bottom: 2em;
+}

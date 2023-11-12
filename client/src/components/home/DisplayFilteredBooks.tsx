@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Card, Pagination, Form } from 'react-bootstrap';
+import { Container, Row, Col, Card, Pagination, Form } from "react-bootstrap";
 
 import cfba_json from "../../../../server/outputs/cfba.json";
 import placeholder from "../../images/placeholder.png";
 import "./module.home.css";
+
+import { PostButton } from "../shared/PostButton";
 
 export const DisplayFilteredBooks = () => {
   interface Book {
@@ -30,31 +32,26 @@ export const DisplayFilteredBooks = () => {
 
   // Apply filtering and sorting to the entire dataset
   // Apply filtering and sorting to the entire dataset
-  const filteredAndSortedBooks = books
-    .filter((book) => {
-      return (
-        book.price !== null && // Check for non-null prices
-        (
-          (yearFilter === "All") || // Year filter conditions
-          (
-            (yearFilter === "2023" && book.year !== null && book.year !== undefined && book.year === 2023) ||
-            (yearFilter === "Past 3 Years" && book.year !== null && book.year !== undefined && (book.year >= 2020 && book.year <= 2023))
-          )
-        ) &&
-        (
-          (costFilter === "All") || // Cost filter conditions
-          (
-            (costFilter === "10" && book.price === 10) ||
-            (costFilter === "10-25" && book.price >= 10 && book.price <= 25) ||
-            (costFilter === "25-50" && book.price > 25 && book.price <= 50) ||
-            (costFilter === "50+" && book.price > 50)
-          )
-        )
-      );
-    });
-
-
-
+  const filteredAndSortedBooks = books.filter((book) => {
+    return (
+      book.price !== null && // Check for non-null prices
+      (yearFilter === "All" || // Year filter conditions
+        (yearFilter === "2023" &&
+          book.year !== null &&
+          book.year !== undefined &&
+          book.year === 2023) ||
+        (yearFilter === "Past 3 Years" &&
+          book.year !== null &&
+          book.year !== undefined &&
+          book.year >= 2020 &&
+          book.year <= 2023)) &&
+      (costFilter === "All" || // Cost filter conditions
+        (costFilter === "10" && book.price === 10) ||
+        (costFilter === "10-25" && book.price >= 10 && book.price <= 25) ||
+        (costFilter === "25-50" && book.price > 25 && book.price <= 50) ||
+        (costFilter === "50+" && book.price > 50))
+    );
+  });
 
   const itemsPerPage = 15;
 
@@ -62,7 +59,10 @@ export const DisplayFilteredBooks = () => {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = filteredAndSortedBooks.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = filteredAndSortedBooks.slice(
+    indexOfFirstItem,
+    indexOfLastItem
+  );
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
@@ -71,7 +71,7 @@ export const DisplayFilteredBooks = () => {
   return (
     <div>
       <div>
-      <Form>
+        <Form>
           <Container className="filter-container">
             <Row>
               <Col>
@@ -108,23 +108,29 @@ export const DisplayFilteredBooks = () => {
           </Container>
         </Form>
 
-
-        <Container>
+        <Container className="display-artbooks-container">
           <Row>
             {currentItems.map((book, index) => (
               <Col key={index} xs={12} sm={6} lg={2} className="product-col">
                 <Card className="product-item">
                   {book.images ? (
-                    <Card.Img variant="top" src={book.images[0]} style={{ width: '100%', height: '200px' }} alt="Artwork" />
+                    <Card.Img
+                      variant="top"
+                      src={book.images[0]}
+                      style={{ width: "100%", height: "200px" }}
+                      alt="Artwork"
+                    />
                   ) : (
                     <img
                       src={placeholder}
                       alt="Placeholder Artwork"
-                      style={{ width: '100', height: '200px' }}
+                      style={{ width: "100", height: "200px" }}
                     />
                   )}
                   <Card.Body>
-                    <Card.Title>{book.title} - ${book.price}.00</Card.Title>
+                    <Card.Title>
+                      {book.title} - ${book.price}.00
+                    </Card.Title>
                     <Card.Text>Year {book.year}</Card.Text>
                     <Card.Text>{book.description}</Card.Text>
                   </Card.Body>
@@ -132,34 +138,35 @@ export const DisplayFilteredBooks = () => {
               </Col>
             ))}
           </Row>
+
+          <PostButton/>
+
           <div className="pagination-container">
-          <Pagination>
-            {Array(Math.ceil(filteredAndSortedBooks.length / itemsPerPage))
-              .fill(0)
-              .map((_, index) => {
-                const numPages = Math.ceil(filteredAndSortedBooks.length / itemsPerPage);
-                if (numPages <= 10 || (index < 5 || index >= numPages - 5)) {
-                  return (
-                    <Pagination.Item
-                      key={index}
-                      active={index + 1 === currentPage}
-                      onClick={() => handlePageChange(index + 1)}
-                    >
-                      {index + 1}
-                    </Pagination.Item>
+            <Pagination>
+              {Array(Math.ceil(filteredAndSortedBooks.length / itemsPerPage))
+                .fill(0)
+                .map((_, index) => {
+                  const numPages = Math.ceil(
+                    filteredAndSortedBooks.length / itemsPerPage
                   );
-                } else if (index === 5) {
-                  return (
-                    <Pagination.Ellipsis key="start-ellipsis" />
-                  );
-                } else if (index === numPages - 6) {
-                  return (
-                    <Pagination.Ellipsis key="end-ellipsis" />
-                  );
-                }
-                return null;
-              })}
-          </Pagination>
+                  if (numPages <= 10 || index < 5 || index >= numPages - 5) {
+                    return (
+                      <Pagination.Item
+                        key={index}
+                        active={index + 1 === currentPage}
+                        onClick={() => handlePageChange(index + 1)}
+                      >
+                        {index + 1}
+                      </Pagination.Item>
+                    );
+                  } else if (index === 5) {
+                    return <Pagination.Ellipsis key="start-ellipsis" />;
+                  } else if (index === numPages - 6) {
+                    return <Pagination.Ellipsis key="end-ellipsis" />;
+                  }
+                  return null;
+                })}
+            </Pagination>
           </div>
         </Container>
       </div>
