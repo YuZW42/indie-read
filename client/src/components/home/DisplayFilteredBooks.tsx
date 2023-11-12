@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Container, Row, Col, Card, Pagination, Form } from "react-bootstrap";
 
 import cfba_json from "../../../../server/outputs/cfba.json";
