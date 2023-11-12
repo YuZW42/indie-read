@@ -13,6 +13,7 @@ lerna-debug.log*
 node_modules
 /node_modules
 ./node_modules
+/Users/yuzeng/williamz/Developer/indie-book-arts/indie-read/server/node_modules
 
 dist
 node_modules 
