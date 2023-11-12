@@ -17,7 +17,7 @@ app.get('/resources_data',(req,res) =>{
 });
 
 app.get('/search_keyword', async(req,res) =>{
-  const keyword:string = req.query.keyword;
+  const keyword:string = req.query.keyword as string;
   try{
     const books = await search(keyword);
     console.log(books)
