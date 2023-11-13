@@ -23,17 +23,20 @@ app.use(cors({
   methods:"GET,POST,PUT,DELETE",
   credentials:true,
 }));
+app.use(cors());
 
 app.get('/',(req,res) =>{
   res.send('Hello');
 });
 
 app.get('/resources_data',(req,res) =>{
+
+
   res.json(resources);
 });
 
 app.get('/search_keyword', async(req,res) =>{
-  const keyword:string = req.query.keyword;
+  const keyword:any = req.query.keyword;
   try{
     const books = await search(keyword);
     console.log(books)

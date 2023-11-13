@@ -24,8 +24,6 @@ passport.use(new GoogleStrategy({
   }
 ));
 
-
-
 passport.serializeUser(function(profile, cb) {
   process.nextTick(function() {
     cb(null, profile);
@@ -58,7 +56,7 @@ router.get("/login/failed", (req, res) => {
 });
 
 router.get("/logout", (req, res) => {
-  req.logout();
+  //req.logout();
   res.redirect(CLIENT_URL);
 });
 
