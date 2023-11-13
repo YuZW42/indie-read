@@ -28,5 +28,11 @@ app.get('/search_keyword', async (req, res) => {
         res.status(500).json({ error: 'An error occurred while fetching books' });
     }
 });
+app.get('/api/healthchecker', (_, res) => {
+    res.status(200).json({
+        status: 'success',
+        message: 'server running',
+    });
+});
 app.listen(port, () => console.log(`server running on port ${port}`));
 //# sourceMappingURL=index.js.map

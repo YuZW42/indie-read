@@ -3,6 +3,7 @@ import express from 'express';
 import{hey } from './helper.js';
 import resources from './pages/resource/resources'
 import search from './pages/search/searchquery'
+import { Request, Response } from 'express';
 
 const cors = require('cors');
 const app = express();
@@ -27,5 +28,12 @@ app.get('/search_keyword', async(req,res) =>{
     res.status(500).json({ error: 'An error occurred while fetching books' });
   }
 })
+
+app.get('/api/healthchecker', (_, res: Response) => {
+  res.status(200).json({
+    status: 'success',
+    message: 'server running',
+  });
+});
 
 app.listen(port,()=> console.log(`server running on port ${port}`));
