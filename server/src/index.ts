@@ -32,7 +32,7 @@ app.get('/search_keyword', async(req,res) =>{
 app.get('/api/healthchecker', (_, res: Response) => {
   res.status(200).json({
     status: 'success',
-    message: 'server running',
+    message: 'server running'
   });
 });
 
