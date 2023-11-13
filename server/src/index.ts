@@ -1,5 +1,5 @@
 import fs from 'fs';
-import express,{Request, Response} from 'express';
+import express from 'express';
 import{hey } from './helper.js';
 import resources from './pages/resource/resources'
 import search from './pages/search/searchquery'
@@ -29,7 +29,7 @@ app.get('/search_keyword', async(req,res) =>{
   }
 })
 
-app.get('/api/healthchecker', (_, res: Response) => {
+app.get('/api/healthchecker', (_, res) => {
   res.status(200).json({
     status: 'success',
     message: 'server running'
