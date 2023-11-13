@@ -29,11 +29,5 @@ app.get('/search_keyword', async(req,res) =>{
   }
 })
 
-app.get('/api/healthchecker', (_, res:express.Response) => {
-  res.status(200).json({
-    status: 'success',
-    message: 'server running',
-  });
-});
 
 app.listen(port,()=> console.log(`server running on port ${port}`));
