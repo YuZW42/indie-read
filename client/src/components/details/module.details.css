@@ -14,3 +14,7 @@
     align-items: center;
     flex-direction: column;
 }
+
+.card-title {
+    font-style: italic;
+}

@@ -107,7 +107,7 @@ export const DisplayFilteredBooks = () => {
           <Row>
             {currentItems.map((book) => (
               <Col key={book.id} xs={12} sm={6} lg={2} className="product-col">
-                <Link to={`/details/${book.id}`}>
+                <Link to={`/details/${book.id}`} target="_blank">
                   <Card className="product-item">
                     {book.images ? (
                       <Card.Img
