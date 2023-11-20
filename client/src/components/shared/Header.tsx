@@ -18,6 +18,7 @@ export const Header = () => {
         {/* <img src={pfp} alt="Profile Picture" className="pfp"/> */}
       </div>
       <User/>
+      
     </div>
   )
 }

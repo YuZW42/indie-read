@@ -4,8 +4,11 @@ import axios from 'axios';
 interface UserData {
   googleId: string;
   username: string;
-  name: string;
-
+  name: {
+    givenName: string;
+    familyName: string;
+  };
+  data: any;
 }
 
 const UserDetails = () => {
@@ -20,6 +23,7 @@ const UserDetails = () => {
             'Content-Type': 'application/json',
           },
         });
+        console.log(response.data.user.name)
 
         if (response.status === 200) {
           setUserData(response.data.user as UserData); 
@@ -38,9 +42,8 @@ const UserDetails = () => {
     <div>
       {userData ? (
         <div>
-          <h2>Welcome, {userData.name.givenName} {userData.name.familyName}!</h2>
-          <p>ID: {userData.googleId}</p>
-          <p>Name: {userData.name}</p>
+          
+
           
         </div>
       ) : (
@@ -51,3 +54,6 @@ const UserDetails = () => {
 };
 
 export default UserDetails;
+
+//          <p>ID: {userData.data.user.name}</p>       <p>ID: {userData.data.user.name}</p>
+   //       <p>Name : {userData.name.givenName}</p>

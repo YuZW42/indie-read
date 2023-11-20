@@ -27,6 +27,8 @@ function ColorSchemesExample() {
                   <Nav.Link href="#">Events</Nav.Link>
                   <Nav.Link href="#">About</Nav.Link>
                   <Nav.Link href="#">Contact</Nav.Link>
+                  <Nav.Link href="/login">Login</Nav.Link>
+
               </Nav>
           </Navbar.Offcanvas>
         </Container>
