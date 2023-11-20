@@ -6,6 +6,7 @@ import placeholder from "../../images/placeholder.png";
 import "./module.home.css";
 
 import { PostButton } from "../shared/PostButton";
+import { Link } from "react-router-dom";
 
 export const DisplayFilteredBooks = () => {
   // interface Book {
@@ -37,7 +38,8 @@ export const DisplayFilteredBooks = () => {
       (yearFilter === "All" || // Year filter conditions
         ((yearFilter === "2023" || yearFilter === "Past 3 Years") &&
           typeof book.year === "number" &&
-          (yearFilter === "2023" || (book.year >= 2020 && book.year <= 2023)))) &&
+          (yearFilter === "2023" ||
+            (book.year >= 2020 && book.year <= 2023)))) &&
       (costFilter === "All" || // Cost filter conditions
         (costFilter === "10" && book.price === 10) ||
         (costFilter === "10-25" && book.price >= 10 && book.price <= 25) ||
@@ -45,7 +47,6 @@ export const DisplayFilteredBooks = () => {
         (costFilter === "50+" && book.price > 50))
     );
   });
-  
 
   const itemsPerPage = 15;
 
@@ -104,36 +105,38 @@ export const DisplayFilteredBooks = () => {
 
         <Container className="display-artbooks-container">
           <Row>
-            {currentItems.map((book, index) => (
-              <Col key={index} xs={12} sm={6} lg={2} className="product-col">
-                <Card className="product-item">
-                  {book.images ? (
-                    <Card.Img
-                      variant="top"
-                      src={book.images[0]}
-                      style={{ width: "100%", height: "200px" }}
-                      alt="Artwork"
-                    />
-                  ) : (
-                    <img
-                      src={placeholder}
-                      alt="Placeholder Artwork"
-                      style={{ width: "100", height: "200px" }}
-                    />
-                  )}
-                  <Card.Body>
-                    <Card.Title>
-                      {book.title} - ${book.price}.00
-                    </Card.Title>
-                    <Card.Text>Year {book.year}</Card.Text>
-                    <Card.Text>{book.description}</Card.Text>
-                  </Card.Body>
-                </Card>
+            {currentItems.map((book) => (
+              <Col key={book.id} xs={12} sm={6} lg={2} className="product-col">
+                <Link to={`/details/${book.id}`}>
+                  <Card className="product-item">
+                    {book.images ? (
+                      <Card.Img
+                        variant="top"
+                        src={book.images[0]}
+                        style={{ width: "100%", height: "200px" }}
+                        alt="Artwork"
+                      />
+                    ) : (
+                      <img
+                        src={placeholder}
+                        alt="Placeholder Artwork"
+                        style={{ width: "100", height: "200px" }}
+                      />
+                    )}
+                    <Card.Body>
+                      <Card.Title>
+                        {book.title} - ${book.price}.00
+                      </Card.Title>
+                      <Card.Text>Year {book.year}</Card.Text>
+                      <Card.Text>{book.description}</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Link>
               </Col>
             ))}
           </Row>
 
-          <PostButton/>
+          <PostButton />
 
           <div className="pagination-container">
             <Pagination>
