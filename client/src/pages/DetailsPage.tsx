@@ -85,9 +85,9 @@ export const DetailsPage = () => {
                   )}
               </p>
             </div>
-            {resultObject.artbook_url && (
+            {resultObject.url && (
                 <Button className="primary">
-                <a href={resultObject.artbook_url} style={{ color: 'white' }}>
+                <a href={resultObject.url} target="_blank" style={{ color: 'white' }}>
                   See Art Book
                 </a>
               </Button>

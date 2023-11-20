@@ -48,13 +48,15 @@ def get_description(article):
     return " ".join(desc)
 
 
-def get_post_data(url):
+def get_post_data(url, id):
     book_data = {}
     res = requests.get(url)
 
     if res.status_code == 200:
         soup = BeautifulSoup(res.text, "html.parser")
-
+        
+        book_data["id"] = id
+        book_data["url"] = url
         book_data["title"] = extract_text(soup.find("h1", {"class": "hero-title"}))
         book_data["author"] = extract_text(soup.find("h2", {"class": "hero-subtitle"}).find("a") if soup.find("h2", {"class": "hero-subtitle"}) else None)
         book_data["price"] = clean_cost(extract_text(soup.find("div", {"class": "row"}).find("h3")))
@@ -117,7 +119,7 @@ def init_scrape():
 
     for post in tqdm(ALL_POSTS):
         post_url = post['permalink']
-        book_data = get_post_data(post_url)
+        book_data = get_post_data(post_url, num_books)
 
         all_post_data.append(book_data)
 
