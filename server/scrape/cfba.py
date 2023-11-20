@@ -48,12 +48,18 @@ def get_description(article):
     return " ".join(desc)
 
 
-def get_post_data(url):
+def get_post_data(url, id):
     book_data = {}
     res = requests.get(url)
 
     if res.status_code == 200:
         soup = BeautifulSoup(res.text, "html.parser")
+
+        # set id
+        book_data["id"] = id
+
+        book_data["pages"] = None
+        book_data["year"] = None
 
         book_data["title"] = extract_text(soup.find("h1", {"class": "hero-title"}))
         book_data["author"] = extract_text(soup.find("h2", {"class": "hero-subtitle"}).find("a") if soup.find("h2", {"class": "hero-subtitle"}) else None)
@@ -63,17 +69,39 @@ def get_post_data(url):
 
         get_features = features.find_all("p")
         for feature in get_features:
-            match = re.match(r'([^:]+): (.+)', feature.text)  # Notice the space after the colon
+            match = re.match(r'([^:]+): (.+)', feature.text)
             if match:
                 key = match.group(1).strip()
                 value = match.group(2).strip()
 
-                try:
-                    value = int(value)
-                    book_data[key.lower()] = value
-                except:
-                    book_data[key.lower()] = 1
+            # check for valid pages
+                if key == "Pages":
+                    try:
+                        value = int(value)
+                        book_data["pages"] = value
+                        continue
+                    except:
+                        if value == "One-sheet":
+                            value = 1
+                            book_data["pages"] = value
+                            continue
+                        else:
+                            value = None
+                            book_data["pages"] = value
+                            continue
 
+            # check for valid year
+                if key == "Year":
+                    try:
+                        value = int(value)
+                        book_data["year"] = value
+                        continue
+                    except:
+                        value = None
+                        book_data["year"] = value
+                        continue            
+
+                book_data[key.lower()] = value
         try:
             book_data["materials"] = extract_materials(features)
         except Exception as e:
@@ -115,9 +143,11 @@ def init_scrape():
 
     num_books = 0
 
-    for post in tqdm(ALL_POSTS):
+    for i, post in enumerate(tqdm(ALL_POSTS)):
+        # if i == 10:
+        #     break
         post_url = post['permalink']
-        book_data = get_post_data(post_url)
+        book_data = get_post_data(post_url, num_books)
 
         all_post_data.append(book_data)
 
@@ -137,8 +167,8 @@ init_scrape()
     how does this all work?
         - the data is NOT being injected onto the site via the HTML tag
             - instead it is through a SCRIPT tag that has all the data in JSON
-        - I specifically grab the LINK to each ARTBOOK so that I can scrape that site instead
-            - that page doesn't use a script tag so I can use normal scraping methods
+        - I specifically grab the URL to each ARTBOOK so that I can scrape that site instead
+            - the artbook pages don't use a script tag so I use normal scraping methods
 
     how did the guy know that this was the reason?
         - looked up a specific title and found that it was found in the script tag
