@@ -8,7 +8,7 @@ import "./module.home.css"
 function ImageSlider() {
   return (
     <Carousel data-bs-theme="dark" className="carousel-container">
-      <Carousel.Item interval={2000}>
+      <Carousel.Item interval={5000}>
         <div className="carousel item1">
           <img
             className="carousel-img"
@@ -36,7 +36,7 @@ function ImageSlider() {
         </div>
 
       </Carousel.Item>
-      <Carousel.Item interval={2000}>
+      <Carousel.Item interval={5000}>
         <div className="carousel item2">
           <img
             className="carousel-img"
@@ -63,7 +63,7 @@ function ImageSlider() {
           </div>
         </div>
       </Carousel.Item>
-      <Carousel.Item interval={2000}>
+      <Carousel.Item interval={5000}>
         <div className="carousel item3">
           <img
             className="carousel-img"
