@@ -8,7 +8,7 @@ import "../components/details/module.details.css";
 
 export const DetailsPage = () => {
   const { id } = useParams();
-  const filteredAndSortedBooks = cfbaJson.filter((book) => book.id == id);
+  const filteredAndSortedBooks = cfbaJson.filter((book) => book.temp_id == id);
   const resultObject =
     filteredAndSortedBooks.length > 0 ? filteredAndSortedBooks[0] : null;
 
