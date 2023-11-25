@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Accordion from 'react-bootstrap/Accordion';
 import Container from 'react-bootstrap/Container';
 import resourcetype from './ResourceType';
-import "../../styles/pages/resources.css"
+import "./module.resources.css"
 
 import SelectionBar from './SelectionBar';
 import  Resource from './ResourceInterface'
