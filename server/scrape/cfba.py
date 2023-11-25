@@ -144,8 +144,8 @@ def init_scrape():
     num_books = 0
 
     for i, post in enumerate(tqdm(ALL_POSTS)):
-        # if i == 10:
-        #     break
+        if i == 50:
+            break
         post_url = post['permalink']
         book_data = get_post_data(post_url, num_books)
 

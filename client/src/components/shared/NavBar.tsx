@@ -24,6 +24,7 @@ function ColorSchemesExample() {
                   <Nav.Link href="/">Home</Nav.Link>
                   <Nav.Link href="#">Books</Nav.Link>
                   <Nav.Link href="/resources">Resources</Nav.Link>
+                  <Nav.Link href="/search">Search</Nav.Link>
                   <Nav.Link href="#">Events</Nav.Link>
                   <Nav.Link href="#">About</Nav.Link>
                   <Nav.Link href="#">Contact</Nav.Link>
