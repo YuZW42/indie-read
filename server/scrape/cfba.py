@@ -55,11 +55,13 @@ def get_post_data(url, id):
     if res.status_code == 200:
         soup = BeautifulSoup(res.text, "html.parser")
 
+
         # set id
         book_data["id"] = id
-
+        book_data["url"] = url
         book_data["pages"] = None
         book_data["year"] = None
+
 
         book_data["title"] = extract_text(soup.find("h1", {"class": "hero-title"}))
         book_data["author"] = extract_text(soup.find("h2", {"class": "hero-subtitle"}).find("a") if soup.find("h2", {"class": "hero-subtitle"}) else None)
