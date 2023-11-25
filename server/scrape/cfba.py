@@ -57,7 +57,7 @@ def get_post_data(url, id):
 
 
         # set id
-        book_data["id"] = id
+        book_data["temp_id"] = id
         book_data["url"] = url
         book_data["pages"] = None
         book_data["year"] = None
@@ -146,7 +146,7 @@ def init_scrape():
     num_books = 0
 
     for i, post in enumerate(tqdm(ALL_POSTS)):
-        if i == 50:
+        if i == 100:
             break
         post_url = post['permalink']
         book_data = get_post_data(post_url, num_books)

@@ -1,6 +1,7 @@
 [
     {
-        "id": 0,
+        "temp_id": 0,
+        "url": "https://centerforbookarts.org/book-shop/chino-crafts-twin-treasures-mini-bone-folders-in-case",
         "pages": null,
         "year": null,
         "title": "Chino Crafts Twin Treasures Mini Bone Folders in Case",
@@ -20,7 +21,8 @@
         ]
     },
     {
-        "id": 1,
+        "temp_id": 1,
+        "url": "https://centerforbookarts.org/book-shop/chino-crafts-teardrop-3-inch-bone-folder",
         "pages": null,
         "year": null,
         "title": "Chino Crafts Teardrop 3 inch bone folder",
@@ -40,7 +42,8 @@
         ]
     },
     {
-        "id": 2,
+        "temp_id": 2,
+        "url": "https://centerforbookarts.org/book-shop/chino-crafts-horn-handle-awl-and-case",
         "pages": null,
         "year": null,
         "title": "Chino Crafts Horn Handle Awl and Case",
@@ -60,7 +63,8 @@
         ]
     },
     {
-        "id": 3,
+        "temp_id": 3,
+        "url": "https://centerforbookarts.org/book-shop/towards-a-self-sustaining-publishing-model",
         "pages": 4,
         "year": 2021,
         "title": "Towards a Self Sustaining Publishing Model",
@@ -81,7 +85,8 @@
         ]
     },
     {
-        "id": 4,
+        "temp_id": 4,
+        "url": "https://centerforbookarts.org/book-shop/merchandise/pin",
         "pages": null,
         "year": 2023,
         "title": "The Golden Touch Pin",
@@ -101,7 +106,8 @@
         ]
     },
     {
-        "id": 5,
+        "temp_id": 5,
+        "url": "https://centerforbookarts.org/book-shop/books-on-books/coup-de-des-collection-books-and-ideas-after-mallarme-preorder",
         "pages": 304,
         "year": 2024,
         "title": "Coup de Dés (Collection) Books and Ideas After Mallarmé (PREORDER)",
@@ -121,7 +127,8 @@
         ]
     },
     {
-        "id": 6,
+        "temp_id": 6,
+        "url": "https://centerforbookarts.org/book-shop/prints/deportee-without-a-country",
         "pages": null,
         "year": 2023,
         "title": "cantos from the crossing – Preorder",
@@ -140,7 +147,8 @@
         ]
     },
     {
-        "id": 7,
+        "temp_id": 7,
+        "url": "https://centerforbookarts.org/book-shop/prints/and-was-a-flower",
         "pages": null,
         "year": 2023,
         "title": "and was a flower",
@@ -167,7 +175,8 @@
         ]
     },
     {
-        "id": 8,
+        "temp_id": 8,
+        "url": "https://centerforbookarts.org/book-shop/prints/unentitled-women-black-or-on-being-otherwise",
         "pages": 1,
         "year": 2023,
         "title": "unentitled [women black or on being otherwise]",
@@ -188,7 +197,8 @@
         ]
     },
     {
-        "id": 9,
+        "temp_id": 9,
+        "url": "https://centerforbookarts.org/book-shop/prints/fugue",
         "pages": 1,
         "year": 2023,
         "title": "Fugue",
@@ -211,7 +221,8 @@
         ]
     },
     {
-        "id": 10,
+        "temp_id": 10,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/zines/can-you-see-what-i-see",
         "pages": 92,
         "year": 2023,
         "title": "Can You See What I See?",
@@ -233,7 +244,8 @@
         ]
     },
     {
-        "id": 11,
+        "temp_id": 11,
+        "url": "https://centerforbookarts.org/book-shop/halloween",
         "pages": 8,
         "year": 2023,
         "title": "Halloween",
@@ -254,7 +266,8 @@
         ]
     },
     {
-        "id": 12,
+        "temp_id": 12,
+        "url": "https://centerforbookarts.org/book-shop/the-jab-anthology-selections-from-the-journal-of-artists-books-1994-2020",
         "pages": 287,
         "year": 2023,
         "title": "The JAB Anthology: Selections from the Journal of Artists’ Books, 1994-2020",
@@ -271,7 +284,8 @@
         ]
     },
     {
-        "id": 13,
+        "temp_id": 13,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/leymusoom-giftshop",
         "pages": null,
         "year": 2023,
         "title": "Leymusoom Giftshop",
@@ -299,7 +313,8 @@
         ]
     },
     {
-        "id": 14,
+        "temp_id": 14,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/photobooks/restored-access",
         "pages": 88,
         "year": 2022,
         "title": "Restored/Access",
@@ -323,7 +338,8 @@
         ]
     },
     {
-        "id": 15,
+        "temp_id": 15,
+        "url": "https://centerforbookarts.org/book-shop/catalogs/off-register",
         "pages": 190,
         "year": 2023,
         "title": "Off-Register (pre-order)",
@@ -346,7 +362,8 @@
         ]
     },
     {
-        "id": 16,
+        "temp_id": 16,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/embodied-alienation",
         "pages": null,
         "year": 2023,
         "title": "Embodied Alienation",
@@ -372,7 +389,8 @@
         ]
     },
     {
-        "id": 17,
+        "temp_id": 17,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/finepress/three-constitutions",
         "pages": null,
         "year": 2023,
         "title": "Three Constitutions",
@@ -396,7 +414,8 @@
         ]
     },
     {
-        "id": 18,
+        "temp_id": 18,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/finepress/ornography",
         "pages": null,
         "year": 2023,
         "title": "Ornography",
@@ -418,7 +437,8 @@
         ]
     },
     {
-        "id": 19,
+        "temp_id": 19,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/z-is-for-zahar",
         "pages": null,
         "year": 2021,
         "title": "Z is for Zahar",
@@ -443,7 +463,8 @@
         ]
     },
     {
-        "id": 20,
+        "temp_id": 20,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/finepress/body-of-evidence-2",
         "pages": null,
         "year": 2022,
         "title": "Body of Evidence",
@@ -476,7 +497,8 @@
         ]
     },
     {
-        "id": 21,
+        "temp_id": 21,
+        "url": "https://centerforbookarts.org/book-shop/merchandise/letterpress-bookmark",
         "pages": null,
         "year": null,
         "title": "Letterpress Bookmark",
@@ -490,7 +512,8 @@
         ]
     },
     {
-        "id": 22,
+        "temp_id": 22,
+        "url": "https://centerforbookarts.org/book-shop/ephemera/beau-geste-press-exhibition-brochure",
         "pages": 6,
         "year": 2023,
         "title": "Beau Geste Press Exhibition Brochure",
@@ -507,7 +530,8 @@
         ]
     },
     {
-        "id": 23,
+        "temp_id": 23,
+        "url": "https://centerforbookarts.org/book-shop/ephemera/rituals-here-exhibition-brochure",
         "pages": 1,
         "year": 2023,
         "title": "Rituals Here Exhibition Brochure",
@@ -524,7 +548,8 @@
         ]
     },
     {
-        "id": 24,
+        "temp_id": 24,
+        "url": "https://centerforbookarts.org/book-shop/ephemera/i-couldnt-read-what-i-dreamt-of-exhibition-brochure",
         "pages": 1,
         "year": 2023,
         "title": "I Couldn’t Read What I Dreamt Of Exhibition Brochure",
@@ -541,7 +566,8 @@
         ]
     },
     {
-        "id": 25,
+        "temp_id": 25,
+        "url": "https://centerforbookarts.org/book-shop/studio/galley-tray-type-setting-deposit-for-studio-rental",
         "pages": null,
         "year": null,
         "title": "Galley Tray / Type Setting Deposit for Studio Rental",
@@ -558,7 +584,8 @@
         ]
     },
     {
-        "id": 26,
+        "temp_id": 26,
+        "url": "https://centerforbookarts.org/book-shop/studio/additional-storage-for-studio-rental",
         "pages": null,
         "year": null,
         "title": "Additional Storage for Studio Rental",
@@ -573,7 +600,8 @@
         ]
     },
     {
-        "id": 27,
+        "temp_id": 27,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/department-of-n-s-a-no-strings-attached-office-of-memorandums-extracts-vol-1",
         "pages": null,
         "year": 2023,
         "title": "Department of N.S.A. (No Strings Attached) – Office of Memorandums [Extracts] Vol. 1",
@@ -591,7 +619,8 @@
         ]
     },
     {
-        "id": 28,
+        "temp_id": 28,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/kick-activist",
         "pages": null,
         "year": null,
         "title": "Kick Activist",
@@ -613,7 +642,8 @@
         ]
     },
     {
-        "id": 29,
+        "temp_id": 29,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/aerotomania-flight-deck",
         "pages": 52,
         "year": 2022,
         "title": "ÆROTOMANIA FLIGHT DECK",
@@ -636,7 +666,8 @@
         ]
     },
     {
-        "id": 30,
+        "temp_id": 30,
+        "url": "https://centerforbookarts.org/book-shop/merchandise/bookmarks-by-slavko",
         "pages": null,
         "year": 2023,
         "title": "Bookmarks by Slavko",
@@ -655,7 +686,8 @@
         ]
     },
     {
-        "id": 31,
+        "temp_id": 31,
+        "url": "https://centerforbookarts.org/book-shop/studio/hourly-studio-rental-punch-cards",
         "pages": null,
         "year": null,
         "title": "Hourly Studio Rental",
@@ -675,7 +707,8 @@
         ]
     },
     {
-        "id": 32,
+        "temp_id": 32,
+        "url": "https://centerforbookarts.org/book-shop/studio/monthly-studio-rental",
         "pages": null,
         "year": null,
         "title": "Monthly Basic Studio Rental",
@@ -693,7 +726,8 @@
         ]
     },
     {
-        "id": 33,
+        "temp_id": 33,
+        "url": "https://centerforbookarts.org/book-shop/books-on-books/bar-issue-2",
         "pages": 84,
         "year": 2023,
         "title": "BAR Issue 2: Hidden Parts of Publishing",
@@ -715,7 +749,8 @@
         ]
     },
     {
-        "id": 34,
+        "temp_id": 34,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/finepress/e-unum-pluribus-2",
         "pages": 33,
         "year": 2022,
         "title": "E unum pluribus",
@@ -740,7 +775,8 @@
         ]
     },
     {
-        "id": 35,
+        "temp_id": 35,
+        "url": "https://centerforbookarts.org/book-shop/prints/enlisting-whitman-and-emerson",
         "pages": null,
         "year": 2023,
         "title": "Enlisting Whitman and Emerson",
@@ -762,7 +798,8 @@
         ]
     },
     {
-        "id": 36,
+        "temp_id": 36,
+        "url": "https://centerforbookarts.org/book-shop/prints/into-the-bookbinding-jungle",
         "pages": null,
         "year": 2023,
         "title": "Into the Bookbinding Jungle",
@@ -783,7 +820,8 @@
         ]
     },
     {
-        "id": 37,
+        "temp_id": 37,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/zines/moms-magnets",
         "pages": null,
         "year": null,
         "title": "Mom’s Magnets",
@@ -797,7 +835,8 @@
         ]
     },
     {
-        "id": 38,
+        "temp_id": 38,
+        "url": "https://centerforbookarts.org/book-shop/prints/endless-night-where-are-we-now",
         "pages": 1,
         "year": 2023,
         "title": "Endless night – where are we now",
@@ -816,7 +855,8 @@
         ]
     },
     {
-        "id": 39,
+        "temp_id": 39,
+        "url": "https://centerforbookarts.org/book-shop/prints/we-are-rain",
         "pages": null,
         "year": 2023,
         "title": "We Are Rain",
@@ -836,7 +876,8 @@
         ]
     },
     {
-        "id": 40,
+        "temp_id": 40,
+        "url": "https://centerforbookarts.org/book-shop/prints/the-abc-model-of-flower-development",
         "pages": 1,
         "year": 2023,
         "title": "The ABC Model of Flower Development",
@@ -856,7 +897,8 @@
         ]
     },
     {
-        "id": 41,
+        "temp_id": 41,
+        "url": "https://centerforbookarts.org/book-shop/prints/alive-in-the-radio-and-bluff",
         "pages": 1,
         "year": 2023,
         "title": "Alive In The Radio and Bluff",
@@ -879,7 +921,8 @@
         ]
     },
     {
-        "id": 42,
+        "temp_id": 42,
+        "url": "https://centerforbookarts.org/book-shop/prints/when-i-say-your-name",
         "pages": 1,
         "year": 2023,
         "title": "When I Say Your Name",
@@ -899,7 +942,8 @@
         ]
     },
     {
-        "id": 43,
+        "temp_id": 43,
+        "url": "https://centerforbookarts.org/book-shop/prints/utopia-selector",
         "pages": 1,
         "year": 2023,
         "title": "AI Generated Utopia Selector",
@@ -920,7 +964,8 @@
         ]
     },
     {
-        "id": 44,
+        "temp_id": 44,
+        "url": "https://centerforbookarts.org/book-shop/prints/all-power-to-the-people",
         "pages": null,
         "year": 2023,
         "title": "All Power to the People!",
@@ -941,7 +986,8 @@
         ]
     },
     {
-        "id": 45,
+        "temp_id": 45,
+        "url": "https://centerforbookarts.org/book-shop/how-to-books/publishing-now-genderfails-working-class-guide-to-making-a-living-off-self-publishing",
         "pages": 140,
         "year": 2023,
         "title": "Publishing now: GenderFail’s working class guide to making a living off self publishing",
@@ -958,7 +1004,8 @@
         ]
     },
     {
-        "id": 46,
+        "temp_id": 46,
+        "url": "https://centerforbookarts.org/book-shop/books-on-books/subscribe-to-bar",
         "pages": 84,
         "year": 2023,
         "title": "BAR Subscription",
@@ -984,7 +1031,8 @@
         ]
     },
     {
-        "id": 47,
+        "temp_id": 47,
+        "url": "https://centerforbookarts.org/book-shop/prints/a-language-act",
         "pages": 1,
         "year": 2023,
         "title": "A language act",
@@ -1005,7 +1053,8 @@
         ]
     },
     {
-        "id": 48,
+        "temp_id": 48,
+        "url": "https://centerforbookarts.org/book-shop/how-to-books/cheap-copies",
         "pages": 108,
         "year": 2022,
         "title": "CHEAP COPIES!",
@@ -1029,7 +1078,8 @@
         ]
     },
     {
-        "id": 49,
+        "temp_id": 49,
+        "url": "https://centerforbookarts.org/book-shop/ephemera/language-cover-page",
         "pages": null,
         "year": 2014,
         "title": "Language To Cover A Page",
@@ -1046,6 +1096,1046 @@
             "https://centerforbookarts.org/wp-content/uploads/2023/01/language_to_cover_a_page_kristen_mueller_COVER_1.-Bild.jpg",
             "https://centerforbookarts.org/wp-content/uploads/2023/01/language_to_cover_a_page_kristen_mueller_7.jpg",
             "https://centerforbookarts.org/wp-content/uploads/2023/01/language_to_cover_a_page_kristen_mueller_6.jpg"
+        ]
+    },
+    {
+        "temp_id": 50,
+        "url": "https://centerforbookarts.org/book-shop/books-on-books/cca-catalog",
+        "pages": 120,
+        "year": 2023,
+        "title": "Craft & Conceptual Art",
+        "author": "Megan N. Liberty",
+        "price": null,
+        "publisher": "Center for Book Arts",
+        "edition": "500",
+        "binding": "Flexi Bound Softcover",
+        "dimensions": "9 x 12 inches",
+        "isbn": "978-1-951163-12-9",
+        "materials": null,
+        "description": "Sur Rodney (Sur) In the history of art, craft and conceptual art are often placed at odds. Craft emphasizes the materiality of the object, while conceptual art emphasizes the dematerialization of the object. But artists’ books offer a unique merging of these premises in the book’s status as a conceptual, tactile, and often ephemeral object. Successful artists’ books blend the craft of its making—paper, binding, scale, and printing method—with a conceptual premise tied to its status as time-based media in which the idea of the book—sequence, repetition, and audience activation—is essential to its meaning. While early exhibitions and writing on artists’ books maintained both these practices, including unique and small-edition handmade books that verge towards sculpture alongside mass-produced photobooks, paperbacks, and stapled zines, the history of artists’ books has since shifted, primitizing only the democracy of the genre and ghettoizing expensive, unique, and sculptural bookworks. The book focuses on book art production beginning in the mid 1960s that was exhibited from 1973-1996, drawing a—albeit zig-zag—line from the first cited US exhibition of artists’ books at Moore College to the founding of San Francisco Center for the Book, charting an expanding definition, practice, and legacy of bookmaking across the US. It will include a range of artists, from Liliana Porter, Howardena Pindell, and Suzanne Lacy, to Barton Lidice Beneš and Sas Colby. Leaning heavily on the archives and exhibition history of institutions devoted to craft and conceptual art, this exhibition will revisit who and what was considered an “artists’ book.” In doing so, Craft & Conceptual Art will shed new light on both ends of the sliding scale between craft and conceptual art, allowing us to better understand the growing field of artists’ book production. This fully illustrated catalogue features additional contributions by Sur Rodney (Sur), David Senior, Kayleigh Perkov, and Tara Aisha Willis, and a selection of reprinted historical texts. Designed by Dante Carlos and Brian Walbergh. Dante Carlos Brian Walbergh Megan N. Liberty Megan N. Liberty is an arts writer, editor, and archivist based in Brooklyn who writes about artists’ books, ephemera, archives, and other multidisciplinary meetings of text and image. She is the Art Books section editor at the Brooklyn Rail and co-founder of the Book Art Review. Her writing appears regularly on Hyperallergic and in ArtReview, and has also been published in Artforum.com, Art in America, Frieze, NY Review of Books Daily, LA Review of Books, White Review,Art in Print, and elsewhere. She has led and participated in public conversations on artists’ books and publishing with the Brooklyn Rail, Contemporary Artist Book Conference, Hill Art Foundation, and Miriam Gallery, and teaches workshops for early career artists on the practical and conceptual importance of self-archiving. She was a 2019-20 AICA/USA and Creative Capital/The Andy Warhol Foundation’s Arts Writing Workshop participant, and has an MA in Art History from the Courtauld Institute of Art, London and a BA in English from Dickinson College, PA. Megan N. Liberty",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/Screen-Shot-2022-11-16-at-7.37.54-PM.png",
+            "https://centerforbookarts.org/wp-content/uploads/2022/06/Screen-Shot-2022-06-22-at-5.59.57-PM.png",
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/Screen-Shot-2022-11-16-at-7.38.21-PM.png",
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/Screen-Shot-2022-11-16-at-7.38.59-PM.png",
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/Screen-Shot-2022-11-16-at-7.40.17-PM.png",
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/Screen-Shot-2022-11-16-at-7.41.00-PM.png"
+        ]
+    },
+    {
+        "temp_id": 51,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/we-web-keepers",
+        "pages": 1,
+        "year": 2022,
+        "title": "We Web Keepers",
+        "author": "Lukaza Branfman-Verissimo",
+        "price": 10.0,
+        "publisher": "Endless Editions",
+        "edition": "500",
+        "binding": "Newspaper",
+        "dimensions": "11x17 inches",
+        "materials": null,
+        "description": "In the Fall of 2022, Printed Matter / St Marks presented we web keepers, a window exhibition by artist, activist, educator, storyteller, and curator Lukaza Branfman-Verissimo. This newsprint publication of the same name is a translation and continuation of that project; it opens with a new essay by Ayana Zaire Cotton. we web keepers In addition to a large-scale window painting, the exhibition included a series of works on paper added to a window, one by one, over the course of eight weeks. The works were double sided with painted text facing the street (including contributions from Lukaza and others noted in the bibliography below) and with various patterns facing into the bookstore. This slow accumulation of paper mimicked the ethos and life cycle of bulletin boards, themselves public sites wherein people exchange messages, share demands, ask for help, broadcast their stories. Printed Matter staff put up the works at random, creating a knot of unsequenced text that looked out onto the East Village, with phrases discernible but the entire passage obscured.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2023/01/web-keepers.png"
+        ]
+    },
+    {
+        "temp_id": 52,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/scaffolding",
+        "pages": 26,
+        "year": 2023,
+        "title": "Scaffolding",
+        "author": "Tricia Treacy",
+        "price": 40.0,
+        "publisher": "Center for Book Arts",
+        "edition": "125",
+        "binding": "Hand Sewn Softcover",
+        "dimensions": "5.5 x 8.5 inches",
+        "materials": [
+            "risograph printed",
+            "letterpress printed",
+            "hand sewn in cloth wrappers"
+        ],
+        "description": "Scaffolding uncovers a visual collection of printed grids, patterns, and geometric frameworks from our constructed and natural environments. Objects in our typical environments unfold into a familiar, almost invisible backdrop for our lives. Scaffolding Grids of space and time are everywhere, even if we cannot see them on the surface. They create modules and patterns that are easy to follow. Often in blue on ruled composition paper, bright orange on a pad of vellum paper, white on cutting mats, air between poorly installed drywall, or metal to break a window into a set of smaller views. They dissect and image, line, floor, and/or ceiling while filtering a changing view. They give rhythm under the stillness. This mismatch of grids can be quiet, soft, indifferent. This is a second edition of 125 books.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2023/01/tricia-scaled.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2023/01/tricia-1-scaled.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2023/01/tricia-2-scaled.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2023/01/tricia-3-scaled.jpeg"
+        ]
+    },
+    {
+        "temp_id": 53,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/powers-of-ten",
+        "pages": null,
+        "year": 2022,
+        "title": "Powers of Ten",
+        "author": "Kelli Anderson",
+        "price": null,
+        "publisher": "Kelli Anderson",
+        "edition": "400",
+        "binding": "flipbook",
+        "dimensions": "2.5 x 6 inches",
+        "materials": null,
+        "description": "An artist book by Adam Pickard and Kelli Anderson that intends to remake the famous Eames film about the relative size of things in the universe. This flipbook comes in a specially engineered box with an exciting surprise. Comes with a risograph printed zine that talks about the project.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/12/IMG_5983.gif",
+            "https://centerforbookarts.org/wp-content/uploads/2022/12/powersright.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/12/powersleft.jpeg"
+        ]
+    },
+    {
+        "temp_id": 54,
+        "url": "https://centerforbookarts.org/book-shop/karmele-leizaola",
+        "pages": null,
+        "year": 2022,
+        "title": "Karmele Leizaola",
+        "author": "Faride Mereb",
+        "price": 45.0,
+        "publisher": "Letra Muerta",
+        "edition": "100",
+        "binding": "Unbound",
+        "dimensions": "11.5 x 15",
+        "materials": null,
+        "description": "Karmele Leizaola was the first woman graphic designer in Venezuela. This project was made possible with the support of Newspaper Club and 10×10 Photobooks by women grant. Contains 3 unbound volumes, digitally printed.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/12/R217010-copy-scaled.jpg"
+        ]
+    },
+    {
+        "temp_id": 55,
+        "url": "https://centerforbookarts.org/book-shop/tools/snapoff-cutter",
+        "pages": null,
+        "year": null,
+        "title": "Snapoff Cutter",
+        "author": null,
+        "price": 6.0,
+        "materials": null,
+        "description": "Exacto blade",
+        "reference": null,
+        "images": null
+    },
+    {
+        "temp_id": 56,
+        "url": "https://centerforbookarts.org/book-shop/broadside/title",
+        "pages": null,
+        "year": 2022,
+        "title": "Title",
+        "author": "Susan Howe",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "dimensions": "12.75 x 9.5 inches",
+        "materials": null,
+        "description": "Printed on the occasion at the poets reading at Center for Book Arts in 2022. Designed and letterpress printed by Sarah Moody.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/12/boxQ1-Howe-1-scaled.jpeg"
+        ]
+    },
+    {
+        "temp_id": 57,
+        "url": "https://centerforbookarts.org/book-shop/broadside/hard-problem-of-consciousness-2",
+        "pages": null,
+        "year": 2022,
+        "title": "Hard Problem of Consciousness",
+        "author": "Matthew Williams",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "dimensions": "7 x 9.25 inches",
+        "materials": null,
+        "description": "Matthew Williams’ broadside Hard Problem of Consciousness was designed and printed by Simón Ramirez Restrepo in honor of the poet’s reading at Center for Book Arts in November, 2022. Printed using digital printing. Signed by the author.  Hard Problem of Consciousness ",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2023/08/hard-problem-of-cons.jpg"
+        ]
+    },
+    {
+        "temp_id": 58,
+        "url": "https://centerforbookarts.org/book-shop/chapbook/plant-thought",
+        "pages": 24,
+        "year": 2022,
+        "title": "Plant Thought",
+        "author": "Mei-mei Berssenbrugge",
+        "price": 50.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "binding": "Chapbook",
+        "dimensions": "12 x 7 inches",
+        "materials": null,
+        "description": "Mei-mei Berssenbrugge’s chapbook Plant Thought is illustrated by Kiki Smith, designed by Richard Tuttle, and printed by Sarah Moody in honor of the poet’s participation in the 2022 Annual Chapbook Reading at Center for Book Arts on November 10, 2022. This is a letterpress and risograph printed chapbook published in an edition of 100 signed and numbered books. Plant Thought Berssenbrugge served as the 2022 guest judge for CBA’s annual chapbook competition.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/11/Plant-Thought-cover-scaled.jpg"
+        ]
+    },
+    {
+        "temp_id": 59,
+        "url": "https://centerforbookarts.org/book-shop/chapbook/cairo-the-undelivered-letters",
+        "pages": 24,
+        "year": 2022,
+        "title": "CAIRO: the undelivered letters",
+        "author": "Mai Serhan",
+        "price": 50.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "binding": "Softcover chapbook",
+        "dimensions": "5 x 8 inches",
+        "materials": null,
+        "description": "These epistolary poems are simply brilliant. The way the depth comes to the surface with such ease certainly points to the poet’s mastery over language. This is also another manuscript in the pile that mixes fine poetry with a great sense of humor. The poetic “I” takes on different shapes and sounds without losing its focus & the flow of the overall theme & music. Though the poet writes in English, I could also hear the impeccably luscious (as in sweet & appealing) sounds of Arabic between and above the lines.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/chapbook_promo.22-1-scaled-e1667838640459.jpg"
+        ]
+    },
+    {
+        "temp_id": 60,
+        "url": "https://centerforbookarts.org/book-shop/broadside/my-feelings-become-public",
+        "pages": 1,
+        "year": 2022,
+        "title": "My Feelings Become Public",
+        "author": "imogen xtian smith",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "binding": "Broadside",
+        "dimensions": "11 x 17",
+        "materials": null,
+        "description": "imogen xtian smith’s Broadside designed and printed by Eddie Perrote in honor of Seeing The Stars When The Sun is Shining, the 2022 Fall Broadside Series. Risograph printed in an edition of 100. Seeing The Stars When The Sun is Shining",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/CBA_poetry_broadside-copy-scaled.jpg"
+        ]
+    },
+    {
+        "temp_id": 61,
+        "url": "https://centerforbookarts.org/book-shop/broadside/playdate",
+        "pages": 1,
+        "year": 2022,
+        "title": "Playdate",
+        "author": "Christine Shan Shan Hou",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "binding": "Broadside",
+        "dimensions": "11 x 17",
+        "materials": null,
+        "description": "Christine Shan Shan Hou’s Broadside designed and printed by Faride Mereb in honor of Seeing The Stars When The Sun is Shining, the 2022 Fall Broadside Series. Risograph, die cut and letterpress printed in an edition of 100. Seeing The Stars When The Sun is Shining",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/11/IMG_7819-scaled.jpeg"
+        ]
+    },
+    {
+        "temp_id": 62,
+        "url": "https://centerforbookarts.org/book-shop/broadside/in-the-morning",
+        "pages": 1,
+        "year": 2022,
+        "title": "In The Morning At Her Bright Blue Table",
+        "author": "Laura Henriksen",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "binding": "Broadside",
+        "dimensions": "11 x 17",
+        "materials": null,
+        "description": "Laura Henriksen’s Broadside designed and printed by Herikita in honor of Seeing The Stars When The Sun is Shining, the Fall 2022 Broadside Series Reading. Risograph printed in an edition of 100. Seeing The Stars When The Sun is Shining, ",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/11/LAURA-HENRIKSEN-copia.jpg"
+        ]
+    },
+    {
+        "temp_id": 63,
+        "url": "https://centerforbookarts.org/book-shop/broadside/i-feel-sad",
+        "pages": 1,
+        "year": 2022,
+        "title": "I Feel Sad",
+        "author": "Matt L. Roar",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "binding": "Broadside",
+        "dimensions": "11 x 17 inches",
+        "materials": null,
+        "description": "Matt L Roar’s Broadside designed and printed by Christina Martinelli in honor of Seeing The Stars When The Sun is Shining, the Fall 2022 Broadside Series Reading. Risograph printed in an edition of 100. Christina Martinelli Seeing The Stars When The Sun is Shining, ",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/11/i-feel-sad-matt-roar.png"
+        ]
+    },
+    {
+        "temp_id": 64,
+        "url": "https://centerforbookarts.org/book-shop/broadside/goodbye-horses",
+        "pages": 1,
+        "year": 2022,
+        "title": "Goodbye Horses",
+        "author": "Safia Jama",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "binding": "Broadside",
+        "dimensions": "11 x 17",
+        "materials": null,
+        "description": "Safia Jama’s Broadside designed and printed by Leslie Lasiter in honor of Seeing The Stars When The Sun is Shining, the Fall 2022 Broadside Series Reading. Risograph printed in an edition of 100. Leslie Lasiter Seeing The Stars When The Sun is Shining, ",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/goodbyehorses_jama_lasiter_final.jpg"
+        ]
+    },
+    {
+        "temp_id": 65,
+        "url": "https://centerforbookarts.org/book-shop/broadside/listen",
+        "pages": null,
+        "year": 2022,
+        "title": "Listen",
+        "author": "Megan Sungyoon",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "dimensions": "10 x 13.75 inches",
+        "materials": null,
+        "description": "LISTEN was written by Megan Sungyoon , designed by Dongyoung Lee, and printed letterpress by Allison Carter-Beaulé, in honor of the 2022 Annual Chapbook Contest Reading on November 10, 2022. Megan was selected by guest judge, Mei-mei Berssenbrugge, as one of two runners-up in the 2022 Annual Chapbook Contest. LISTEN Megan Sungyoon Dongyoung Lee Allison Carter-Beaulé Mei-mei Berssenbrugge This broadside is letterpress printed in three colors in an edition of 100.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/11/11-10-2022_Megan-Sungyoon_Listen_Broadside.png"
+        ]
+    },
+    {
+        "temp_id": 66,
+        "url": "https://centerforbookarts.org/book-shop/broadside/four-great-errors",
+        "pages": null,
+        "year": 2022,
+        "title": "Four Great Errors",
+        "author": "Nicola Masciandaro",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "dimensions": "11 x 17 inches",
+        "materials": null,
+        "description": "Nicola Masciandaro’s broadside Four Great Errors was designed and printed by Oswaldo García in honor of the poet’s participation in the Annual Chapbook Reading at Center for Book Arts on November 10, 2022. This is a four color, risograph printed broadside published in an edition of 100. Four Great Errors Masciandaro’s manuscript was selected as a runner up by Mei-Mei Berssenbrugge  in CBA’s 2022 chapbook competition. Mei-Mei Berssenbrugge ",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/11/22_11_4_nicola_masciandara_oswaldo_garcia_broadside-scaled.jpg"
+        ]
+    },
+    {
+        "temp_id": 67,
+        "url": "https://centerforbookarts.org/book-shop/broadside/hard-problem-of-consciousness",
+        "pages": 1,
+        "year": 2022,
+        "title": "Hard Problem of Consciousness",
+        "author": "Matthew Williams",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "binding": "Broadside",
+        "dimensions": "7x9",
+        "materials": [
+            "Sticker sheet printed using digital printing."
+        ],
+        "description": "Designed and printed by Símon Ramirez in honor of Seeing The Stars When The Sun is Shining, Fall 2022 Broadside Reading Series on November 23. Sticker sheet printed using digital printing. In an edition of 100. Seeing The Stars When The Sun is Shining, ",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/Broadsidefront_ok.jpg"
+        ]
+    },
+    {
+        "temp_id": 68,
+        "url": "https://centerforbookarts.org/book-shop/books-on-books/pattern-and-flow",
+        "pages": 188,
+        "year": 2023,
+        "title": "Pattern and Flow: A Golden Age of American Decorated Paper",
+        "author": "Mindell Dubansky",
+        "price": 65.0,
+        "publisher": "Yale University Press",
+        "binding": "Hardcover",
+        "dimensions": "10.12 x 10.62 inches",
+        "isbn": "9780300266191",
+        "materials": null,
+        "description": "by Mindell Dubansky with an introduction by Sidney E. Berger. Showcasing marbled paper, paste paper, fold-and-dye papers, and more, this book reveals a little-known arts phenomenon from its grass roots in the 1960s to artistic heights in the following decades Pattern and Flow chronicles the flourishing of American decorated paper arts beginning in the 1960s and extending to the 2000s, with an ongoing legacy today. As knowledge and skills were shared across a grass‐roots community in the 1960s, decorated paper became increasingly popular, with centers for the study of the book and paper arts emerging across the United States, and artists developing new, innovative styles of paper. The book begins with an introductory essay outlining the history of decorated paper arts in America up to the 1960s, followed by a chronological narrative, which surveys the development of the field and introduces the artists working from the 1960s to the 2000s, and an illustrated reference section with essential biographical and professional information for each artist. Designed to be an immersive experience, Pattern and Flow conveys the vivid visual world of American decorated paper, celebrating the variety and variations that are key features of the art. Stunning illustrations show designs with intricate, tessellated patterns and others that flow with forms and waves that seem liquid; some explore subtle, muted tones, while others are explosive in their use of brilliant colors. About the Author Mindell Dubansky is museum librarian for preservation, Sherman Fairchild Center for Book Conservation, Thomas J. Watson Library, The Metropolitan Museum of Art, New York. Sidney E. Berger is director emeritus of the Phillips Library at the Peabody Essex Museum, Salem, MA.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/11/patternflow.webp",
+            "https://centerforbookarts.org/wp-content/uploads/2022/11/Screen-Shot-2022-11-02-at-6.05.15-PM.png",
+            "https://centerforbookarts.org/wp-content/uploads/2022/11/Screen-Shot-2022-11-02-at-6.05.51-PM.png",
+            "https://centerforbookarts.org/wp-content/uploads/2022/11/Screen-Shot-2022-11-02-at-6.05.30-PM.png"
+        ]
+    },
+    {
+        "temp_id": 69,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/kelli-anderson-book",
+        "pages": 56,
+        "year": 2022,
+        "title": "ABRACADABRA an interactive guide",
+        "author": "Kelli Anderson",
+        "price": 50.0,
+        "publisher": "Kelli Anderson",
+        "binding": "Tab bound soft cover",
+        "dimensions": "6 x 9 inches",
+        "materials": [
+            "interactive paper cover",
+            "risograph printed",
+            "various inserts"
+        ],
+        "description": "ABRACADABRA an interactive guide by Kelli Anderson is a companion book to Kelli’s exhibition at Center for Book Arts. This book takes a deep dive into the history of typographic technology! Learn about photo type setting, offset printing, the geometry of a letter and so much more! Each book was risograph printed and hand bound by Kelli Anderson. ABRACADABRA an interactive guide",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/kelli-cover-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/kelli-3-scaled.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/kelli-2-scaled.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/kelli-1-scaled.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/cover-scaled.jpg"
+        ]
+    },
+    {
+        "temp_id": 70,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/collective-roadmap",
+        "pages": null,
+        "year": 2022,
+        "title": "Collective Roadmap",
+        "author": null,
+        "price": null,
+        "publisher": "Maria Veronica San Martin and Ignacio Szmulewicz",
+        "binding": "16 booklets printed on both sides fold as one-page-book structure contained in a white box",
+        "dimensions": "6 x 4.5 x 16/8 inches",
+        "materials": null,
+        "description": "Collective Roadmap is a publication that brings together 15 artists and collectives from around the world who were inspired by the Chilean Constitutional Convention. Original works from Australia, Iran, Ukraine, Serbia, Spain, Bolivia, Colombia, the United States and Chile are collected in an artist’s book format addressing topics from memory, political social activism, the environment, native peoples, travel, territories and autobiography, all in multiple formats and techniques, with graphics, illustrations, photographs, interviews, testimonies, letters, audio messages printed with risograph by Calipso Press. This project, curated by artist María Verónica San Martín and art historian Ignacio Szmulewicz, address the questions “what does it mean to live together? How do we inhabit the future? The 15 artists and collectives carried out collaborative processes, inviting specialists, relatives, friends, acquaintances and strangers, to take the pulse of the present from the enormous possibility of imagining a different future.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/road.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/CR_MAC_CL_2-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/CR_MAC_CL_7-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/4-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/CR_MAC_CL_6-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/Artist-Alina-Tenser-from-Ukrain_US.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/2-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/221017_Collective-Roadmap-Chile-NYC_7922_LARGE.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/Artist-Camila-Galaz-from-AUS_Chile.jpg"
+        ]
+    },
+    {
+        "temp_id": 71,
+        "url": "https://centerforbookarts.org/book-shop/catalogs/tideline-press-catalog",
+        "pages": 68,
+        "year": 2022,
+        "title": "TideLine Press 1972 -2022",
+        "author": "Leonard Seastone",
+        "price": null,
+        "publisher": "Center for Book Arts",
+        "edition": "Unlimited",
+        "binding": "Saddle Stitched Softcover",
+        "dimensions": "8.5 x 6.5 inches",
+        "materials": null,
+        "description": "The catalog TideLine Press 1972 -2022 accompanies the exhibition TideLine Press 1972 -2022 and A Long Hill Homeward at Center for Book Arts on view from October 7-December 10, 2022. The catalog contains an artist’s statement, artwork descriptions, and images of over 60 artworks included in the exhibition. Designed by Caslon Yoon, this catalog is available in both full color and black and white. TideLine Press 1972 -2022 TideLine Press 1972 -2022 and A Long Hill Homeward TideLine Press 1972 -2022 and A Long Hill Homeward Caslon Yoon",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/10/tideline-cover.jpeg"
+        ]
+    },
+    {
+        "temp_id": 72,
+        "url": "https://centerforbookarts.org/book-shop/catalogs/books-revisited",
+        "pages": 74,
+        "year": 2022,
+        "title": "Books Revisited",
+        "author": "Taylor Fisch",
+        "price": null,
+        "publisher": "Center for Book Arts",
+        "edition": "200",
+        "binding": "Perfect Bound Softcover",
+        "dimensions": "7 x 10 inches",
+        "isbn": "978-1-951163-10-5",
+        "materials": [
+            "Softcover book",
+            "translucent book jacket",
+            "translucent leaves inserted throughout"
+        ],
+        "description": "Books Revisited, presents artworks, artists’ books, and bookworks across time and media that play with and challenge how narrative, historical truths, and knowledge occupy space within and beyond the material and conceptual boundaries of books. The eleven artists and collectives in the exhibition use existing books as raw material—whether that be an address book, an art historical catalog, the Bible, an encyclopedia, a geometry manual, a novel, or a reader—as the site for the reinterpretation of texts and images, the open-ended possibilities of authorship, and the inscriptions of new subjectivities. Books Revisited posits that while books have historical resonances rooted in the specifics of time and place, they eventually circulate, temporally and geographically, cross-pollinating to create new understandings of history and one’s place in it. Books Revisited, Books Revisited",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/09/Books-Revisited-cover-scaled.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/09/Screen-Shot-2022-09-26-at-4.43.20-PM.png",
+            "https://centerforbookarts.org/wp-content/uploads/2022/09/Screen-Shot-2022-09-26-at-4.43.37-PM.png"
+        ]
+    },
+    {
+        "temp_id": 73,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/past-futures-aftermaths",
+        "pages": 448,
+        "year": 2022,
+        "title": "Pasts, Futures, and Aftermaths",
+        "author": "Adam Pendleton",
+        "price": 45.0,
+        "publisher": "DABA",
+        "binding": "Hardcover",
+        "dimensions": "8 x 10.5 inches",
+        "isbn": "9781734681710",
+        "materials": null,
+        "description": "In 2011, artist Adam Pendleton assembled Black Dada Reader, a compendium of texts, documents and positions that elucidated a practice and ethos of “Black Dada.” Resembling a school course reader, the book was a spiral-bound series of photocopies and collages, originally intended only for personal reference, and eventually distributed informally to friends and colleagues. The contents—an unlikely mix of Hugo Ball, W.E.B. Du Bois, Adrian Piper, Gertrude Stein, Sun Ra, Stokely Carmichael, Gilles Deleuze—formed a kind of experimental canon, realized through what Pendleton calls “radical juxtaposition.” In 2017, Koenig Books published the Reader in a hardcover edition, with newly commissioned essays and additional writings by the artist. Black Dada Reader Introduction by Adam Pendleton. Interviews with Thomas Hirschhorn, Ishmael Houston-Jones, Joan Jonas, Lorraine O’Grady, and Joan Retallack. Source texts by Sara Ahmed, Mikhail Bakhtin, Toni Cade Bambara, Amiri Baraka, Augusto de Campos, Hardoldo de Campos, and Décio Pignatari, Angela Davis, Gilles Deleuze, Julius Eastman, Adrienne Edwards, Clarice Lispector, Achille Mbembe, Philippe-Alain Michaud, Charles Mingus, Piet Mondrian, Leslie Scalapino, Leonard Schwartz and Michael Hardt, Juliana Spahr, Cecil Taylor, and Malcolm X. Co-published with Verlag der Buchhandlung Walther und Franz König.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/09/AdamPendleton_Pasts_Futures_andAftermathsRevisitngtheBlackDadaReader-front_1024x1024@2x-e1664231019723.webp",
+            "https://centerforbookarts.org/wp-content/uploads/2022/09/pendleton3.webp",
+            "https://centerforbookarts.org/wp-content/uploads/2022/09/pendleton2.webp",
+            "https://centerforbookarts.org/wp-content/uploads/2022/09/pendleton4.webp",
+            "https://centerforbookarts.org/wp-content/uploads/2022/09/pendleton1.jpg"
+        ]
+    },
+    {
+        "temp_id": 74,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/finepress/mothers-of-mothers-of-mothers",
+        "pages": 16,
+        "year": 2022,
+        "title": "Mothers of Mothers of Mothers",
+        "author": "Rachel Hillery",
+        "price": 50.0,
+        "edition": "100",
+        "binding": "Soft-cover handsewn",
+        "dimensions": "6.5 x 9.5 inches",
+        "materials": [
+            "Letterpress printed cover and text",
+            "Handsewn pamphlet",
+            "Dust jacket"
+        ],
+        "description": "Mothers of Mothers of Mothers by Rachel Hillery is a letterpress-printed artist book, designed and produced during the artist’s residency at Center for Book Arts (2019-2020). The rhythmic narrative is inspired by feminist texts from the 1980s and contemporary feminist philosophy to investigate matrilineal erasure, both artistic and familial. Mothers of Mothers of Mothers",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/09/Rachel-Hillery-mothers.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/09/Rachel-Hillery-4.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/09/Rachel-Hillery-3.jpg"
+        ]
+    },
+    {
+        "temp_id": 75,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/finepress/collaboration-with-chris-retsina",
+        "pages": null,
+        "year": null,
+        "title": "Collaboration with Chris Retsina",
+        "author": "Hadley Vogel",
+        "price": 3000.0,
+        "publisher": "Hadley Hill Bindery",
+        "edition": "Unique",
+        "binding": "Hinged drawings in hardcover binding",
+        "dimensions": "15 x 11.5 inches",
+        "materials": [
+            "Full leather binding with inlay",
+            "Original drawings on paper"
+        ],
+        "description": "Chris Retsina is also a NYC based artist and is a painter, often depicting intimate scenes from around the home. He currently has a full wall mural at Europa that is painted to resemble the exterior of a building where each window opens onto a weird world of its own. In this book Chris has illustrated flaming bathroom scenes, absurd and grotesque. The leather binding borrowing the motifs of the tiled floors with a flaming spine, a forced perspective giving you a hint of the bizarro world within.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2023/09/27_Hadley-Hill-Bindery-Chris-Retsina_Artist-Book_2021-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2023/09/30_Hadley-Hill-Bindery-Chris-Retsina_Book-Page-4_2021.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2023/09/31_Hadley-Hill-Bindery-Chris-Retsina_Book-Page-6_2021-1-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2023/09/32_Hadley-Hill-Bindery-Chris-Retsina_Headcap-Detail_2021-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2023/09/27_Hadley-Hill-Bindery-Chris-Retsina_Artist-Book_2021-scaled.jpg"
+        ]
+    },
+    {
+        "temp_id": 76,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/finepress/collaboration-with-abby-lloyd",
+        "pages": null,
+        "year": null,
+        "title": "Collaboration with Abby Lloyd",
+        "author": "Hadley Vogel",
+        "price": 1200.0,
+        "publisher": "Hadley Hill Bindery",
+        "edition": "Unique",
+        "binding": "Board Book",
+        "dimensions": "7.5 x 5.5 inches",
+        "materials": [
+            "Hand bound in metallic leather",
+            "Digital printing"
+        ],
+        "description": "Abby Lloyd is a NYC based artist, working primarily in sculpture. Best known for her playful sculptures of dolls, their personality and humor is conveyed through the unusual finishes and mediums the artist employs. One appearing to be made from burlap and yarn, another is a tarnished copper, this book reflects her diversity in faux finishes with leather onlays of stamped copper python and purple patent leather printed with tiger stripes.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2023/09/076_Shed_July2018-9984-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2023/09/ehs_tiny_book_3-copy.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2023/09/ehs_tiny_book_2.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2023/09/072_Shed_July2018-9970-scaled.jpg"
+        ]
+    },
+    {
+        "temp_id": 77,
+        "url": "https://centerforbookarts.org/book-shop/books-on-books/coptic",
+        "pages": 532,
+        "year": 2021,
+        "title": "Coptic Bookbindings in the Pierpont Morgan Library",
+        "author": null,
+        "price": 150.0,
+        "publisher": "The Legacy Press",
+        "dimensions": "11.25 x 8.25 inches",
+        "isbn": "9781953421043",
+        "materials": null,
+        "description": "Theodore C. Petersen wrote Coptic Bookbindings in the Pierpont Morgan Library between 1929 and 1950, but it remained unpublished until now. This seminal work describes the binding techniques and materials of a collection of early manuscripts at the Morgan Library and Museum. Coptic Bookbindings in the Pierpont Morgan Library  This long-awaited publication of Petersen’s work includes an introductory essay by the Morgan Library and Museum’s book conservator, Francisco H. Trujillo, that details the circuitous history of the collection from Egypt to New York to Rome and back to New York, as well as the equally baroque story of the efforts to get the work published. Augmenting the text are Petersen’s original line drawings and recent color photographs of the Morgan Library’s bindings.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/09/coptic-22-08-29-scaled-e1662059348687.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/09/IMG_1901-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/09/IMG_1902-scaled.jpg"
+        ]
+    },
+    {
+        "temp_id": 78,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/notes_about_notes",
+        "pages": 26,
+        "year": 2022,
+        "title": "Notes about Notes",
+        "author": "Roni Aviv",
+        "price": null,
+        "publisher": "Self Published",
+        "edition": "30",
+        "binding": "Handmade, drumleaf softcover",
+        "dimensions": "6 x 9 inches",
+        "materials": null,
+        "description": "Notes about Notes is thoughts, scraps, tears, and fingerprints interwoven. Roni Aviv’s handmade drumleaf book overlaps, occludes, and references itself, turning the familiar unfamiliar to remind one that “facts live in a field of language that is very malleable.” Notes about Notes  Aviv embodies her process through an interwoven text that thinks, makes, deals and struggles with itself on the page. A single line re-appears, spliced anew to reckon and re-reckon with “linear responsibility.” The book moves in spirals of varied legibility, visibility, and redaction to reveal. Edition of 30.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/08/notes-shoot-e1664205993239.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/08/notes-shoot_1.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/08/notes-shoot_3.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/08/notes-shoot_2.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/08/notes-shoot_4.jpg"
+        ]
+    },
+    {
+        "temp_id": 79,
+        "url": "https://centerforbookarts.org/book-shop/ephemera/vera-icon-first-you-have-to-prove-it-to-me-exhibition-brochure",
+        "pages": 24,
+        "year": 2022,
+        "title": "Vera Icon / / First You Have To Prove It To Me Exhibition Brochure",
+        "author": "Veronika Schäpers",
+        "price": 5.0,
+        "publisher": "Center for Book Arts",
+        "binding": "Soft cover, saddle stitch",
+        "dimensions": "6.5 x 8.5 inches",
+        "materials": null,
+        "description": "Vera Icon / / First You Have To Prove It To Me",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2023/07/vera-icon.jpg"
+        ]
+    },
+    {
+        "temp_id": 80,
+        "url": "https://centerforbookarts.org/book-shop/ephemera/resistant-systems-spring-2022-exhibition-brochure",
+        "pages": 15,
+        "year": 2022,
+        "title": "Resistant Systems Spring 2022 Exhibition Brochure",
+        "author": null,
+        "price": 5.0,
+        "publisher": "Center for Book Arts",
+        "binding": "Soft cover, saddle stitch",
+        "dimensions": "6.5 x 8.5 inches",
+        "materials": null,
+        "description": "Resistant Systems Spring 2022",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2023/07/resistant-systems-spring-2022.jpg"
+        ]
+    },
+    {
+        "temp_id": 81,
+        "url": "https://centerforbookarts.org/book-shop/ephemera/paths-to-the-shore-exhibition-brochure",
+        "pages": 16,
+        "year": 2022,
+        "title": "Paths to the Shore Exhibition Brochure",
+        "author": "Sarah Nicholls",
+        "price": 5.0,
+        "publisher": "Center for Book Arts",
+        "binding": "Soft cover, saddle stitch",
+        "dimensions": "6.5 x 8.5 inches",
+        "materials": null,
+        "description": "Paths to the Shore",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2023/07/paths-to-the-shore.jpg"
+        ]
+    },
+    {
+        "temp_id": 82,
+        "url": "https://centerforbookarts.org/book-shop/merchandise/popsicle-bookmark",
+        "pages": null,
+        "year": 2022,
+        "title": "Popsicle Bookmark (or ‘And every time you read a book, someone eats your ice-cream’)",
+        "author": null,
+        "price": 5.0,
+        "dimensions": "2 x 7 inches",
+        "materials": [
+            "paper"
+        ],
+        "description": "Cool down with one of these paper popsicles hand made by artist Slavko Djuric! Need a way to mark your page? These popsicles hold your spot on a hot summer day without melting or getting sticky. One popsicle per order, all bookmarks are handmade and unique! unique",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/07/pop.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/07/pop2.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/07/pop1.jpg"
+        ]
+    },
+    {
+        "temp_id": 83,
+        "url": "https://centerforbookarts.org/book-shop/catalogs/performing-documents-modes-of-assembling",
+        "pages": 130,
+        "year": 2022,
+        "title": "Performing Documents: Modes of Assembling",
+        "author": "Paige Landesberg",
+        "price": 35.0,
+        "publisher": "Center for Book Arts",
+        "edition": "500",
+        "binding": "Softcover, prong bound",
+        "dimensions": "8.5 x 11 inches",
+        "isbn": "78-1-951163-09-9",
+        "materials": null,
+        "description": "",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/06/Performing-Documents-1-scaled.jpeg"
+        ]
+    },
+    {
+        "temp_id": 84,
+        "url": "https://centerforbookarts.org/book-shop/broadside/dear-lord",
+        "pages": null,
+        "year": 2022,
+        "title": "Dear Lord",
+        "author": "Matthew Dix",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "binding": "Broadside",
+        "dimensions": "12 x 18 inches",
+        "materials": null,
+        "description": "This variable-edition of 100 pressure-printed broadsides features a poem, Dear Lord,  by Matthew Dix and was printed by Roni Aviv at Center for Book Arts. Signed and numbered. Dear Lord, Please note that each print in this edition is unique; photos are for illustration purposes only. Matthew Dix is a writer from South Carolina. He studied poetry at the College of Charleston and Columbia University where he served as the poetry editor of Columbia Journal. He has two poems in current issue of Fence. Matthew Dix Roni Aviv is a New York-based visual artist whose practice is at the intersection of photography, text, drawing, and installation. In her work—which has been published and exhibited internationally—Aviv explores emotional residue through repetition and material change. She photographs different types of mark-makings performed onto paper using soaking, grinding, and tracing techniques. This practice is a visual and psychological inquiry into experiences and surfaces that are ubiquitous in everyday life and therefore often overlooked. Roni Aviv Produced in honor of the Spring 2022 Broadside Series reading on June 2, 2022, curated by Allison Carter-Beaulé. A recording of the event can be found here. here",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/06/aviv-dix-4.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/06/aviv-dix-5.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/06/aviv-dix-2.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/06/aviv-dix-1.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/06/aviv-dix-3.jpg"
+        ]
+    },
+    {
+        "temp_id": 85,
+        "url": "https://centerforbookarts.org/book-shop/broadside/alas",
+        "pages": null,
+        "year": 2022,
+        "title": "Alas",
+        "author": "Megan Sungyoon",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "dimensions": "11 x 14.875 inches",
+        "materials": null,
+        "description": "This poetry broadside, Alas by Megan Sungyoon, was designed and letterpress printed by Tsohil Bhatia in honor of the poet’s virtual reading at Center for Book Arts on June 2, 2022. Published as part of CBA’s Broadside Reading Series, this broadside was printed onto a special paper-like fabric and hand scrunched by the artist giving each print a unique quality. Alas Tsohil Bhatia",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/12/IMG_2382-scaled.jpg"
+        ]
+    },
+    {
+        "temp_id": 86,
+        "url": "https://centerforbookarts.org/book-shop/a-public-service",
+        "pages": 74,
+        "year": 2022,
+        "title": "A Public Service",
+        "author": "Tim Schwartz",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "200",
+        "binding": "Perfect Bound Softcover",
+        "dimensions": "8 x 10 inches",
+        "isbn": "1978-1-951163-26-6",
+        "materials": null,
+        "description": "Governments and corporations now have the tools to track and control us as never before. On this whistleblowing how-to, Tim Schwartz provides you with the tools to fight back , and to hold organizations, agencies and corporations accountable for unethical behavior. Tim Schwartz",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/06/whistle.jpeg"
+        ]
+    },
+    {
+        "temp_id": 87,
+        "url": "https://centerforbookarts.org/book-shop/broadside/the-return",
+        "pages": null,
+        "year": 2022,
+        "title": "The Return",
+        "author": "Shyanne Figueroa Bennett",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "dimensions": "14.5x10.375",
+        "materials": null,
+        "description": "A limited edition broadside of poetry by Shyanne Figueroa Bennett was designed and risograph printed by Gwen Smith at Center for Book Arts. Shyanne Figueroa Bennett is a Brooklyn poet with roots in Panama, Jamacia, and Puerto Rico. Her work has been published in various journals and. Magazines, including Green Mountains Review, Oversound, The Acentos Review, and Tribes. She graduated with an MFA in Writing from Columbia University, where she was a recipient of a Chair’s Fellowship and a Creative Writing Teaching Fellowship. Most recently, she was awarded a Fulbright Fellowship to Panama to support her creative work. Shyanne Figueroa Bennett Gwen Smith is a practitioner of the Book Arts. Using the exquisite corpse of memory to reconstruct archives and find her place within the diaspora. Smith’s work grapples with identity and attempts to gain freedom by addressing the traumas inherent in that search. Gwen Smith",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/05/IMG_9468-scaled.jpg"
+        ]
+    },
+    {
+        "temp_id": 88,
+        "url": "https://centerforbookarts.org/book-shop/broadside/impromptu-the-spring-books",
+        "pages": null,
+        "year": 2022,
+        "title": "Impromptu: The Spring Books",
+        "author": "Shane McCrae",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "dimensions": "10.75 x 15.375",
+        "materials": null,
+        "description": "Limited edition broadside designed and letterpress printed by Vanessa Sandoval in an edition of 100. Shane McCrae is the author of eight books of poetry including, most recently, Cain Named the Animal (Farrar, Straus and Giroux). His book In the Language of My Captor (Wesleyan University Press) was a finalist for the National Book Award as well as the Los Angeles Times Book Prize. He is the recipient of a Whiting Writers’ Award, a NYSCA/NYFA Fellowship, and a National Endowment for the Arts Fellowship. He teaches at Columbia University and lives in New York City. Shane McCrae Vanessa Sandoval is a visual artist with practice in the fields of sculpture, drawing, performance, and installation. She is interested in exploring and questioning the separation between nature and culture, and how bodies are expressions of ecological relations. Sandoval uses condensation and the practice of counting as part of her creative process. Recently, she has been writing essays and doing performances that examine human ways of condensing knowledge in objects and devices such as encyclopedias, habitat dioramas, and wonder cabinets, in order to point out the ideological relations that structure our relation with the world. Vanessa Sandoval",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/05/broadside_2-scaled-e1653606851513.jpg"
+        ]
+    },
+    {
+        "temp_id": 89,
+        "url": "https://centerforbookarts.org/book-shop/broadside/untitled-fragment-by-lynn-xu",
+        "pages": null,
+        "year": 2022,
+        "title": "Untitled Fragment",
+        "author": "Lynn Xu",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "dimensions": "10.5 x 13.125",
+        "materials": null,
+        "description": "A limited edition broadside of poetry by Lynn Xu was designed and letterpress printed by Rodrigo Moreira. Lynn Xu Born in Shanghai, China, Lynn Xu is the author of Debts & Lessons (Omnidawn) and And Those Ashen Heaps That Cantilevered Vase of Moonlight (Wave Books), and the co-translator of Pee Poems by Lao Lang (Circumference Books). She has performed multi-disciplinary works at 300 South Kelly Street, the Guggenheim Museum, the Renaissance Society, and Rising Tide Projects. She teaches at Columbia University and coedits Canarium Books. Lynn Xu Rodrigo Moreira",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/05/Broadside_Final_layout-scaled.jpg"
+        ]
+    },
+    {
+        "temp_id": 90,
+        "url": "https://centerforbookarts.org/book-shop/prints/jaguar-quindio",
+        "pages": null,
+        "year": 2022,
+        "title": "Jaguar Quindío",
+        "author": "Mateo López",
+        "price": 250.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100 signed prints",
+        "dimensions": "12 x 15 inches",
+        "materials": null,
+        "description": "Fundraising Edition Jaguar Quindío by Mateo López is a 2022 Center for Book Arts’ Fundraising Edition. By acquiring this work you are supporting Center for Book Arts’ community and contributing to our educational and exhibition programs. Jaguar Quindío López’s work engages with cartographies, journeys and construction processes while grappling with themes of chance, encounter and time. Viewed one way, the face of a jaguar from the Quindió region of Columbia is visible; viewed another the pattern evokes a bird.  Printed and die-cut by Elizabeth Castaldo.  Bio  Printed and die-cut by Elizabeth Castaldo. Bio Mateo López (b. 1978, Bogotá, Colombia) is an artist who trained as an architect and uses organic forms, film and dance in his practice. He studied architecture for two years at the Pontificia Universidad Javeriana in Bogotá before switching to Visual Arts at Bogotá’s Universidad de Los Andes. López’s work engages with cartographies, journeys and con-struction processes while grappling with themes of chance, encounter and time. His practice traces a conceptual ap-proach, expanding from drawings to installations, architecture, films and sculptural choreography. Key international solo exhibitions include Sin Principio / Sin Final Museo de Arte Universidad Nacional, Bogota, Colombia (2018); Undo List, The Drawing Center, New York, USA (2017); A Weed is a Plant Out of Place, Lismore Castle Arts, Lismore, Ireland (2016) and Deriva at Museo de Arte Contemporáneo de Castilla y León, Spain (2009). Important group exhibitions include United States of Latin America, curated by Jens Hoffmann and Pablo León de la Barra at Museum of Contemporary Art Detroit, Detroit, USA (2015); A Trip from Here to There, Museum of Modern Art, New York, USA (2013) and Ha sempre um copo de mar para um homem navegar, 29 Bienal de São Paulo, São Paulo, Brazil (2010). Major awards and residencies include the Rolex Mentor and Protégé Arts Initiative. William Kentridge’s Protégé, Geneva Switzerland in 2012 and the Gasworks Residency Program, London, UK in 2010, which was followed by an exhibition. López’s work can be found in public collections around the world, including the Art Gallery of Ontario, Toronto, Canada; Banco de la República, Biblioteca Luis Ángel Arango, Bogotá, Colombia, Inhotim, Minas Gerais, Brazil and Museum of Modern Art (MoMA), New York, NY.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/05/mateo1-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/05/mateo2-scaled.jpg"
+        ]
+    },
+    {
+        "temp_id": 91,
+        "url": "https://centerforbookarts.org/book-shop/published-by-cba/showing-our-faces",
+        "pages": 112,
+        "year": 2021,
+        "title": "Showing Our Faces",
+        "author": null,
+        "price": 375.0,
+        "publisher": "Center for Book Arts",
+        "edition": "50",
+        "binding": "Handsewn hardcover",
+        "dimensions": "8.5 x 11 inches",
+        "materials": [
+            "Bugra and canapetta covers",
+            "hand set letterpress printed interior",
+            "handsewn headbands"
+        ],
+        "description": "",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/05/sof-cover-scaled.jpeg"
+        ]
+    },
+    {
+        "temp_id": 92,
+        "url": "https://centerforbookarts.org/book-shop/prints/growth-house",
+        "pages": null,
+        "year": 2022,
+        "title": "Growth House",
+        "author": "Charles Simonds",
+        "price": 350.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100 signed prints",
+        "dimensions": "24 x 18 inches",
+        "materials": [
+            "Letterpress on Mohawk Superfine",
+            "Each print signed by the artist with a thumbprint "
+        ],
+        "description": "Growth House Growth House Simonds sees the Growth House as a “marriage of building and growing, shelter and food; an hermaphroditic dwelling. If one thinks of building (shelter) as a (“male”) imitation and envy of (“female”) growing (food) then one can see the Growth House as an hermaphroditic structure” 1973. Growth House Growth House More information about Simonds’ work can be found here. here Printed by Allison Carter-Beaulé.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/04/GrowthHouse-c-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/04/GrowthHouse-f-scaled.jpg"
+        ]
+    },
+    {
+        "temp_id": 93,
+        "url": "https://centerforbookarts.org/book-shop/catalogs/beyond-codex-living-archives",
+        "pages": 74,
+        "year": 2022,
+        "title": "Beyond Codex: Living Archives",
+        "author": "Shahar Kramer",
+        "price": 25.0,
+        "publisher": "Center for Book Arts",
+        "edition": "200",
+        "binding": "Wire-o Softcover",
+        "dimensions": "8 x 10 inches",
+        "isbn": "1978-1-951163-26-6",
+        "materials": null,
+        "description": "We often think of the book as a container; an inert vessel that patiently awaits contact, its words and pictures permanently fixed in time and place on the page. There are books, however, that invite re-animation–even conversation–with what is contained therein.  We often think of the book as a container; an inert vessel that patiently awaits contact, its words and pictures permanently fixed in time and place on the page. There are books, however, that invite re-animation–even conversation–with what is contained therein.  For instance, the Talmud, a historic Jewish text whose origins date back to 200 CE, is often designed to incorporate commentary and opinion alongside its core text. In some editions, two or more voices share space on an elaborate page, in dialogue with both the Talmud and each other.  For instance, the Talmud, a historic Jewish text whose origins date back to 200 CE, is often designed to incorporate commentary and opinion alongside its core text. In some editions, two or more voices share space on an elaborate page, in dialogue with both the Talmud and each other.  In this way, the Talmud’s design creates space for conversation and extends the invitation to a reader. This is but one example of the way books can give permission. The juxtaposition of different perspectives alongside one another suggest that one’s interpretation of a text is neither fixed nor static. It encourages a reader to engage with the book as a dynamic object, as opposed to the arbiter of unequivocal fact.  In this way, the Talmud’s design creates space for conversation and extends the invitation to a reader. This is but one example of the way books can give permission. The juxtaposition of different perspectives alongside one another suggest that one’s interpretation of a text is neither fixed nor static. It encourages a reader to engage with the book as a dynamic object, as opposed to the arbiter of unequivocal fact.  to rethink the power structures that surround us. Text, image, material, and structure all have the power to inform and influence us. In this catalog, designer Mina Shoaib draws inspiration from the Talmud and its interwoven texts. On these pages and, indeed, throughout this exhibition, we invite you to create space for a multiplicity of voices and perspectives–including your own. ",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/04/Cover-BeyondCodex-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/04/IMG_1399-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/04/IMG_1400-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/04/IMG_1401-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/04/IMG_1402-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/04/IMG_1403-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/04/IMG_1398-2-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/04/TOC-BeyondCodex-pdf.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/04/32-33-BeyondCodex-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/04/64-65-BeyondCodex-pdf.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/04/BeyondCodex-foreword-scaled.jpg"
+        ]
+    },
+    {
+        "temp_id": 94,
+        "url": "https://centerforbookarts.org/book-shop/books-on-books/bar1",
+        "pages": 86,
+        "year": 2022,
+        "title": "BAR Issue 1: A New Book Art Criticism",
+        "author": null,
+        "price": null,
+        "publisher": "Center for Book Arts",
+        "binding": "Perfect Bound Softcover",
+        "dimensions": "7 x 10 inches",
+        "materials": [
+            "Risograph",
+            "Letterpress",
+            "Die-cutting "
+        ],
+        "description": "Book Art Review (BAR) is a semiannual magazine dedicated to providing a forum for critical writing about book art and artist books. Book Art Review BAR Book Art Review publishes two issues per year, with the first issue launching in Fall 2021. We want to raise the bar for book art criticism! BAR is our plan to make book art criticism more visible and more valuable, and to engage with a diverse group of writers and readers. Our launching manifesto calls for “New Book Art Criticism,” and in building that, our magazine will showcase a new kind of writing about artist books, one that focuses on the material, paginated, object qualities of the book. Book Art Review BAR Features BAR “The History of Criticism of the Book with Some Observations for Future” by Deirdre Lawrence “How Does the Artist Book?” by Kinohi Nishikawa  Reviews Phoebe Cripps on Margaret Salmon’s  K is for Kato  K is for Kato  Nicole Kaack on Leandro Katz’s  Self Hipnosis Self Hipnosis Ollie Gapper on Awoiska van der Molen’s  Living Mountain Living Mountain Meghan Forbes on  Milada Součková’s  Mluvící pásmo Mluvící pásmo Tausif Noor on Soumya Sankar Bose’s  Where the Birds Never Sing  Where the Birds Never Sing ",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/01/in-this-issue.png"
+        ]
+    },
+    {
+        "temp_id": 95,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/either-way-its-perfect",
+        "pages": null,
+        "year": 2021,
+        "title": "Either Way It’s Perfect",
+        "author": "Lenny Silverberg",
+        "price": 40.0,
+        "publisher": "Lenny Silverberg",
+        "dimensions": "9.25 x 12.25 inches",
+        "isbn": "978-0-578-65729-5",
+        "materials": null,
+        "description": "Artist Statement This book is about two lives lived in the same time and place and yet had very different experiences. My wife, Noni Reisner, had dementia I cared for her for 6 years. She was a very funny, witty person, and that sense of humor and wit continued during her dementia. She would say these short sayings and I started to write them down on any piece of paper I could grab. Backs of envelopes, shopping lists, etc. While caring for her I did little artwork but I did make a few drawings. A few years after she died I started the watercolors and drawings that make up this book. It was the book designer Laura Lindgren who suggested that I combine them with Noni’s sayings that I collected and make a book which she helped design. This book is a kind of visual memoir of that difficult yet spiritual time.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/03/lenny_silverberg_either-way-its-perfect-1.jpeg"
+        ]
+    },
+    {
+        "temp_id": 96,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/red-rabbit-the-opera-game",
+        "pages": 100,
+        "year": 2022,
+        "title": "Red Rabbit & the Opera Game",
+        "author": "Malik Kirkwood",
+        "price": 33.0,
+        "publisher": "The Black Market",
+        "binding": "Perfect Bound Softcover",
+        "dimensions": "5 x 7 inches",
+        "materials": null,
+        "description": "a meditation on mysoginoir, radfem in its most masculine, on dragons, the boogeyman, the other side of the board, cocaine and a bottle of water for breakfast on rabbits for bunnies and bullets 😉 you can’t go to sleep yet —",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/02/image-22-02-23.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/02/image-22-02-23-1-scaled.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/02/image-22-02-23-3-scaled.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/02/image-22-02-23-2-scaled.jpeg"
+        ]
+    },
+    {
+        "temp_id": 97,
+        "url": "https://centerforbookarts.org/book-shop/prints/collective-survival-archive",
+        "pages": 1,
+        "year": 2022,
+        "title": "A Collective Survival Archive",
+        "author": "Lukaza Branfman-Verissimo",
+        "price": 25.0,
+        "publisher": "Childish Books",
+        "edition": "400",
+        "binding": "Poster",
+        "dimensions": "11x17 inches",
+        "materials": [
+            "risograph printed"
+        ],
+        "description": "A Collective Survival Archive is a three color risograph print that holds space for remembering and honoring the work, practices and ways we need each other for the co-creating of our futures. The text comes from a conversation between the artist and their dear friend Lee Rae Walsh about the deep work and nourishment practices around crafting and forming kinship. Naming all the tools, “ingredients” of a giving kinship space….webs, lovers, spiritual lube, quilts, nets, co-breathing. A Collective Survival Archive",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2023/01/IMG-0953.jpg"
+        ]
+    },
+    {
+        "temp_id": 98,
+        "url": "https://centerforbookarts.org/book-shop/artists-books/motherhood",
+        "pages": 9,
+        "year": 2021,
+        "title": "Motherhood",
+        "author": "Elizabeth Castaldo",
+        "price": null,
+        "publisher": "Elizabeth Castaldo",
+        "edition": "50",
+        "binding": "one sheet book",
+        "dimensions": "5 x 6.5 inches",
+        "materials": null,
+        "description": "Motherhood 2021, cyanotype with letterpress and collagraph. Edition of 50. Motherhood Upon being invited to be a part of (S)mother in 2021, an exhibition addressing parenting, I wondered what had held me back from making work specifically about my experience as a mother. I made this artists book as a first attempt to grapple with what it has felt like to be a mother, addressing the joy and frustration, isolation and connection. The inside folds feature a collagraph made by my child when she was 7 years old. (S)mother",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/12/motherhood.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/12/motherhood2-2-scaled-e1672850248462.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/12/motherhood2-scaled-e1672850170659.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/12/motherhood3-scaled-e1672850273408.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/12/motherhood4.jpeg",
+            "https://centerforbookarts.org/wp-content/uploads/2022/12/motherhood_inside_2_lowres.jpeg"
+        ]
+    },
+    {
+        "temp_id": 99,
+        "url": "https://centerforbookarts.org/book-shop/broadside/numb-with-grief",
+        "pages": null,
+        "year": 2021,
+        "title": "Numb With Grief From My Mother’s Sudden Death, I Write This Poem About Bottlegourds For A Handsome Farmer",
+        "author": "Benjamin Aleshire",
+        "price": 20.0,
+        "publisher": "Center for Book Arts",
+        "edition": "100",
+        "dimensions": "6 x 10.75 inches",
+        "materials": [
+            "letterpress",
+            "signed and numbered by the poet"
+        ],
+        "description": "About the Broadside This broadside was designed and printed by Center for Book Arts Administrative Assistant and artist Allison Carter-Beaulé for CBA’s 25th Anniversary Chapbook Competition Runner-Up Benjamin Aleshire in 2021. Allison Carter-Beaulé 25th Anniversary Chapbook Competition Benjamin Aleshire CBA’s Annual Chapbook Competition is an open call for poets to submit manuscripts. Submissions are reviewed blindly by a Guest Judge who selects one winner and two runners-up. As part of the awards package, CBA publishes respective limited-edition chapbooks for the Guest Judge and Competition Winner as well as respective limited-edition broadsides for the runners-up. Annual Chapbook Competition Aleshire was selected as 2021 Competition Runner-Up by Guest Judge Simone White. Simone White Carter-Beaulé’s broadside design for Aleshire’s poem, Numb With Grief From My Mother’s Sudden Death, I Write This Poem About Bottlegourds For A Handsome Farmer, was inspired by Pamela Colman Smith’s 1909 Eight of Cups illustration in the Waite-Smith Tarot. umb With Grief From My Mother’s Sudden Death, I Write This Poem About Bottlegourds For A Handsome Farmer In addition to Carter-Beaulé’s broadside for Aleshire, CBA published a limited-edition chapbook for the 2021 Competition Winner, Bianca Rae Messinger, that was designed and produced by artist Yuchen Chang. CBA also published a limited-edition chapbook for White that was designed and produced by 2020-2021 Book Artist-in-Residence Alva Mooses. And lastly, Aleshire’s fellow 2021 Competition Runner-Up, Dujie Tahat, had his poem published as a limited-edition broadside designed and produced by CBA 2020-2021 Book Artist-in-Residence, Oswaldo García. Bianca Rae Messinger Yuchen Chang Book Artist-in-Residence Alva Mooses Dujie Tahat Oswaldo García Colophon Designed and printed by Allison Carter-Beaulé in honor of the poet’s reading. Center for Book Arts, December 9, 2021. In homage to Pamela Coleman Smith’s Waite-Smith Tarot illustrations, first printed 1909 by William Rider & Son.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2021/12/Benjamin-Aleshire-scaled.jpg",
+            "https://centerforbookarts.org/wp-content/uploads/2021/12/Image-from-iOS-9-scaled.jpg"
         ]
     }
 ]
