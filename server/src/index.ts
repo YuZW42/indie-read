@@ -1,14 +1,36 @@
 import fs from 'fs';
 import express from 'express';
+import cors from 'cors'
+import cookieSession from 'cookie-session'
+import passport from 'passport'
+
 import{hey } from './helper.js';
+
 import resources from './pages/resource/resources'
 import search from './pages/search/searchquery'
-
+import authRoute from "./pages/login/google"
 
 const cors = require('cors');
 const app = express();
 const port = 5002
-app.use(cors());
+
+app.use(
+  cookieSession({
+    name: 'session',
+    keys: ['indie-book'],
+    maxAge: 24 * 60 * 60 * 100
+  })
+)
+
+app.use(passport.initialize());
+app.use(passport.session())
+
+app.use(cors({
+  origin: 'http://localhost:5173',
+  methods: 'GET,POST,PUT,DELETE',
+  credentials: true,
+}));
+
 app.get('/',(req,res) =>{
   res.send('Hello');
 });
