@@ -6,9 +6,9 @@ import {BsArrowLeftCircle} from "react-icons/bs"
 
 import NavBar from "../components/shared/NavBar";
 
-import "../components/login/module.login.css";
+import "../components/post/module.post.css";
 
-export const Login = () => {
+export const Post = () => {
   const [uploadedFileName, setUploadedFileName] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
