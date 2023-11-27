@@ -6,6 +6,7 @@ import { Resource } from "./pages/Resources.tsx"
 import { Post } from "./pages/Post.tsx"
 import { DetailsPage } from "./pages/DetailsPage.tsx"
 import Search from "./pages/Search.tsx"
+import UserLogin from "../src/components/shared/UserLogin.tsx"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/search' element={<Search/>}/> 
         <Route path='/post-artbook' element={<Post/>}/>
         <Route path="/details/:id" element={<DetailsPage/>} />
+        <Route path="/login" element={<UserLogin/>}/>
       </Routes>
     </>
   )
