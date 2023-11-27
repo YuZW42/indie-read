@@ -51,17 +51,21 @@ model Category {
 }
 
 model Book {
-  id               String   @id @default(uuid())
-  title            String
-  author           String
-  price            Decimal
-  dimensions       String[]
-  materials        String?
-  publisher        String?
-  description      String
-  reference        String?
-  inner_page_photo String?
-  pages            Int?
+  id          String   @id @default(uuid())
+  title       String?
+  author      String?
+  price       Float?   @db.Real
+  dimensions  String?
+  materials   String?
+  publisher   String?
+  description String?
+  reference   String?
+  images      String[]
+  pages       String?
+  isbn        String?
+  edition     String?
+  binding     String?
+  year        String?
 }
 
 enum Role {

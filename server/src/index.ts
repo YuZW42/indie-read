@@ -1,16 +1,12 @@
-import fs from 'fs';
 import express from 'express';
-import cors from 'cors'
-import cookieSession from 'cookie-session'
-import passport from 'passport'
+import cors from 'cors';
+import cookieSession from 'cookie-session';
+import passport from 'passport';
 
-import{hey } from './helper.js';
+import resources from './pages/resource/resources';
+import search from './pages/search/searchquery';
+import authRoute from './pages/login/google';
 
-import resources from './pages/resource/resources'
-import search from './pages/search/searchquery'
-import authRoute from "./pages/login/google"
-
-const cors = require('cors');
 const app = express();
 const port = 5002
 
@@ -35,7 +31,7 @@ app.get('/',(req,res) =>{
   res.send('Hello');
 });
 
-app.get('/resources_data',(req,res) =>{
+app.get('/resources_data', (req, res) => {
   res.json(resources);
 });
 
@@ -43,14 +39,15 @@ app.get('/search_keyword', async(req,res) =>{
   const keyword:string = req.query.keyword as string;
   try{
     const books = await search(keyword);
-    console.log(books)
+    console.log(books);
     res.json(books);
-  }catch(error){
-    console.error(error)
+  } catch (error) {
+    console.error(error);
     res.status(500).json({ error: 'An error occurred while fetching books' });
   }
-})
 
+
+});
 app.get('/api/healthchecker', (_, res) => {
   res.status(200).json({
     status: 'success',
@@ -58,4 +55,7 @@ app.get('/api/healthchecker', (_, res) => {
   });
 });
 
-app.listen(port,()=> console.log(`server running on port ${port}`));
+
+app.use('/auth', authRoute);
+
+app.listen(port, () => console.log(`Server running on port ${port}`));
