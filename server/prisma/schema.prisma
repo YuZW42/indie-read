@@ -51,7 +51,6 @@ model Category {
 }
 
 model Book {
-  id          String   @id @default(uuid())
   title       String?
   author      String?
   price       Float?   @db.Real
@@ -66,6 +65,9 @@ model Book {
   edition     String?
   binding     String?
   year        String?
+  temp_id     BigInt?
+  url         String?
+  uuid        String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
 }
 
 enum Role {

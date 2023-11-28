@@ -2,17 +2,21 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 interface UserData {
-  googleId: string;
-  username: string;
-  name: {
-    givenName: string;
-    familyName: string;
-  };
-  data: any;
+  email: string;
+  name: string;
+  createdAt: string;
+  id: string;
+  isCreator: boolean;
+  preference: any; 
+  role: string;
+  userPreferenceId: string | null;
+}
+interface UserDetailsProps {
+  setUser: React.Dispatch<React.SetStateAction<UserData | null>>;
 }
 
-const UserDetails = () => {
-  const [userData, setUserData] = useState<UserData | null>(null);
+const UserDetails = ({ setUser }: UserDetailsProps) => {
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,10 +27,12 @@ const UserDetails = () => {
             'Content-Type': 'application/json',
           },
         });
-        console.log(response.data.user.name)
+        console.log("check",response.data.user)
 
         if (response.status === 200) {
-          setUserData(response.data.user as UserData); 
+          //setUserData(response.data.user as UserData); 
+          setUser(response.data.user as UserData);
+         
         } else {
           throw new Error('Failed to fetch user data');
         }
@@ -36,21 +42,10 @@ const UserDetails = () => {
     };
 
     fetchData();
-  }, []);
+  }, [setUser]);
 
-  return (
-    <div>
-      {userData ? (
-        <div>
-          
 
-          
-        </div>
-      ) : (
-        <p>Loading...</p>
-      )}
-    </div>
-  );
+  return null
 };
 
 export default UserDetails;

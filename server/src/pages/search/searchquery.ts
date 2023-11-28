@@ -13,7 +13,15 @@ async function read (keyword:string) {
       ],
     },
   });
-  return books
+
+  const booksW = books.map(book => ({
+    ...book,
+    temp_id: String(book.temp_id)
+
+  }));
+
+  return booksW;
+  
 }
 
 export default read

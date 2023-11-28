@@ -6,7 +6,8 @@ import { Resource } from "./pages/Resources.tsx"
 import { Post } from "./pages/Post.tsx"
 import { DetailsPage } from "./pages/DetailsPage.tsx"
 import Search from "./pages/Search.tsx"
-import UserLogin from "../src/components/shared/UserLogin.tsx"
+
+import UserLogin from "../src/pages/Login.tsx"
 
 function App() {
   return (

@@ -22,7 +22,7 @@ passport.use(new GoogleStrategy({
     username: profile.displayName,
     name: profile.name
   };
-  console.log();
+
   // Storing the user in a database should be done here, call to the prisma
   //file and see if it exist --> if not, then we should use the create function
 
@@ -95,15 +95,26 @@ router.get('/login/failed', (req, res) => {
   });
 });
 
-router.get('/logout', (req, res) => {
+
+router.get('/logout', (req, res,next) => {
+  console.log("logout", req.user);
   req.logout((err) => {
     if (err) {
-      console.error(err);
+      console.error('Error during logout:', err);
       return res.status(500).json({ message: 'Logout failed' });
     }
-    res.redirect(CLIENT_URL);
+    console.log('Successfully logged out');
+    return res.status(200).json({ message: 'Logout successful' });
   });
+  console.log("complete", req.user)
+  return res.status(200).json({ message: 'Logout initiation successful' });
+
 });
+
+
+
+
+
 
 router.get('/google', passport.authenticate('google', { scope: ['profile'] }));
 router.get('/google/callback', passport.authenticate('google', {
