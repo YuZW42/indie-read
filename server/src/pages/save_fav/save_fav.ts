@@ -1,36 +1,46 @@
 import prisma from '../shared/prismaclient';
 
-async function save( id:string, bookId:number) {
-  
+
+async function save(id: string, bookId: number) {
   try {
-    // Find all users with the provided email
     const usersWithEmail = await prisma.user.findMany({ where: { email: id } });
 
-    // Perform update logic for each user
     for (const user of usersWithEmail) {
       try {
-        // Perform update for each user
+        const existingPreference = user.preference as any;
+        let updatedQ: string = '';
+
+        if (typeof existingPreference === 'string') {
+          updatedQ = existingPreference;
+        } else if (existingPreference && typeof existingPreference === 'object' && 'q' in existingPreference) {
+          updatedQ = existingPreference.q as string;
+        }
+
+        updatedQ = updatedQ ? `${updatedQ},${bookId}` : `${bookId}`;
+
         const updatedUser = await prisma.user.update({
-          where: { id: user.id }, // Use the actual unique identifier field (e.g., id)
+          where: { id: user.id },
           data: {
-            favBook: {
-              push: bookId,
+            preference: {
+              q: updatedQ,
             },
           },
         });
 
-        console.log(`Book added to favorites for user with id ${user.id}`);
-        // You can do additional handling or logging here
+        console.log(`Preference updated for user with id ${user.id}`);
+        // Additional handling or logging here
       } catch (error) {
         console.error(`Error updating user with id ${user.id}: ${error.message}`);
         // Handle errors during update for specific users
       }
     }
 
-    return { message: 'Books updated for users with the provided email' };
+    return { message: 'Preferences updated for users with the provided email' };
   } catch (error) {
     return { error: error.message };
   }
 }
+
+
 
 export default save;

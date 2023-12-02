@@ -9,11 +9,11 @@ interface UserData {
   isCreator: boolean;
   preference: any; 
   role: string;
-  favBook:number[];
+  favBook: any;
   userPreferenceId: string | null;
 }
 interface UserDetailsProps {
-  setUser: React.Dispatch<React.SetStateAction<UserData | null>>;
+  setUser: React.Dispatch<React.SetStateAction<UserData| null>>;
 }
 
 const UserDetails = ({ setUser }: UserDetailsProps) => {
@@ -38,6 +38,7 @@ const UserDetails = ({ setUser }: UserDetailsProps) => {
           throw new Error('Failed to fetch user data');
         }
       } catch (error) {
+        
         console.error(error);
       }
     };

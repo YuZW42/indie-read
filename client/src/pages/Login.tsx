@@ -3,7 +3,7 @@ import NavBar from "../components/shared/NavBar"
 import { Header } from "../components/shared/Header"
 import User from '../components/shared/UserLogin' 
 import logout from "../components/login/Logout"
-
+import UserDetails from "../components/login/userdetailTest"
 interface UserData {
   email: string;
   name: string;
@@ -13,7 +13,7 @@ interface UserData {
   preference: any;
   role: string;
   userPreferenceId: string | null;
-  favBook:number[];
+  favBook:any;
 }
 
  const Login = () => {
@@ -47,7 +47,7 @@ interface UserData {
 
       <button onClick={handleLogout}>Logout</button>
 
-
+      <UserDetails/>
     </>
   )
 }
