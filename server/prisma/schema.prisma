@@ -16,6 +16,7 @@ model User {
   preference       Json?
   role             Role            @default(BASIC)
   userPreferenceId String?         @unique
+  favBook          BigInt[]
   writtenPosts     Post[]          @relation("WrittenPosts")
   favPosts         Post[]          @relation("FavPosts")
   userPreference   UserPreference? @relation(fields: [userPreferenceId], references: [id])

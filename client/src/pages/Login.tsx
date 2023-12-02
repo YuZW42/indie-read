@@ -2,7 +2,7 @@ import { useState } from 'react';
 import NavBar from "../components/shared/NavBar"
 import { Header } from "../components/shared/Header"
 import User from '../components/shared/UserLogin' 
-import logout from "../components/login/logout"
+import logout from "../components/login/Logout"
 
 interface UserData {
   email: string;
@@ -13,6 +13,7 @@ interface UserData {
   preference: any;
   role: string;
   userPreferenceId: string | null;
+  favBook:number[];
 }
 
  const Login = () => {

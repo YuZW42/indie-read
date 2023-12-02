@@ -8,6 +8,8 @@ import "./module.home.css";
 import { PostButton } from "../shared/PostButton";
 import { Link } from "react-router-dom";
 
+import handleTitleClick from "./SaveFav";
+import axios from "axios";
 export const DisplayFilteredBooks = () => {
   // interface Book {
   //   title: string;
@@ -62,6 +64,48 @@ export const DisplayFilteredBooks = () => {
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
   };
+/*
+  const handleSaveClick = async (bookId:number) => {
+    const { handleClick } = handleTitleClick(bookId); // Avoid using hooks conditionally or inside loops
+
+    await handleClick(bookId); // Invoking handleClick method
+  };*/
+  const handleSaveClick = async (bookId: number) => {
+    try {
+      const response = await axios.get('http://localhost:5002/auth/login/success', {
+        withCredentials: true,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (response.status === 200) {
+        const user = response.data.user;
+
+        if (user) {
+          const result = await axios.get('http://localhost:5002/save_fav', {
+            params: {
+              id: user.email,
+              bookId: bookId,
+            },
+          });
+          console.log(result.data);
+          // Handle result.data as needed
+        } else {
+          console.log('User not logged in');
+          // Handle case where user is not logged in
+        }
+      } else {
+        throw new Error('Failed to fetch user data');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      // Handle errors as needed
+    }
+  };
+
+
+
 
   return (
     <div>
@@ -107,6 +151,7 @@ export const DisplayFilteredBooks = () => {
           <Row>
             {currentItems.map((book) => (
               <Col key={book.temp_id} xs={12} sm={6} lg={2} className="product-col">
+                 <button onClick={() => handleSaveClick(book.temp_id)}>Sav</button>
                 <Link to={`/details/${book.temp_id}`} target="_blank">
                   <Card className="product-item">
                     {book.images ? (
@@ -127,6 +172,8 @@ export const DisplayFilteredBooks = () => {
                       <Card.Title>
                         {book.title} - ${book.price}.00
                       </Card.Title>
+                     
+   
                       <Card.Text>Year {book.year}</Card.Text>
                       <Card.Text>{book.description}</Card.Text>
                     </Card.Body>

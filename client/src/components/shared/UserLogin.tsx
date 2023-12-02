@@ -9,6 +9,7 @@ interface UserData {
   isCreator: boolean;
   preference: any; 
   role: string;
+  favBook:number[];
   userPreferenceId: string | null;
 }
 interface UserDetailsProps {
@@ -43,6 +44,7 @@ const UserDetails = ({ setUser }: UserDetailsProps) => {
 
     fetchData();
   }, [setUser]);
+
 
 
   return null

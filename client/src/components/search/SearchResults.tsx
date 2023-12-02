@@ -17,7 +17,7 @@ interface SearchResultsProps {
 
 const SearchResults: React.FC<SearchResultsProps> = ({ results }) => {
 
-  console.log("data being sent",results)
+  
   return (
     <div>
       <h2>Search Results</h2>

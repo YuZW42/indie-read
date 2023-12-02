@@ -95,6 +95,10 @@ router.get('/login/failed', (req, res) => {
   });
 });
 
+router.get('/userId',(req,res)=>{
+  res
+})
+
 
 router.get('/logout', (req, res,next) => {
   console.log("logout", req.user);
@@ -121,5 +125,8 @@ router.get('/google/callback', passport.authenticate('google', {
   successRedirect: CLIENT_URL,
   failureRedirect: '/auth/login/failed'
 }));
+
+
+
 
 export default router;
