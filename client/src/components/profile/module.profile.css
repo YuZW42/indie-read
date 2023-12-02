@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 2em;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 2em;
+}
+
+.info-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    gap: 2em;
+}
+
+.collections {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1em;
+}
