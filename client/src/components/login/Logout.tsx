@@ -10,9 +10,7 @@ const logout = async () => {
         'Content-Type': 'application/json',
       },
     });
-    console.log("r",response.data)
-    console.log("finished")
-    
+
     
     return response.data; 
   } catch (error) {

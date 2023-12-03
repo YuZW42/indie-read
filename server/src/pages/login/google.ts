@@ -17,12 +17,7 @@ passport.use(new GoogleStrategy({
 }, async (accessToken, refreshToken, profile: Profile, cb) => {
   console.log('Logging in...');
  
-  const user: any = {
-    googleId: profile.id,
-    username: profile.displayName,
-    name: profile.name
-  };
-
+  
   // Storing the user in a database should be done here, call to the prisma
   //file and see if it exist --> if not, then we should use the create function
 
@@ -32,6 +27,7 @@ passport.use(new GoogleStrategy({
 
   if (existingUser) {
     console.log('User already exists:', existingUser);
+
     return cb(null, existingUser);
   } else {
  
@@ -44,6 +40,7 @@ passport.use(new GoogleStrategy({
         isCreator: false,
         preference: {},
         role: 'BASIC'
+        ,favBook: []
         
       }
     });
@@ -53,7 +50,11 @@ passport.use(new GoogleStrategy({
   }
   //return cb(null, user);
 }));
-
+router.use(session({
+  secret: 'indie', 
+  resave: false,
+  saveUninitialized: true
+}));
 passport.serializeUser(function (user, cb) {
   cb(null, user);
 });
@@ -62,17 +63,14 @@ passport.deserializeUser(function (user, cb) {
   cb(null, user);
 });
 
-router.use(session({
-  secret: 'indie', 
-  resave: false,
-  saveUninitialized: true
-}));
+
 
 router.use(passport.initialize());
 router.use(passport.session());
 
 router.get('/login/success', (req, res) => {
   console.log('Request received at /login/success');
+
   if (req.user) {
     res.status(200).json({
       success: true,
@@ -94,6 +92,10 @@ router.get('/login/failed', (req, res) => {
     message: 'failure'
   });
 });
+
+router.get('/userId',(req,res)=>{
+  res
+})
 
 
 router.get('/logout', (req, res,next) => {
@@ -121,5 +123,8 @@ router.get('/google/callback', passport.authenticate('google', {
   successRedirect: CLIENT_URL,
   failureRedirect: '/auth/login/failed'
 }));
+
+
+
 
 export default router;

@@ -55,6 +55,7 @@ export const DisplayArtwork = () => {
                 <Card.Text>Cost: {product.cost}</Card.Text>
                 <Card.Link href={product.link}>Artwork Link</Card.Link>
                 <Card.Text>Description: {product.desc}</Card.Text>
+                
               </Card.Body>
             </Card>
 
