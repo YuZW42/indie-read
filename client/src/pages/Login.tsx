@@ -3,7 +3,7 @@ import NavBar from "../components/shared/NavBar"
 import { Header } from "../components/shared/Header"
 import User from '../components/shared/UserLogin' 
 import logout from "../components/login/Logout"
-import UserDetails from "../components/login/userdetailTest"
+import Fav from "../components/login/Favorite"
 interface UserData {
   email: string;
   name: string;
@@ -30,7 +30,7 @@ interface UserData {
   };
 
   return (
-    <>
+<>
       <Header/>
       <NavBar/>
       <button onClick={google}> Login</button>
@@ -38,16 +38,12 @@ interface UserData {
       {user ? (
         <div>
           <p>Welcome, {user.name}</p>
-
+          <button onClick={handleLogout}>Logout</button>
+          <Fav preference={user.preference} /> 
         </div>
       ) : (
         <p>Loading...</p>
-
       )}
-
-      <button onClick={handleLogout}>Logout</button>
-
-      <UserDetails/>
     </>
   )
 }

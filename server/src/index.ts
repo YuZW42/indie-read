@@ -7,6 +7,7 @@ import resources from './pages/resource/resources';
 import search from './pages/search/searchquery';
 import authRoute from './pages/login/google';
 import save_fav from './pages/save_fav/save_fav'
+import display_fav from './pages/save_fav/display_fav'
 const app = express();
 const port = 5002
 
@@ -54,9 +55,22 @@ app.get('/save_fav',async(req,res) =>{
   try {
     const result = await save_fav(String(id), Number(bookId));
     
-    res.status(200).json(result); // Send the result back as JSON response
+    res.status(200).json(result); 
   } catch (error) {
-    res.status(500).json({ error: error.message }); // Handle errors and send as JSON response
+    res.status(500).json({ error: error.message });
+  }
+})
+
+app.get('/get_fav',async(req,res) =>{
+
+  const preference = req.query;
+  
+  try {
+    const result = await display_fav( preference);
+    
+    res.status(200).json(result); 
+  } catch (error) {
+    res.status(500).json({ error: error.message }); 
   }
 })
 
