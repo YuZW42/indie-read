@@ -108,10 +108,6 @@ export const DisplayFilteredBooks = () => {
     }
   };
 
-
-
-
-
   const [bookmark, setBookmark] = useState();
   
   const handleBookmark = () => {
