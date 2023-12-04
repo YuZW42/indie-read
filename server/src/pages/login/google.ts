@@ -93,7 +93,7 @@ router.get('/login/failed', (req, res) => {
   });
 });
 
-router.get('/userId',(req,res)=>{
+router.get('/user',(req,res)=>{
   res
 })
 

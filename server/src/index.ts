@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import cookieSession from 'cookie-session';
 import passport from 'passport';
+import prisma from './pages/shared/prismaclient';
 
 import resources from './pages/resource/resources';
 import search from './pages/search/searchquery';
@@ -73,6 +74,34 @@ app.get('/get_fav',async(req,res) =>{
     res.status(500).json({ error: error.message }); 
   }
 })
+
+// Add this route to retrieve user data by ID
+app.get('/user', async (req, res) => {
+  try {
+    
+    const userEmail = req.query.list as string; // Extract the email from the query params
+    
+    if (!userEmail) {
+      return res.status(400).json({ message: 'Email parameter is missing' });
+    }
+
+    // Retrieve the user data based on the user's email
+    const user = await prisma.user.findFirst({
+      where: { email: userEmail },
+      // Include additional fields if needed
+      include: { /* additional fields */ }
+    });
+
+    if (!user) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+    console.log(user)
+    return res.status(200).json(user);
+  } catch (error) {
+    console.error('Error retrieving user:', error);
+    return res.status(500).json({ message: 'Error retrieving user data' });
+  }
+});
 
 
 app.get('/api/healthchecker', (_, res) => {

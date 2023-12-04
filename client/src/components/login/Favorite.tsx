@@ -12,8 +12,9 @@ const Fav = ({ preference}: { preference: any }) => {
         const fetchedBooks = response.data; 
        
         setFavoriteBooks(fetchedBooks);
-      } catch (error) {
         
+      } catch (error) {
+
         console.error(error);
         throw new Error('Failed to fetch favorite books');
       }

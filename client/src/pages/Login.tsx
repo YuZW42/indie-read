@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import NavBar from "../components/shared/NavBar"
 import { Header } from "../components/shared/Header"
 import User from '../components/shared/UserLogin' 
 import logout from "../components/login/Logout"
 import Fav from "../components/login/Favorite"
+import axios from 'axios';
 interface UserData {
   email: string;
   name: string;
@@ -28,6 +29,34 @@ interface UserData {
       setUser(null); 
 
   };
+  //experiement
+  const fetchUserData = async () => {
+    
+      try {
+        const response = await axios.get(`http://localhost:5002/user?list=${user?.email}`);
+        if (response.status === 200) {
+          const userData = response.data;
+          console.log('sucess')
+          setUser(userData);
+        } else {
+          throw new Error('Failed to fetch user data');
+        }
+      } catch (error) {
+        console.error('Error fetching user data:', error);
+      }
+    };
+    
+ 
+
+  // Function to handle refresh button click
+  const handleRefresh = () => {
+    fetchUserData();
+  };
+
+  useEffect(() => {
+    // Fetch initial user data when the component mounts
+    fetchUserData();
+  }, []);
 
   return (
 <>
@@ -40,9 +69,13 @@ interface UserData {
           <p>Welcome, {user.name}</p>
           <button onClick={handleLogout}>Logout</button>
           <Fav preference={user.preference} /> 
+          <button onClick={handleRefresh}>Refresh</button>
+
         </div>
       ) : (
         <p>Loading...</p>
+
+        
       )}
     </>
   )
