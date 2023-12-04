@@ -68,12 +68,12 @@ export const DisplayFilteredBooks = () => {
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
   };
-/*
-  const handleSaveClick = async (bookId:number) => {
-    const { handleClick } = handleTitleClick(bookId); // Avoid using hooks conditionally or inside loops
-
-    await handleClick(bookId); // Invoking handleClick method
-  };*/
+  /*
+    const handleSaveClick = async (bookId:number) => {
+      const { handleClick } = handleTitleClick(bookId); // Avoid using hooks conditionally or inside loops
+  
+      await handleClick(bookId); // Invoking handleClick method
+    };*/
   const handleSaveClick = async (bookId: number) => {
     try {
       const response = await axios.get('http://localhost:5002/auth/login/success', {
@@ -108,10 +108,10 @@ export const DisplayFilteredBooks = () => {
     }
   };
 
-  const [bookmark, setBookmark] = useState();
-  
+  const [bookmark, setBookmark] = useState(true);
+
   const handleBookmark = () => {
-    console.log("bookmark clicked");
+    setBookmark((prev) => !prev);
   }
 
   return (
@@ -122,7 +122,6 @@ export const DisplayFilteredBooks = () => {
             <Row>
               <Col>
                 <Form.Group controlId="yearFilter">
-                  <Form.Label>Publication Date</Form.Label>
                   <Form.Control
                     as="select"
                     value={yearFilter}
@@ -136,7 +135,6 @@ export const DisplayFilteredBooks = () => {
               </Col>
               <Col>
                 <Form.Group controlId="costFilter">
-                  <Form.Label>Price</Form.Label>
                   <Form.Control
                     as="select"
                     value={costFilter}
@@ -154,7 +152,7 @@ export const DisplayFilteredBooks = () => {
           </Container>
         </Form>
 
-        <Container className="display-artbooks-container">
+        <Container className="display-artbooks-container" style={{ marginTop: "2em", marginBottom: "2em" }}>
           <Row>
             {currentItems.map((book) => (
               <Col
@@ -162,29 +160,44 @@ export const DisplayFilteredBooks = () => {
                 xs={12}
                 sm={6}
                 md={3}
-                lg={2}
                 className="product-col"
+                style={{ padding: "1em" }}
               >
                 <Link to={`/details/${book.temp_id}`} target="_blank" className="product-item">
+                  <div className="book-title">
                     {book.title}
-                    {book.images ? (
-                      <Card.Img
-                        variant="top"
-                        src={book.images[0]}
-                        style={{ width: "100%", height: "200px" }}
-                        alt="Artwork"
-                      />
-                    ) : (
-                      <img
-                        src={placeholder}
-                        alt="Placeholder Artwork"
-                        style={{ width: "100", height: "200px" }}
-                      />
-                    )}
-                    <div className="text-muted">
-                      <IoBookOutline className="bookmark" onClick={() => handleBookmark}/>
-                      ${book.price}.00
+
+                  </div>
+                  {book.images ? (
+                    <Card.Img
+                      variant="top"
+                      src={book.images[0]}
+                      className="book-image"
+                      style={{ width: "100%", height: "100%" }}
+                      alt="Artwork"
+                    />
+                  ) : (
+                    <img
+                      src={placeholder}
+                      alt="Placeholder Artwork"
+                      style={{ width: "100", height: "200px" }}
+                    />
+                  )}
+                  <div className="card-footer">
+
+                    <div>
+                      {bookmark ? (
+                        <IoBookOutline onClick={handleBookmark} className="bookmark"/>
+                      ) : (
+                        <IoBookSharp onClick={handleBookmark} className="bookmark" />
+                      )}
+                    </div>                      
+                    
+                    <div className="card-info">
+                      <span>{book.author ? book.author : "No Author"}</span>
+                      <span>{"$" + (book.price ? book.price + ".00" : "No Price")}</span>
                     </div>
+                  </div>
                 </Link>
               </Col>
             ))}
