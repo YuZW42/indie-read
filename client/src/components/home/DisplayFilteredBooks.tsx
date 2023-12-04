@@ -108,52 +108,68 @@ export const DisplayFilteredBooks = () => {
     }
   };
 
-  const [bookmark, setBookmark] = useState(true);
+  const [bookmarkStatus, setBookmarkStatus] = useState({});
 
-  const handleBookmark = () => {
-    setBookmark((prev) => !prev);
-  }
+  // Function to handle bookmark toggle for a specific card ID
+  const handleBookmark = (cardId) => {
+    setBookmarkStatus((prevStatus) => ({
+      ...prevStatus,
+      [cardId]: !prevStatus[cardId], // Toggle bookmark status for the specific card ID
+    }));
+  };
 
   return (
     <div>
       <Container fluid>
-        <Form>
-          <Container className="filter-container">
-            <Row>
-              <Col>
-                <Form.Group controlId="yearFilter">
-                  <Form.Control
-                    as="select"
-                    value={yearFilter}
-                    onChange={(e) => setYearFilter(e.target.value)}
-                  >
-                    <option value="All">All</option>
-                    <option value="2023">2023</option>
-                    <option value="Past 3 Years">Past 3 Years</option>
-                  </Form.Control>
-                </Form.Group>
-              </Col>
-              <Col>
-                <Form.Group controlId="costFilter">
-                  <Form.Control
-                    as="select"
-                    value={costFilter}
-                    onChange={(e) => setCostFilter(e.target.value)}
-                  >
-                    <option value="All">All</option>
-                    <option value="10">$10</option>
-                    <option value="10-25">$10-$25</option>
-                    <option value="25-50">$25-$50</option>
-                    <option value="50+">Over $50</option>
-                  </Form.Control>
-                </Form.Group>
-              </Col>
-            </Row>
-          </Container>
-        </Form>
 
         <Container className="display-artbooks-container" style={{ marginTop: "2em", marginBottom: "2em" }}>
           <Row>
+          <Container className="filter-container">
+          <Row className="dropdown-row">
+
+          <Col>
+            <Form.Group controlId="costFilter" className="custom-dropdown-group">
+                <Form.Control
+                  as="select"
+                  value={costFilter}
+                  onChange={(e) => setCostFilter(e.target.value)}
+                >
+                  <option value="All">All</option>
+                  <option value="10">$10</option>
+                  <option value="10-25">$10-$25</option>
+                  <option value="25-50">$25-$50</option>
+                  <option value="50+">Over $50</option>
+                </Form.Control>
+                <Form.Label>Price <span id="form-icon">-</span></Form.Label>
+              </Form.Group>
+              <Form.Group controlId="yearFilter" className="custom-dropdown-group">
+                <Form.Control
+                  as="select"
+                  value={yearFilter}
+                  onChange={(e) => setYearFilter(e.target.value)}
+                >
+                  <option value="All">All</option>
+                  <option value="2023">2023</option>
+                  <option value="Past 3 Years">Past 3 Years</option>
+                </Form.Control>
+                <Form.Label>Date <span id="form-icon">-</span></Form.Label>
+              </Form.Group>
+
+              <Form.Group controlId="costFilter" className="custom-dropdown-group">
+                <Form.Control
+                  as="select"
+                  value={costFilter}
+                >
+                  <option value="book">Book</option>
+                  <option value="zine">Zine</option>
+                  <option value="emphemera">Emphemera</option>
+                </Form.Control>
+                <Form.Label>Format <span id="form-icon">-</span></Form.Label>
+              </Form.Group>
+
+            </Col>
+          </Row>
+        </Container>
             {currentItems.map((book) => (
               <Col
                 key={book.temp_id}
@@ -173,7 +189,7 @@ export const DisplayFilteredBooks = () => {
                       variant="top"
                       src={book.images[0]}
                       className="book-image"
-                      style={{ width: "100%", height: "100%" }}
+                      style={{ aspectRatio: "auto" }}
                       alt="Artwork"
                     />
                   ) : (
@@ -185,14 +201,10 @@ export const DisplayFilteredBooks = () => {
                   )}
                   <div className="card-footer">
 
-                    <div>
-                      {bookmark ? (
-                        <IoBookOutline onClick={handleBookmark} className="bookmark"/>
-                      ) : (
-                        <IoBookSharp onClick={handleBookmark} className="bookmark" />
-                      )}
-                    </div>                      
-                    
+                    <div onClick={() => handleBookmark(book.temp_id)} className="bookmark">
+                      {bookmarkStatus[book.temp_id] ? <IoBookSharp /> : <IoBookOutline />}
+                    </div>
+
                     <div className="card-info">
                       <span>{book.author ? book.author : "No Author"}</span>
                       <span>{"$" + (book.price ? book.price + ".00" : "No Price")}</span>
