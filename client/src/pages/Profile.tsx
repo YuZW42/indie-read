@@ -9,7 +9,6 @@ import img from "../images/placeholder.png"
 
 // import { Container, Row, Col, Card, Pagination, Form } from "react-bootstrap";
 
-
 export const Profile = () => {
   return (
     <div className="parent-container">
@@ -35,7 +34,6 @@ export const Profile = () => {
             <img src={img}/>
             <img src={img}/>
             <img src={img}/>
-            
         </div>
       </div>
     </div>

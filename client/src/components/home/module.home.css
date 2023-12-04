@@ -182,24 +182,40 @@
     font-weight: 100;
 }
 
-.product-col {
-    padding: 10px;
+/* .product-item {
+} */
+
+.product-row {
+    margin: 0;
+    padding: 0;
 }
 
+ .product-col {
+    margin: 0;
+    border: 1px solid black;
+}
+
+.bookmark {
+    height: 25px;
+    width: 25px;
+
+    cursor: pointer;
+}
+/*
 .product-item {
 border: 1px solid #ddd;
 padding: 10px;
 text-align: center;
 margin-bottom: 20px;
-height: 100%; /* Make all items the same height */
-max-height: 300px; /* Set a fixed maximum height for the cards */
-overflow: hidden; /* Hide content that exceeds the maximum height */
+height: 100%;
+max-height: 300px;
+overflow: hidden;
 }
 
 .pagination-container {
     max-width: 100%;
     overflow: auto; 
-}
+} */
 
   /**************************** POST BUTTON SECTION ****************************/
 .btn-container {

@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Container, Row, Col, Card, Pagination, Form } from "react-bootstrap";
 
 import cfba_json from "../../../../server/outputs/cfba.json";
-import placeholder from "../../images/placeholder.png";
+import placeholder from "../../images/placeholder.png"
+
 import "./module.home.css";
 
 import { PostButton } from "../shared/PostButton";
@@ -10,6 +11,9 @@ import { Link } from "react-router-dom";
 
 import handleTitleClick from "./SaveFav";
 import axios from "axios";
+
+import { IoBookOutline, IoBookSharp } from "react-icons/io5";
+
 export const DisplayFilteredBooks = () => {
   // interface Book {
   //   title: string;
@@ -107,9 +111,16 @@ export const DisplayFilteredBooks = () => {
 
 
 
+
+  const [bookmark, setBookmark] = useState();
+  
+  const handleBookmark = () => {
+    console.log("bookmark clicked");
+  }
+
   return (
     <div>
-      <div>
+      <Container fluid>
         <Form>
           <Container className="filter-container">
             <Row>
@@ -150,10 +161,16 @@ export const DisplayFilteredBooks = () => {
         <Container className="display-artbooks-container">
           <Row>
             {currentItems.map((book) => (
-              <Col key={book.temp_id} xs={12} sm={6} lg={2} className="product-col">
-                 <button onClick={() => handleSaveClick(book.temp_id)}>Sav</button>
-                <Link to={`/details/${book.temp_id}`} target="_blank">
-                  <Card className="product-item">
+              <Col
+                key={book.temp_id}
+                xs={12}
+                sm={6}
+                md={3}
+                lg={2}
+                className="product-col"
+              >
+                <Link to={`/details/${book.temp_id}`} target="_blank" className="product-item">
+                    {book.title}
                     {book.images ? (
                       <Card.Img
                         variant="top"
@@ -168,16 +185,10 @@ export const DisplayFilteredBooks = () => {
                         style={{ width: "100", height: "200px" }}
                       />
                     )}
-                    <Card.Body>
-                      <Card.Title>
-                        {book.title} - ${book.price}.00
-                      </Card.Title>
-                     
-   
-                      <Card.Text>Year {book.year}</Card.Text>
-                      <Card.Text>{book.description}</Card.Text>
-                    </Card.Body>
-                  </Card>
+                    <div className="text-muted">
+                      <IoBookOutline className="bookmark" onClick={() => handleBookmark}/>
+                      ${book.price}.00
+                    </div>
                 </Link>
               </Col>
             ))}
@@ -213,7 +224,7 @@ export const DisplayFilteredBooks = () => {
             </Pagination>
           </div>
         </Container>
-      </div>
+      </Container>
     </div>
   );
 };
