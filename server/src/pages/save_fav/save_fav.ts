@@ -28,10 +28,10 @@ async function save(id: string, bookId: number) {
         });
 
         console.log(`Preference updated for user with id ${user.id}`);
-        // Additional handling or logging here
+ 
       } catch (error) {
         console.error(`Error updating user with id ${user.id}: ${error.message}`);
-        // Handle errors during update for specific users
+
       }
     }
 

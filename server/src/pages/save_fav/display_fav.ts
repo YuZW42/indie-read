@@ -10,7 +10,7 @@ async function display_fav(preference: any) {
 
     const uniqueBookIdsArray = Array.from(uniqueBookIds);
 
-    console.log("array",preference)
+
     const books = await prisma.book.findMany({
       where: {
         temp_id: {

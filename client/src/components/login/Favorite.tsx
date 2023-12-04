@@ -7,12 +7,13 @@ const Fav = ({ preference}: { preference: any }) => {
   useEffect(() => {
     const fetchFavoriteBooks = async () => {
       try {
-        console.log("p",preference.q)
+        
         const response = await axios.get(`http://localhost:5002/get_fav?list=${preference.q}`);
         const fetchedBooks = response.data; 
        
         setFavoriteBooks(fetchedBooks);
       } catch (error) {
+        
         console.error(error);
         throw new Error('Failed to fetch favorite books');
       }
