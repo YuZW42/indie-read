@@ -1,7 +1,7 @@
-import React, { useState, ChangeEvent } from 'react';
-import { Container } from 'react-bootstrap';
+import React, { useState, ChangeEvent, KeyboardEvent } from 'react';
+import { Container, Row, Col, Card } from "react-bootstrap";
 
-import "./module.search.css"
+import "./module.search.css";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 
 interface SearchBarProps {
@@ -19,12 +19,19 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
     onSearch(searchQuery);
   };
 
+  const handleKeyPress = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+  };
+
   return (
     <div className='search-container'>
       <input
         type="text"
         value={searchQuery}
         onChange={handleInputChange}
+        onKeyDown={handleKeyPress} 
         placeholder="Type a title or any keyword"
         className='search-input'
       />

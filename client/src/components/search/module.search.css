@@ -1,7 +1,11 @@
+@import "../../../styles/colors.css";
+
 * {
     padding: 0;
     margin: 0;
 }
+
+/* SEARCH BAR  */
 
 .search-container {
     width: 100vw;
@@ -17,15 +21,48 @@
     margin: 0 2em 0 2em;
     padding: 1em 2em;
 
-    background-color: rgba(146, 146, 246, 0.479);
+    background-color: var(--tertiary-soft-blue);
 
     width: 40%;
 }
 
+.search-input::placeholder {
+    color: var(--primary-blue);
+    font-weight: bold;
+}
+
 .search-btn {
-    background-color: blue;
+    background-color: var(--primary-blue);
 
     border-radius: 0;
-    border: 1px solid black;
+    border: 1.5px solid black;
 
+}
+
+/* SEARCH RESULT */
+
+.search-result-container {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+    margin: 2em 0;
+    height: auto;
+
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2em 0;
+}
+
+.search-result-container > ul {
+    list-style: none;
+}
+
+#no-result-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--primary-blue)
 }

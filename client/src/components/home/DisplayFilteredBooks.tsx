@@ -36,6 +36,8 @@ export const DisplayFilteredBooks = () => {
 
   const [yearFilter, setYearFilter] = useState<string>("All");
   const [costFilter, setCostFilter] = useState<string>("All");
+  const [formatFilter, setFormatFilter] = useState<string>("All");
+
 
   // Apply filtering and sorting to the entire dataset
   const filteredAndSortedBooks = cfba_json.filter((book) => {
@@ -53,6 +55,13 @@ export const DisplayFilteredBooks = () => {
         (costFilter === "50+" && book.price > 50))
     );
   });
+
+  const handleClear = () => {
+    console.log("cleared all filters")
+
+    setCostFilter("All")
+    setYearFilter("All")
+  }
 
   const itemsPerPage = 15;
 
@@ -74,7 +83,10 @@ export const DisplayFilteredBooks = () => {
   
       await handleClick(bookId); // Invoking handleClick method
     };*/
-  const handleSaveClick = async (bookId: number) => {
+
+  const [bookmarkStatus, setBookmarkStatus] = useState({});
+
+  const handleSaveClick = async (bookId: any) => {
     setBookmarkStatus((prevStatus) => ({
       ...prevStatus,
       [bookId]: !prevStatus[bookId], // Toggle bookmark status for the specific card ID
@@ -116,7 +128,48 @@ export const DisplayFilteredBooks = () => {
     }
   };
 
-  const [bookmarkStatus, setBookmarkStatus] = useState({});
+  const getCostLabel = () => {
+    switch (costFilter) {
+      case "All":
+        return "All";
+      case "10":
+        return "$10";
+      case "10-25":
+        return "$10-$25";
+      case "25-50":
+        return "$25-$50";
+      case "50+":
+        return "Over $50";
+      default:
+        return "Price";
+    }
+  };
+
+  const getDateLabel = () => {
+    switch (yearFilter) {
+      case "All":
+        return "All";
+      case "2023":
+        return "2023";
+      case "Past 3 Years":
+        return "Past 3 Years";
+      default:
+        return "Date";
+    }
+  };
+
+  const getFormatLabel = () => {
+    switch (costFilter) {
+      case "Book":
+        return "Book";
+      case "Zine":
+        return "Zine";
+      case "Emphemera":
+        return "Emphemera";
+      default:
+        return "Format";
+    }
+  };
 
   return (
     <div>
@@ -129,6 +182,13 @@ export const DisplayFilteredBooks = () => {
         >
           <Row className="artwork-row">
             <Col xs={12} md={2} className="filter-option">
+              <button 
+                className="clear-filter-btn" 
+                onClick={() => handleClear()}
+              >
+                  Clear Filter
+              </button>
+
               <Form.Group
                 controlId="costFilter"
                 className="custom-dropdown-group"
@@ -145,40 +205,37 @@ export const DisplayFilteredBooks = () => {
                   <option value="25-50">$25-$50</option>
                   <option value="50+">Over $50</option>
                 </Form.Control>
-                <Form.Label>
-                  Price <span id="form-icon">-</span>
-                </Form.Label>
+                <Form.Label>{getCostLabel()}</Form.Label>
               </Form.Group>
-              <Form.Group
-                controlId="yearFilter"
-                className="custom-dropdown-group"
-              >
+
+              <Form.Group className="custom-dropdown-group">
                 <Form.Control
                   as="select"
                   value={yearFilter}
                   onChange={(e) => setYearFilter(e.target.value)}
+                  className="form-control"
                 >
                   <option value="All">All</option>
                   <option value="2023">2023</option>
                   <option value="Past 3 Years">Past 3 Years</option>
                 </Form.Control>
-                <Form.Label>
-                  Date <span id="form-icon">-</span>
-                </Form.Label>
+                <Form.Label>{getDateLabel()}</Form.Label>
               </Form.Group>
 
               <Form.Group
                 controlId="costFilter"
                 className="custom-dropdown-group"
               >
-                <Form.Control as="select" value={costFilter}>
+                <Form.Control
+                  as="select"
+                  value={formatFilter}
+                  className="form-control"
+                >
                   <option value="book">Book</option>
                   <option value="zine">Zine</option>
                   <option value="emphemera">Emphemera</option>
                 </Form.Control>
-                <Form.Label>
-                  Format <span id="form-icon">-</span>
-                </Form.Label>
+                <Form.Label>{getFormatLabel()}</Form.Label>
               </Form.Group>
             </Col>
 
@@ -191,8 +248,12 @@ export const DisplayFilteredBooks = () => {
                     xs={12}
                     sm={6}
                     md={3}
-                    style={{ padding: "1em", display: "flex", flexDirection: "column" }}
-                    >
+                    style={{
+                      padding: "1em",
+                      display: "flex",
+                      flexDirection: "column",
+                    }}
+                  >
                     <Link
                       to={`/details/${book.temp_id}`}
                       target="_blank"
@@ -220,22 +281,21 @@ export const DisplayFilteredBooks = () => {
                           <span>{book.author ? book.author : "No Author"}</span>
                           <span id="divider">-</span>
                           <span>
-                            {"$" +
-                              (book.price ? book.price + ".00" : "No Price")}
+                            {"$" + (book.price ? book.price + ".00" : "No Price")}
                           </span>
                         </div>
                       </div>
                     </Link>
                     <div
-                          onClick={() => handleSaveClick(book.temp_id)}
-                          className="bookmark"
-                        >
-                          {bookmarkStatus[book.temp_id] ? (
-                            <IoBookSharp />
-                          ) : (
-                            <IoBookOutline />
-                          )}
-                        </div>
+                      onClick={() => handleSaveClick(book.temp_id)}
+                      className="bookmark"
+                    >
+                      {bookmarkStatus[book.temp_id] ? (
+                        <IoBookSharp />
+                      ) : (
+                        <IoBookOutline />
+                      )}
+                    </div>
                   </Col>
                 ))}
               </Row>

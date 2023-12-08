@@ -1,6 +1,4 @@
-:root {
-    --indie-blue: #1635D7;
-}
+@import "../../../styles/colors.css";
 
 * {
     padding: 0;
@@ -10,14 +8,14 @@
 /********************************** HERO SECTION **********************************/
 .hero-section {
     height: 100vh;
-    background-color: var(--indie-blue);
+    background-color: var(--primary-blue);
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    color: white;
+    color: var(--primary-white);
 }
 
 .hero-info {
@@ -85,7 +83,7 @@
     }
 
     .hero-arrow {
-        color: white;
+        color: var(--primary-white);
         width: 5em;
         height: 8em;
     }
@@ -93,7 +91,7 @@
 
 
 .hero-arrow {
-    color: white;
+    color: var(--primary-white);
     width: 5em;
     height: 8em;
 
@@ -126,7 +124,7 @@
     align-items: center;
     padding: 2em 8em 2em 8em;
 
-    background-color: white;
+    background-color: var(--primary-white);
     font-weight: 400;
 }
 
@@ -176,7 +174,24 @@
 /********************************** DISPLAY ARTWORK **********************************/
 
 /****** dropdown section*******/
+.clear-filter-btn {
+    border-radius: 0;
+    border: 1.5px solid black;
 
+    margin: 1em 0;
+
+    background-color: var(--primary-blue);
+
+    font-weight: 300;
+    font-style: italic
+
+}
+
+.dropdown {
+    position: relative;
+
+    border: 1px solid black;
+}
 
 /******************************/
 
@@ -194,7 +209,6 @@
   }
   
 
-/**/
 .display-artbooks-container {
     position: relative;
 }
@@ -291,6 +305,13 @@
     margin: 0 6px;
 }
   
+.pagination-container {
+    margin: 2em 0;
+}
+
+.pagination {
+    color: red;
+}
 
 /*
 .product-item {
@@ -302,11 +323,9 @@ height: 100%;
 max-height: 300px;
 overflow: hidden;
 }
+*/
 
-.pagination-container {
-    max-width: 100%;
-    overflow: auto; 
-} */
+
 
   /**************************** POST BUTTON SECTION ****************************/
 .btn-container {
@@ -318,7 +337,7 @@ overflow: hidden;
     height: 100px;
     border-radius: 50%;
 
-    background-color: var(--indie-blue);
+    background-color: var(--primary-blue);
 
     display: flex;
     justify-content: center;
@@ -326,11 +345,15 @@ overflow: hidden;
 
     font-size: 75px;
     font-weight: lighter;
-    color: white;
+    color: var(--primary-white);
 
     position: absolute;
     bottom: 0;
     right: 0;
 
     margin-bottom: 2em;
+}
+
+.post-btn:hover {
+    color: var(--primary-white);
 }
