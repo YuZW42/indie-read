@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import SearchBar from '../components/search/SearchBar';
 import SearchResults from '../components/search/SearchResults'; 
-import NavBar from "../components/shared/NavBar"
-import { Header } from "../components/shared/Header"
-
 const Search: React.FC = () => {
   const [searchResults, setSearchResults] = useState<any[]>([]); 
 
@@ -26,8 +23,6 @@ const Search: React.FC = () => {
 
   return (
     <>
-      <Header /> 
-      <NavBar />
       <SearchBar onSearch={handleSearch} />
       <SearchResults results={searchResults} />
     </>

@@ -20,7 +20,6 @@ const SearchResults: React.FC<SearchResultsProps> = ({ results }) => {
   
   return (
     <div>
-      <h2>Search Results</h2>
       <ul>
         {results.map((result) => (
           <li key={result.title}>
