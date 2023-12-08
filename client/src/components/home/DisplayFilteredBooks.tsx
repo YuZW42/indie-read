@@ -2,12 +2,12 @@ import { useState } from "react";
 import { Container, Row, Col, Card, Pagination, Form } from "react-bootstrap";
 
 import cfba_json from "../../../../server/outputs/cfba.json";
-import placeholder from "../../images/placeholder.png"
-
-import "./module.home.css";
-
+import placeholder from "../../images/placeholder.png";
 import { PostButton } from "../shared/PostButton";
 import { Link } from "react-router-dom";
+import Search from "../../pages/Search";
+
+import "./module.home.css";
 
 import handleTitleClick from "./SaveFav";
 import axios from "axios";
@@ -75,19 +75,27 @@ export const DisplayFilteredBooks = () => {
       await handleClick(bookId); // Invoking handleClick method
     };*/
   const handleSaveClick = async (bookId: number) => {
+    setBookmarkStatus((prevStatus) => ({
+      ...prevStatus,
+      [bookId]: !prevStatus[bookId], // Toggle bookmark status for the specific card ID
+    }));
+
     try {
-      const response = await axios.get('http://localhost:5002/auth/login/success', {
-        withCredentials: true,
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
+      const response = await axios.get(
+        "http://localhost:5002/auth/login/success",
+        {
+          withCredentials: true,
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       if (response.status === 200) {
         const user = response.data.user;
 
         if (user) {
-          const result = await axios.get('http://localhost:5002/save_fav', {
+          const result = await axios.get("http://localhost:5002/save_fav", {
             params: {
               id: user.email,
               bookId: bookId,
@@ -96,43 +104,40 @@ export const DisplayFilteredBooks = () => {
           console.log(result.data);
           // Handle result.data as needed
         } else {
-          console.log('User not logged in');
+          console.log("User not logged in");
           // Handle case where user is not logged in
         }
       } else {
-        throw new Error('Failed to fetch user data');
+        throw new Error("Failed to fetch user data");
       }
     } catch (error) {
-      console.error('Error:', error);
+      console.error("Error:", error);
       // Handle errors as needed
     }
   };
 
   const [bookmarkStatus, setBookmarkStatus] = useState({});
 
-  // Function to handle bookmark toggle for a specific card ID
-  const handleBookmark = (cardId) => {
-    setBookmarkStatus((prevStatus) => ({
-      ...prevStatus,
-      [cardId]: !prevStatus[cardId], // Toggle bookmark status for the specific card ID
-    }));
-  };
-
   return (
     <div>
+      <Search />
+
       <Container fluid>
-
-        <Container className="display-artbooks-container" style={{ marginTop: "2em", marginBottom: "2em" }}>
-          <Row>
-          <Container className="filter-container">
-          <Row className="dropdown-row">
-
-          <Col>
-            <Form.Group controlId="costFilter" className="custom-dropdown-group">
+        <Container
+          className="display-artbooks-container"
+          style={{ marginTop: "2em", marginBottom: "2em" }}
+        >
+          <Row className="artwork-row">
+            <Col xs={12} md={2} className="filter-option">
+              <Form.Group
+                controlId="costFilter"
+                className="custom-dropdown-group"
+              >
                 <Form.Control
                   as="select"
                   value={costFilter}
                   onChange={(e) => setCostFilter(e.target.value)}
+                  className="form-control"
                 >
                   <option value="All">All</option>
                   <option value="10">$10</option>
@@ -140,9 +145,14 @@ export const DisplayFilteredBooks = () => {
                   <option value="25-50">$25-$50</option>
                   <option value="50+">Over $50</option>
                 </Form.Control>
-                <Form.Label>Price <span id="form-icon">-</span></Form.Label>
+                <Form.Label>
+                  Price <span id="form-icon">-</span>
+                </Form.Label>
               </Form.Group>
-              <Form.Group controlId="yearFilter" className="custom-dropdown-group">
+              <Form.Group
+                controlId="yearFilter"
+                className="custom-dropdown-group"
+              >
                 <Form.Control
                   as="select"
                   value={yearFilter}
@@ -152,67 +162,84 @@ export const DisplayFilteredBooks = () => {
                   <option value="2023">2023</option>
                   <option value="Past 3 Years">Past 3 Years</option>
                 </Form.Control>
-                <Form.Label>Date <span id="form-icon">-</span></Form.Label>
+                <Form.Label>
+                  Date <span id="form-icon">-</span>
+                </Form.Label>
               </Form.Group>
 
-              <Form.Group controlId="costFilter" className="custom-dropdown-group">
-                <Form.Control
-                  as="select"
-                  value={costFilter}
-                >
+              <Form.Group
+                controlId="costFilter"
+                className="custom-dropdown-group"
+              >
+                <Form.Control as="select" value={costFilter}>
                   <option value="book">Book</option>
                   <option value="zine">Zine</option>
                   <option value="emphemera">Emphemera</option>
                 </Form.Control>
-                <Form.Label>Format <span id="form-icon">-</span></Form.Label>
+                <Form.Label>
+                  Format <span id="form-icon">-</span>
+                </Form.Label>
               </Form.Group>
-
             </Col>
-          </Row>
-        </Container>
-            {currentItems.map((book) => (
-              <Col
-                key={book.temp_id}
-                xs={12}
-                sm={6}
-                md={3}
-                className="product-col"
-                style={{ padding: "1em" }}
-              >
-                <Link to={`/details/${book.temp_id}`} target="_blank" className="product-item">
-                  <div className="book-title">
-                    {book.title}
 
-                  </div>
-                  {book.images ? (
-                    <Card.Img
-                      variant="top"
-                      src={book.images[0]}
-                      className="book-image"
-                      style={{ aspectRatio: "auto" }}
-                      alt="Artwork"
-                    />
-                  ) : (
-                    <img
-                      src={placeholder}
-                      alt="Placeholder Artwork"
-                      style={{ width: "100", height: "200px" }}
-                    />
-                  )}
-                  <div className="card-footer">
-
-                    <div onClick={() => handleBookmark(book.temp_id)} className="bookmark">
-                      {bookmarkStatus[book.temp_id] ? <IoBookSharp /> : <IoBookOutline />}
-                    </div>
-
-                    <div className="card-info">
-                      <span>{book.author ? book.author : "No Author"}</span>
-                      <span>{"$" + (book.price ? book.price + ".00" : "No Price")}</span>
-                    </div>
-                  </div>
-                </Link>
-              </Col>
-            ))}
+            <Col md={10}>
+              <Row>
+                {currentItems.map((book) => (
+                  <Col
+                    key={book.temp_id}
+                    className="product-col"
+                    xs={12}
+                    sm={6}
+                    md={3}
+                    style={{ padding: "1em", display: "flex", flexDirection: "column" }}
+                    >
+                    <Link
+                      to={`/details/${book.temp_id}`}
+                      target="_blank"
+                      className="product-item"
+                      style={{ flex: 1 }}
+                    >
+                      <div className="book-title">{book.title}</div>
+                      {book.images ? (
+                        <Card.Img
+                          variant="top"
+                          src={book.images[0]}
+                          className="book-image"
+                          style={{ aspectRatio: "auto" }}
+                          alt="Artwork"
+                        />
+                      ) : (
+                        <img
+                          src={placeholder}
+                          alt="Placeholder Artwork"
+                          style={{ width: "100", height: "200px" }}
+                        />
+                      )}
+                      <div className="card-footer">
+                        <div className="card-info">
+                          <span>{book.author ? book.author : "No Author"}</span>
+                          <span id="divider">-</span>
+                          <span>
+                            {"$" +
+                              (book.price ? book.price + ".00" : "No Price")}
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                    <div
+                          onClick={() => handleSaveClick(book.temp_id)}
+                          className="bookmark"
+                        >
+                          {bookmarkStatus[book.temp_id] ? (
+                            <IoBookSharp />
+                          ) : (
+                            <IoBookOutline />
+                          )}
+                        </div>
+                  </Col>
+                ))}
+              </Row>
+            </Col>
           </Row>
 
           <PostButton />

@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.search-container {
+    width: 100vw;
+    margin: 5em 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search-input {
+    margin: 0 2em 0 2em;
+    padding: 1em 2em;
+
+    background-color: rgba(146, 146, 246, 0.479);
+
+    width: 40%;
+}
+
+.search-btn {
+    background-color: blue;
+
+    border-radius: 0;
+    border: 1px solid black;
+
+}

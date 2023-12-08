@@ -6,7 +6,6 @@ import ImageSlider from "../components/home/ImageSlider"
 import { LandingPage } from "../components/home/LandingPage"
 import { Footer } from "../components/shared/Footer"
 import { Header } from "../components/shared/Header"
-import NavBar from "../components/shared/NavBar"
 
 export const Home = () => {
   return (
@@ -14,7 +13,6 @@ export const Home = () => {
       <LandingPage/>
       <Header/>
       <ImageSlider/>
-      <NavBar/>
       <DisplayFilteredBooks/>
       {/* <DisplayArtwork/> */}
       <Footer/>

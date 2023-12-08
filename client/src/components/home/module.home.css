@@ -116,7 +116,7 @@
 }
 
 .carousel-img {
-    width: 50vw;
+    width: 100%;
 }
 
 .carousel-desc {
@@ -175,11 +175,10 @@
 
 /********************************** DISPLAY ARTWORK **********************************/
 
-/* dropdown section*/
+/****** dropdown section*******/
 
-.dropdown-row > * {
-    border: 1px solid black;
-}
+
+/******************************/
 
 .custom-dropdown-group {
     position: relative;
@@ -190,7 +189,6 @@
     top: 50%;
     left: 10px; /* Adjust the left position based on your design */
     transform: translateY(-50%);
-    z-index: 1;
     background-color: #fff; /* Optional: Set the background color to match your form background */
     padding: 0 5px; /* Optional: Add padding for better visual appearance */
   }
@@ -212,7 +210,7 @@
     justify-content: center;
     align-items: center;
 
-    z-index: -1;
+    z-index: 1;
 } 
 
 .product-row {
@@ -225,10 +223,16 @@
     border: 1px solid black;
 }
 
+.bookmark {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1em 0
+}
+
 .bookmark > *{
-
-    border: 2px solid black;
-
     height: 35px;
     width: 35px;
 
@@ -249,9 +253,13 @@
     font-size: 20px;
     font-weight: 100;
     font-style: italic;
+
+    
 }
 
 .book-image {
+    width: 50%;
+    height: 50%;
     margin: 2em;
 }
 
@@ -271,14 +279,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .card-info span {
-    flex: 1; 
+}
+
+.card-info > span {
     font-size: 18px;
     font-weight: 100;
     font-style: italic;
-  }
+}
+
+#divider {
+    margin: 0 6px;
+}
   
 
 /*
