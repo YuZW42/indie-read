@@ -1,6 +1,125 @@
 [
     {
         "temp_id": 0,
+        "url": "https://centerforbookarts.org/book-shop/chino-crafts-wearable-book-art-hard-wood-pendant-necklace",
+        "pages": null,
+        "year": null,
+        "title": "Chino Crafts Wearable Book Art – Hard Wood Pendant Necklace",
+        "author": null,
+        "price": 20.0,
+        "dimensions": "1 inch",
+        "materials": [
+            "Hard Wood",
+            "laser engraving"
+        ],
+        "description": "Necklaces with laser engraved hard wood pendants featuring two birds on an open book or a book press with flower wreaths. Waxed Cotton necklace fits over the head and is easily adjustable to shorten or lengthen Pendants are 1 inch in diameter Handmade by Chino Crafts of Nepal We bring you bone , horn and wood crafted folders that are a delight to own and work with . We have been in business for over 2 decades , supplying our finely made tools and accessories to book artists worldwide .",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_hard_wood_pendants.png",
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_hard_wood_pendant_press.png",
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_hard_wood_pendant_birds.png"
+        ]
+    },
+    {
+        "temp_id": 1,
+        "url": "https://centerforbookarts.org/book-shop/chino-crafts-large-horn-folder",
+        "pages": null,
+        "year": null,
+        "title": "Chino Crafts Large Horn Folder",
+        "author": null,
+        "price": 15.0,
+        "dimensions": "5.5 inches",
+        "materials": [
+            "natural horn"
+        ],
+        "description": "Beautiful handmade horn folder Handmade by Chino Crafts of Nepal We bring you bone , horn and wood crafted folders that are a delight to own and work with . We have been in business for over 2 decades , supplying our finely made tools and accessories to book artists worldwide .",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_horn_folder_plain.png"
+        ]
+    },
+    {
+        "temp_id": 2,
+        "url": "https://centerforbookarts.org/book-shop/chino-crafts-basic-bone-folder",
+        "pages": null,
+        "year": null,
+        "title": "Chino Crafts Basic Bone Folder",
+        "author": null,
+        "price": 6.0,
+        "dimensions": "5.5 inches",
+        "materials": [
+            "natural bone"
+        ],
+        "description": "Beautiful basic bone folder Handmade by Chino Crafts of Nepal We bring you bone , horn and wood crafted folders that are a delight to own and work with . We have been in business for over 2 decades , supplying our finely made tools and accessories to book artists worldwide .",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_basic_bone_folder_large.png"
+        ]
+    },
+    {
+        "temp_id": 3,
+        "url": "https://centerforbookarts.org/book-shop/chino-crafts-engraved-mini-bone-folder-classic-car",
+        "pages": null,
+        "year": null,
+        "title": "Chino Crafts Engraved Mini Bone Folder – classic car",
+        "author": null,
+        "price": 15.0,
+        "dimensions": "4.5 inches",
+        "materials": [
+            "natural bone"
+        ],
+        "description": "Mini Bone folder with old classic car engraving Handmade by Chino Crafts of Nepal We bring you bone , horn and wood crafted folders that are a delight to own and work with . We have been in business for over 2 decades , supplying our finely made tools and accessories to book artists worldwide .",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_old_classic_small.png",
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_old_classic_detail.png"
+        ]
+    },
+    {
+        "temp_id": 4,
+        "url": "https://centerforbookarts.org/book-shop/chino-crafts-rosewood-folders",
+        "pages": null,
+        "year": null,
+        "title": "Chino Crafts Rosewood Folders",
+        "author": null,
+        "price": null,
+        "materials": [
+            "rosewood"
+        ],
+        "description": "Rosewood folders small 4.5 inches and large 6 inches Large size comes in plain or with “save the snail” engraving Handmade by Chino Crafts of Nepal We bring you bone , horn and wood crafted folders that are a delight to own and work with . We have been in business for over 2 decades , supplying our finely made tools and accessories to book artists worldwide .",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_rose_wood.png",
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_rose_wood_large_snail_2.png",
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_rose_wood_large_snail_1.png",
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_rose_wood_small.png"
+        ]
+    },
+    {
+        "temp_id": 5,
+        "url": "https://centerforbookarts.org/book-shop/chino-crafts-engraved-bone-folders",
+        "pages": null,
+        "year": null,
+        "title": "Chino Crafts Engraved Bone Folders",
+        "author": null,
+        "price": null,
+        "dimensions": "5.5 inches",
+        "materials": [
+            "natural bone",
+            "natural horn"
+        ],
+        "description": "Engraved Bone and Horn Folders Black Engraved Horn Folder Black Engraved Bone Folder Paper Crane Bone Folder Handmade by Chino Crafts of Nepal We bring you bone , horn and wood crafted folders that are a delight to own and work with . We have been in business for over 2 decades , supplying our finely made tools and accessories to book artists worldwide .",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_line_art_black_white.png",
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_origami_crane_2.png",
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_origami_crane_1.png",
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_line_art_white.png",
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_line_art_black.png"
+        ]
+    },
+    {
+        "temp_id": 6,
         "url": "https://centerforbookarts.org/book-shop/chino-crafts-twin-treasures-mini-bone-folders-in-case",
         "pages": null,
         "year": null,
@@ -15,19 +134,19 @@
         "description": "Two mini bone and horn folders in pouch Handmade by Chino Crafts of Nepal We bring you bone , horn and wood crafted folders that are a delight to own and work with . We have been in business for over 2 decades , supplying our finely made tools and accessories to book artists worldwide .",
         "reference": null,
         "images": [
-            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_twin_tresures-1.png",
-            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_twin_tresures_3.png",
-            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_twin_tresures_2.png"
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_twin_tresures-2.png",
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_twin_tresures_2-1.png",
+            "https://centerforbookarts.org/wp-content/uploads/2023/11/chino_twin_tresures_3-1.png"
         ]
     },
     {
-        "temp_id": 1,
+        "temp_id": 7,
         "url": "https://centerforbookarts.org/book-shop/chino-crafts-teardrop-3-inch-bone-folder",
         "pages": null,
         "year": null,
         "title": "Chino Crafts Teardrop 3 inch bone folder",
         "author": null,
-        "price": 7.0,
+        "price": 14.0,
         "dimensions": "3 inches",
         "materials": [
             "natural bone"
@@ -42,7 +161,7 @@
         ]
     },
     {
-        "temp_id": 2,
+        "temp_id": 8,
         "url": "https://centerforbookarts.org/book-shop/chino-crafts-horn-handle-awl-and-case",
         "pages": null,
         "year": null,
@@ -63,13 +182,13 @@
         ]
     },
     {
-        "temp_id": 3,
+        "temp_id": 9,
         "url": "https://centerforbookarts.org/book-shop/towards-a-self-sustaining-publishing-model",
         "pages": 4,
         "year": 2021,
         "title": "Towards a Self Sustaining Publishing Model",
         "author": "Marc Fischer",
-        "price": 1.0,
+        "price": null,
         "publisher": "Public Collectors",
         "edition": "2300",
         "binding": "folio",
@@ -85,7 +204,7 @@
         ]
     },
     {
-        "temp_id": 4,
+        "temp_id": 10,
         "url": "https://centerforbookarts.org/book-shop/merchandise/pin",
         "pages": null,
         "year": 2023,
@@ -106,7 +225,7 @@
         ]
     },
     {
-        "temp_id": 5,
+        "temp_id": 11,
         "url": "https://centerforbookarts.org/book-shop/books-on-books/coup-de-des-collection-books-and-ideas-after-mallarme-preorder",
         "pages": 304,
         "year": 2024,
@@ -127,7 +246,7 @@
         ]
     },
     {
-        "temp_id": 6,
+        "temp_id": 12,
         "url": "https://centerforbookarts.org/book-shop/prints/deportee-without-a-country",
         "pages": null,
         "year": 2023,
@@ -147,7 +266,7 @@
         ]
     },
     {
-        "temp_id": 7,
+        "temp_id": 13,
         "url": "https://centerforbookarts.org/book-shop/prints/and-was-a-flower",
         "pages": null,
         "year": 2023,
@@ -175,7 +294,7 @@
         ]
     },
     {
-        "temp_id": 8,
+        "temp_id": 14,
         "url": "https://centerforbookarts.org/book-shop/prints/unentitled-women-black-or-on-being-otherwise",
         "pages": 1,
         "year": 2023,
@@ -197,7 +316,7 @@
         ]
     },
     {
-        "temp_id": 9,
+        "temp_id": 15,
         "url": "https://centerforbookarts.org/book-shop/prints/fugue",
         "pages": 1,
         "year": 2023,
@@ -221,7 +340,7 @@
         ]
     },
     {
-        "temp_id": 10,
+        "temp_id": 16,
         "url": "https://centerforbookarts.org/book-shop/artists-books/zines/can-you-see-what-i-see",
         "pages": 92,
         "year": 2023,
@@ -244,7 +363,7 @@
         ]
     },
     {
-        "temp_id": 11,
+        "temp_id": 17,
         "url": "https://centerforbookarts.org/book-shop/halloween",
         "pages": 8,
         "year": 2023,
@@ -266,7 +385,7 @@
         ]
     },
     {
-        "temp_id": 12,
+        "temp_id": 18,
         "url": "https://centerforbookarts.org/book-shop/the-jab-anthology-selections-from-the-journal-of-artists-books-1994-2020",
         "pages": 287,
         "year": 2023,
@@ -284,7 +403,7 @@
         ]
     },
     {
-        "temp_id": 13,
+        "temp_id": 19,
         "url": "https://centerforbookarts.org/book-shop/artists-books/leymusoom-giftshop",
         "pages": null,
         "year": 2023,
@@ -313,7 +432,7 @@
         ]
     },
     {
-        "temp_id": 14,
+        "temp_id": 20,
         "url": "https://centerforbookarts.org/book-shop/artists-books/photobooks/restored-access",
         "pages": 88,
         "year": 2022,
@@ -338,7 +457,7 @@
         ]
     },
     {
-        "temp_id": 15,
+        "temp_id": 21,
         "url": "https://centerforbookarts.org/book-shop/catalogs/off-register",
         "pages": 190,
         "year": 2023,
@@ -362,7 +481,7 @@
         ]
     },
     {
-        "temp_id": 16,
+        "temp_id": 22,
         "url": "https://centerforbookarts.org/book-shop/artists-books/embodied-alienation",
         "pages": null,
         "year": 2023,
@@ -389,7 +508,7 @@
         ]
     },
     {
-        "temp_id": 17,
+        "temp_id": 23,
         "url": "https://centerforbookarts.org/book-shop/artists-books/finepress/three-constitutions",
         "pages": null,
         "year": 2023,
@@ -414,7 +533,7 @@
         ]
     },
     {
-        "temp_id": 18,
+        "temp_id": 24,
         "url": "https://centerforbookarts.org/book-shop/artists-books/finepress/ornography",
         "pages": null,
         "year": 2023,
@@ -437,7 +556,7 @@
         ]
     },
     {
-        "temp_id": 19,
+        "temp_id": 25,
         "url": "https://centerforbookarts.org/book-shop/artists-books/z-is-for-zahar",
         "pages": null,
         "year": 2021,
@@ -463,7 +582,7 @@
         ]
     },
     {
-        "temp_id": 20,
+        "temp_id": 26,
         "url": "https://centerforbookarts.org/book-shop/artists-books/finepress/body-of-evidence-2",
         "pages": null,
         "year": 2022,
@@ -497,7 +616,7 @@
         ]
     },
     {
-        "temp_id": 21,
+        "temp_id": 27,
         "url": "https://centerforbookarts.org/book-shop/merchandise/letterpress-bookmark",
         "pages": null,
         "year": null,
@@ -512,7 +631,24 @@
         ]
     },
     {
-        "temp_id": 22,
+        "temp_id": 28,
+        "url": "https://centerforbookarts.org/book-shop/triangles-set-of-2",
+        "pages": null,
+        "year": null,
+        "title": "6 inch Metal Triangle",
+        "author": null,
+        "price": 8.0,
+        "materials": null,
+        "description": "6 inch metal triangle, choice of 45/90 or 30/60/90.",
+        "reference": null,
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2023/08/triangles_1.png",
+            "https://centerforbookarts.org/wp-content/uploads/2023/08/triangles_2.png",
+            "https://centerforbookarts.org/wp-content/uploads/2023/08/triangles_3.png"
+        ]
+    },
+    {
+        "temp_id": 29,
         "url": "https://centerforbookarts.org/book-shop/ephemera/beau-geste-press-exhibition-brochure",
         "pages": 6,
         "year": 2023,
@@ -530,7 +666,7 @@
         ]
     },
     {
-        "temp_id": 23,
+        "temp_id": 30,
         "url": "https://centerforbookarts.org/book-shop/ephemera/rituals-here-exhibition-brochure",
         "pages": 1,
         "year": 2023,
@@ -548,7 +684,7 @@
         ]
     },
     {
-        "temp_id": 24,
+        "temp_id": 31,
         "url": "https://centerforbookarts.org/book-shop/ephemera/i-couldnt-read-what-i-dreamt-of-exhibition-brochure",
         "pages": 1,
         "year": 2023,
@@ -566,7 +702,7 @@
         ]
     },
     {
-        "temp_id": 25,
+        "temp_id": 32,
         "url": "https://centerforbookarts.org/book-shop/studio/galley-tray-type-setting-deposit-for-studio-rental",
         "pages": null,
         "year": null,
@@ -584,7 +720,7 @@
         ]
     },
     {
-        "temp_id": 26,
+        "temp_id": 33,
         "url": "https://centerforbookarts.org/book-shop/studio/additional-storage-for-studio-rental",
         "pages": null,
         "year": null,
@@ -600,7 +736,7 @@
         ]
     },
     {
-        "temp_id": 27,
+        "temp_id": 34,
         "url": "https://centerforbookarts.org/book-shop/artists-books/department-of-n-s-a-no-strings-attached-office-of-memorandums-extracts-vol-1",
         "pages": null,
         "year": 2023,
@@ -619,7 +755,7 @@
         ]
     },
     {
-        "temp_id": 28,
+        "temp_id": 35,
         "url": "https://centerforbookarts.org/book-shop/artists-books/kick-activist",
         "pages": null,
         "year": null,
@@ -642,7 +778,7 @@
         ]
     },
     {
-        "temp_id": 29,
+        "temp_id": 36,
         "url": "https://centerforbookarts.org/book-shop/artists-books/aerotomania-flight-deck",
         "pages": 52,
         "year": 2022,
@@ -666,7 +802,7 @@
         ]
     },
     {
-        "temp_id": 30,
+        "temp_id": 37,
         "url": "https://centerforbookarts.org/book-shop/merchandise/bookmarks-by-slavko",
         "pages": null,
         "year": 2023,
@@ -686,7 +822,7 @@
         ]
     },
     {
-        "temp_id": 31,
+        "temp_id": 38,
         "url": "https://centerforbookarts.org/book-shop/studio/hourly-studio-rental-punch-cards",
         "pages": null,
         "year": null,
@@ -707,7 +843,7 @@
         ]
     },
     {
-        "temp_id": 32,
+        "temp_id": 39,
         "url": "https://centerforbookarts.org/book-shop/studio/monthly-studio-rental",
         "pages": null,
         "year": null,
@@ -726,7 +862,7 @@
         ]
     },
     {
-        "temp_id": 33,
+        "temp_id": 40,
         "url": "https://centerforbookarts.org/book-shop/books-on-books/bar-issue-2",
         "pages": 84,
         "year": 2023,
@@ -749,7 +885,7 @@
         ]
     },
     {
-        "temp_id": 34,
+        "temp_id": 41,
         "url": "https://centerforbookarts.org/book-shop/artists-books/finepress/e-unum-pluribus-2",
         "pages": 33,
         "year": 2022,
@@ -775,7 +911,7 @@
         ]
     },
     {
-        "temp_id": 35,
+        "temp_id": 42,
         "url": "https://centerforbookarts.org/book-shop/prints/enlisting-whitman-and-emerson",
         "pages": null,
         "year": 2023,
@@ -798,7 +934,7 @@
         ]
     },
     {
-        "temp_id": 36,
+        "temp_id": 43,
         "url": "https://centerforbookarts.org/book-shop/prints/into-the-bookbinding-jungle",
         "pages": null,
         "year": 2023,
@@ -820,7 +956,7 @@
         ]
     },
     {
-        "temp_id": 37,
+        "temp_id": 44,
         "url": "https://centerforbookarts.org/book-shop/artists-books/zines/moms-magnets",
         "pages": null,
         "year": null,
@@ -835,7 +971,7 @@
         ]
     },
     {
-        "temp_id": 38,
+        "temp_id": 45,
         "url": "https://centerforbookarts.org/book-shop/prints/endless-night-where-are-we-now",
         "pages": 1,
         "year": 2023,
@@ -855,7 +991,7 @@
         ]
     },
     {
-        "temp_id": 39,
+        "temp_id": 46,
         "url": "https://centerforbookarts.org/book-shop/prints/we-are-rain",
         "pages": null,
         "year": 2023,
@@ -876,7 +1012,7 @@
         ]
     },
     {
-        "temp_id": 40,
+        "temp_id": 47,
         "url": "https://centerforbookarts.org/book-shop/prints/the-abc-model-of-flower-development",
         "pages": 1,
         "year": 2023,
@@ -897,7 +1033,7 @@
         ]
     },
     {
-        "temp_id": 41,
+        "temp_id": 48,
         "url": "https://centerforbookarts.org/book-shop/prints/alive-in-the-radio-and-bluff",
         "pages": 1,
         "year": 2023,
@@ -921,7 +1057,7 @@
         ]
     },
     {
-        "temp_id": 42,
+        "temp_id": 49,
         "url": "https://centerforbookarts.org/book-shop/prints/when-i-say-your-name",
         "pages": 1,
         "year": 2023,
@@ -942,7 +1078,7 @@
         ]
     },
     {
-        "temp_id": 43,
+        "temp_id": 50,
         "url": "https://centerforbookarts.org/book-shop/prints/utopia-selector",
         "pages": 1,
         "year": 2023,
@@ -964,7 +1100,7 @@
         ]
     },
     {
-        "temp_id": 44,
+        "temp_id": 51,
         "url": "https://centerforbookarts.org/book-shop/prints/all-power-to-the-people",
         "pages": null,
         "year": 2023,
@@ -986,7 +1122,7 @@
         ]
     },
     {
-        "temp_id": 45,
+        "temp_id": 52,
         "url": "https://centerforbookarts.org/book-shop/how-to-books/publishing-now-genderfails-working-class-guide-to-making-a-living-off-self-publishing",
         "pages": 140,
         "year": 2023,
@@ -1004,7 +1140,7 @@
         ]
     },
     {
-        "temp_id": 46,
+        "temp_id": 53,
         "url": "https://centerforbookarts.org/book-shop/books-on-books/subscribe-to-bar",
         "pages": 84,
         "year": 2023,
@@ -1031,7 +1167,7 @@
         ]
     },
     {
-        "temp_id": 47,
+        "temp_id": 54,
         "url": "https://centerforbookarts.org/book-shop/prints/a-language-act",
         "pages": 1,
         "year": 2023,
@@ -1053,13 +1189,13 @@
         ]
     },
     {
-        "temp_id": 48,
+        "temp_id": 55,
         "url": "https://centerforbookarts.org/book-shop/how-to-books/cheap-copies",
         "pages": 108,
         "year": 2022,
         "title": "CHEAP COPIES!",
         "author": null,
-        "price": 30.0,
+        "price": null,
         "publisher": "Obsolete Press",
         "edition": "unlimited",
         "binding": "Wire-o Softcover",
@@ -1078,7 +1214,7 @@
         ]
     },
     {
-        "temp_id": 49,
+        "temp_id": 56,
         "url": "https://centerforbookarts.org/book-shop/ephemera/language-cover-page",
         "pages": null,
         "year": 2014,
@@ -1099,7 +1235,7 @@
         ]
     },
     {
-        "temp_id": 50,
+        "temp_id": 57,
         "url": "https://centerforbookarts.org/book-shop/books-on-books/cca-catalog",
         "pages": 120,
         "year": 2023,
@@ -1124,7 +1260,7 @@
         ]
     },
     {
-        "temp_id": 51,
+        "temp_id": 58,
         "url": "https://centerforbookarts.org/book-shop/artists-books/we-web-keepers",
         "pages": 1,
         "year": 2022,
@@ -1143,7 +1279,7 @@
         ]
     },
     {
-        "temp_id": 52,
+        "temp_id": 59,
         "url": "https://centerforbookarts.org/book-shop/artists-books/scaffolding",
         "pages": 26,
         "year": 2023,
@@ -1169,13 +1305,13 @@
         ]
     },
     {
-        "temp_id": 53,
+        "temp_id": 60,
         "url": "https://centerforbookarts.org/book-shop/artists-books/powers-of-ten",
         "pages": null,
         "year": 2022,
         "title": "Powers of Ten",
         "author": "Kelli Anderson",
-        "price": null,
+        "price": 30.0,
         "publisher": "Kelli Anderson",
         "edition": "400",
         "binding": "flipbook",
@@ -1190,7 +1326,7 @@
         ]
     },
     {
-        "temp_id": 54,
+        "temp_id": 61,
         "url": "https://centerforbookarts.org/book-shop/karmele-leizaola",
         "pages": null,
         "year": 2022,
@@ -1209,20 +1345,26 @@
         ]
     },
     {
-        "temp_id": 55,
+        "temp_id": 62,
         "url": "https://centerforbookarts.org/book-shop/tools/snapoff-cutter",
         "pages": null,
         "year": null,
         "title": "Snapoff Cutter",
         "author": null,
         "price": 6.0,
-        "materials": null,
-        "description": "Exacto blade",
+        "dimensions": "5 inches",
+        "materials": [
+            "stainless steel"
+        ],
+        "description": "Snap off style small sliding utility knife",
         "reference": null,
-        "images": null
+        "images": [
+            "https://centerforbookarts.org/wp-content/uploads/2022/12/snap_off_2.png",
+            "https://centerforbookarts.org/wp-content/uploads/2022/12/snap_off_1.png"
+        ]
     },
     {
-        "temp_id": 56,
+        "temp_id": 63,
         "url": "https://centerforbookarts.org/book-shop/broadside/title",
         "pages": null,
         "year": 2022,
@@ -1240,7 +1382,7 @@
         ]
     },
     {
-        "temp_id": 57,
+        "temp_id": 64,
         "url": "https://centerforbookarts.org/book-shop/broadside/hard-problem-of-consciousness-2",
         "pages": null,
         "year": 2022,
@@ -1258,7 +1400,7 @@
         ]
     },
     {
-        "temp_id": 58,
+        "temp_id": 65,
         "url": "https://centerforbookarts.org/book-shop/chapbook/plant-thought",
         "pages": 24,
         "year": 2022,
@@ -1277,7 +1419,7 @@
         ]
     },
     {
-        "temp_id": 59,
+        "temp_id": 66,
         "url": "https://centerforbookarts.org/book-shop/chapbook/cairo-the-undelivered-letters",
         "pages": 24,
         "year": 2022,
@@ -1296,7 +1438,7 @@
         ]
     },
     {
-        "temp_id": 60,
+        "temp_id": 67,
         "url": "https://centerforbookarts.org/book-shop/broadside/my-feelings-become-public",
         "pages": 1,
         "year": 2022,
@@ -1315,7 +1457,7 @@
         ]
     },
     {
-        "temp_id": 61,
+        "temp_id": 68,
         "url": "https://centerforbookarts.org/book-shop/broadside/playdate",
         "pages": 1,
         "year": 2022,
@@ -1334,7 +1476,7 @@
         ]
     },
     {
-        "temp_id": 62,
+        "temp_id": 69,
         "url": "https://centerforbookarts.org/book-shop/broadside/in-the-morning",
         "pages": 1,
         "year": 2022,
@@ -1353,7 +1495,7 @@
         ]
     },
     {
-        "temp_id": 63,
+        "temp_id": 70,
         "url": "https://centerforbookarts.org/book-shop/broadside/i-feel-sad",
         "pages": 1,
         "year": 2022,
@@ -1372,7 +1514,7 @@
         ]
     },
     {
-        "temp_id": 64,
+        "temp_id": 71,
         "url": "https://centerforbookarts.org/book-shop/broadside/goodbye-horses",
         "pages": 1,
         "year": 2022,
@@ -1391,7 +1533,7 @@
         ]
     },
     {
-        "temp_id": 65,
+        "temp_id": 72,
         "url": "https://centerforbookarts.org/book-shop/broadside/listen",
         "pages": null,
         "year": 2022,
@@ -1409,7 +1551,7 @@
         ]
     },
     {
-        "temp_id": 66,
+        "temp_id": 73,
         "url": "https://centerforbookarts.org/book-shop/broadside/four-great-errors",
         "pages": null,
         "year": 2022,
@@ -1427,7 +1569,7 @@
         ]
     },
     {
-        "temp_id": 67,
+        "temp_id": 74,
         "url": "https://centerforbookarts.org/book-shop/broadside/hard-problem-of-consciousness",
         "pages": 1,
         "year": 2022,
@@ -1448,7 +1590,7 @@
         ]
     },
     {
-        "temp_id": 68,
+        "temp_id": 75,
         "url": "https://centerforbookarts.org/book-shop/books-on-books/pattern-and-flow",
         "pages": 188,
         "year": 2023,
@@ -1470,7 +1612,7 @@
         ]
     },
     {
-        "temp_id": 69,
+        "temp_id": 76,
         "url": "https://centerforbookarts.org/book-shop/artists-books/kelli-anderson-book",
         "pages": 56,
         "year": 2022,
@@ -1496,7 +1638,7 @@
         ]
     },
     {
-        "temp_id": 70,
+        "temp_id": 77,
         "url": "https://centerforbookarts.org/book-shop/artists-books/collective-roadmap",
         "pages": null,
         "year": 2022,
@@ -1522,7 +1664,7 @@
         ]
     },
     {
-        "temp_id": 71,
+        "temp_id": 78,
         "url": "https://centerforbookarts.org/book-shop/catalogs/tideline-press-catalog",
         "pages": 68,
         "year": 2022,
@@ -1541,7 +1683,7 @@
         ]
     },
     {
-        "temp_id": 72,
+        "temp_id": 79,
         "url": "https://centerforbookarts.org/book-shop/catalogs/books-revisited",
         "pages": 74,
         "year": 2022,
@@ -1567,7 +1709,7 @@
         ]
     },
     {
-        "temp_id": 73,
+        "temp_id": 80,
         "url": "https://centerforbookarts.org/book-shop/artists-books/past-futures-aftermaths",
         "pages": 448,
         "year": 2022,
@@ -1590,7 +1732,7 @@
         ]
     },
     {
-        "temp_id": 74,
+        "temp_id": 81,
         "url": "https://centerforbookarts.org/book-shop/artists-books/finepress/mothers-of-mothers-of-mothers",
         "pages": 16,
         "year": 2022,
@@ -1614,7 +1756,7 @@
         ]
     },
     {
-        "temp_id": 75,
+        "temp_id": 82,
         "url": "https://centerforbookarts.org/book-shop/artists-books/finepress/collaboration-with-chris-retsina",
         "pages": null,
         "year": null,
@@ -1640,7 +1782,7 @@
         ]
     },
     {
-        "temp_id": 76,
+        "temp_id": 83,
         "url": "https://centerforbookarts.org/book-shop/artists-books/finepress/collaboration-with-abby-lloyd",
         "pages": null,
         "year": null,
@@ -1665,7 +1807,7 @@
         ]
     },
     {
-        "temp_id": 77,
+        "temp_id": 84,
         "url": "https://centerforbookarts.org/book-shop/books-on-books/coptic",
         "pages": 532,
         "year": 2021,
@@ -1685,7 +1827,7 @@
         ]
     },
     {
-        "temp_id": 78,
+        "temp_id": 85,
         "url": "https://centerforbookarts.org/book-shop/artists-books/notes_about_notes",
         "pages": 26,
         "year": 2022,
@@ -1708,7 +1850,7 @@
         ]
     },
     {
-        "temp_id": 79,
+        "temp_id": 86,
         "url": "https://centerforbookarts.org/book-shop/ephemera/vera-icon-first-you-have-to-prove-it-to-me-exhibition-brochure",
         "pages": 24,
         "year": 2022,
@@ -1726,7 +1868,7 @@
         ]
     },
     {
-        "temp_id": 80,
+        "temp_id": 87,
         "url": "https://centerforbookarts.org/book-shop/ephemera/resistant-systems-spring-2022-exhibition-brochure",
         "pages": 15,
         "year": 2022,
@@ -1744,7 +1886,7 @@
         ]
     },
     {
-        "temp_id": 81,
+        "temp_id": 88,
         "url": "https://centerforbookarts.org/book-shop/ephemera/paths-to-the-shore-exhibition-brochure",
         "pages": 16,
         "year": 2022,
@@ -1762,7 +1904,7 @@
         ]
     },
     {
-        "temp_id": 82,
+        "temp_id": 89,
         "url": "https://centerforbookarts.org/book-shop/merchandise/popsicle-bookmark",
         "pages": null,
         "year": 2022,
@@ -1782,7 +1924,7 @@
         ]
     },
     {
-        "temp_id": 83,
+        "temp_id": 90,
         "url": "https://centerforbookarts.org/book-shop/catalogs/performing-documents-modes-of-assembling",
         "pages": 130,
         "year": 2022,
@@ -1802,7 +1944,7 @@
         ]
     },
     {
-        "temp_id": 84,
+        "temp_id": 91,
         "url": "https://centerforbookarts.org/book-shop/broadside/dear-lord",
         "pages": null,
         "year": 2022,
@@ -1825,7 +1967,7 @@
         ]
     },
     {
-        "temp_id": 85,
+        "temp_id": 92,
         "url": "https://centerforbookarts.org/book-shop/broadside/alas",
         "pages": null,
         "year": 2022,
@@ -1843,7 +1985,7 @@
         ]
     },
     {
-        "temp_id": 86,
+        "temp_id": 93,
         "url": "https://centerforbookarts.org/book-shop/a-public-service",
         "pages": 74,
         "year": 2022,
@@ -1863,7 +2005,7 @@
         ]
     },
     {
-        "temp_id": 87,
+        "temp_id": 94,
         "url": "https://centerforbookarts.org/book-shop/broadside/the-return",
         "pages": null,
         "year": 2022,
@@ -1881,7 +2023,7 @@
         ]
     },
     {
-        "temp_id": 88,
+        "temp_id": 95,
         "url": "https://centerforbookarts.org/book-shop/broadside/impromptu-the-spring-books",
         "pages": null,
         "year": 2022,
@@ -1899,7 +2041,7 @@
         ]
     },
     {
-        "temp_id": 89,
+        "temp_id": 96,
         "url": "https://centerforbookarts.org/book-shop/broadside/untitled-fragment-by-lynn-xu",
         "pages": null,
         "year": 2022,
@@ -1917,7 +2059,7 @@
         ]
     },
     {
-        "temp_id": 90,
+        "temp_id": 97,
         "url": "https://centerforbookarts.org/book-shop/prints/jaguar-quindio",
         "pages": null,
         "year": 2022,
@@ -1936,7 +2078,7 @@
         ]
     },
     {
-        "temp_id": 91,
+        "temp_id": 98,
         "url": "https://centerforbookarts.org/book-shop/published-by-cba/showing-our-faces",
         "pages": 112,
         "year": 2021,
@@ -1959,7 +2101,7 @@
         ]
     },
     {
-        "temp_id": 92,
+        "temp_id": 99,
         "url": "https://centerforbookarts.org/book-shop/prints/growth-house",
         "pages": null,
         "year": 2022,
@@ -1978,164 +2120,6 @@
         "images": [
             "https://centerforbookarts.org/wp-content/uploads/2022/04/GrowthHouse-c-scaled.jpg",
             "https://centerforbookarts.org/wp-content/uploads/2022/04/GrowthHouse-f-scaled.jpg"
-        ]
-    },
-    {
-        "temp_id": 93,
-        "url": "https://centerforbookarts.org/book-shop/catalogs/beyond-codex-living-archives",
-        "pages": 74,
-        "year": 2022,
-        "title": "Beyond Codex: Living Archives",
-        "author": "Shahar Kramer",
-        "price": 25.0,
-        "publisher": "Center for Book Arts",
-        "edition": "200",
-        "binding": "Wire-o Softcover",
-        "dimensions": "8 x 10 inches",
-        "isbn": "1978-1-951163-26-6",
-        "materials": null,
-        "description": "We often think of the book as a container; an inert vessel that patiently awaits contact, its words and pictures permanently fixed in time and place on the page. There are books, however, that invite re-animation–even conversation–with what is contained therein.  We often think of the book as a container; an inert vessel that patiently awaits contact, its words and pictures permanently fixed in time and place on the page. There are books, however, that invite re-animation–even conversation–with what is contained therein.  For instance, the Talmud, a historic Jewish text whose origins date back to 200 CE, is often designed to incorporate commentary and opinion alongside its core text. In some editions, two or more voices share space on an elaborate page, in dialogue with both the Talmud and each other.  For instance, the Talmud, a historic Jewish text whose origins date back to 200 CE, is often designed to incorporate commentary and opinion alongside its core text. In some editions, two or more voices share space on an elaborate page, in dialogue with both the Talmud and each other.  In this way, the Talmud’s design creates space for conversation and extends the invitation to a reader. This is but one example of the way books can give permission. The juxtaposition of different perspectives alongside one another suggest that one’s interpretation of a text is neither fixed nor static. It encourages a reader to engage with the book as a dynamic object, as opposed to the arbiter of unequivocal fact.  In this way, the Talmud’s design creates space for conversation and extends the invitation to a reader. This is but one example of the way books can give permission. The juxtaposition of different perspectives alongside one another suggest that one’s interpretation of a text is neither fixed nor static. It encourages a reader to engage with the book as a dynamic object, as opposed to the arbiter of unequivocal fact.  to rethink the power structures that surround us. Text, image, material, and structure all have the power to inform and influence us. In this catalog, designer Mina Shoaib draws inspiration from the Talmud and its interwoven texts. On these pages and, indeed, throughout this exhibition, we invite you to create space for a multiplicity of voices and perspectives–including your own. ",
-        "reference": null,
-        "images": [
-            "https://centerforbookarts.org/wp-content/uploads/2022/04/Cover-BeyondCodex-scaled.jpg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/04/IMG_1399-scaled.jpg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/04/IMG_1400-scaled.jpg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/04/IMG_1401-scaled.jpg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/04/IMG_1402-scaled.jpg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/04/IMG_1403-scaled.jpg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/04/IMG_1398-2-scaled.jpg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/04/TOC-BeyondCodex-pdf.jpg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/04/32-33-BeyondCodex-scaled.jpg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/04/64-65-BeyondCodex-pdf.jpg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/04/BeyondCodex-foreword-scaled.jpg"
-        ]
-    },
-    {
-        "temp_id": 94,
-        "url": "https://centerforbookarts.org/book-shop/books-on-books/bar1",
-        "pages": 86,
-        "year": 2022,
-        "title": "BAR Issue 1: A New Book Art Criticism",
-        "author": null,
-        "price": null,
-        "publisher": "Center for Book Arts",
-        "binding": "Perfect Bound Softcover",
-        "dimensions": "7 x 10 inches",
-        "materials": [
-            "Risograph",
-            "Letterpress",
-            "Die-cutting "
-        ],
-        "description": "Book Art Review (BAR) is a semiannual magazine dedicated to providing a forum for critical writing about book art and artist books. Book Art Review BAR Book Art Review publishes two issues per year, with the first issue launching in Fall 2021. We want to raise the bar for book art criticism! BAR is our plan to make book art criticism more visible and more valuable, and to engage with a diverse group of writers and readers. Our launching manifesto calls for “New Book Art Criticism,” and in building that, our magazine will showcase a new kind of writing about artist books, one that focuses on the material, paginated, object qualities of the book. Book Art Review BAR Features BAR “The History of Criticism of the Book with Some Observations for Future” by Deirdre Lawrence “How Does the Artist Book?” by Kinohi Nishikawa  Reviews Phoebe Cripps on Margaret Salmon’s  K is for Kato  K is for Kato  Nicole Kaack on Leandro Katz’s  Self Hipnosis Self Hipnosis Ollie Gapper on Awoiska van der Molen’s  Living Mountain Living Mountain Meghan Forbes on  Milada Součková’s  Mluvící pásmo Mluvící pásmo Tausif Noor on Soumya Sankar Bose’s  Where the Birds Never Sing  Where the Birds Never Sing ",
-        "reference": null,
-        "images": [
-            "https://centerforbookarts.org/wp-content/uploads/2022/01/in-this-issue.png"
-        ]
-    },
-    {
-        "temp_id": 95,
-        "url": "https://centerforbookarts.org/book-shop/artists-books/either-way-its-perfect",
-        "pages": null,
-        "year": 2021,
-        "title": "Either Way It’s Perfect",
-        "author": "Lenny Silverberg",
-        "price": 40.0,
-        "publisher": "Lenny Silverberg",
-        "dimensions": "9.25 x 12.25 inches",
-        "isbn": "978-0-578-65729-5",
-        "materials": null,
-        "description": "Artist Statement This book is about two lives lived in the same time and place and yet had very different experiences. My wife, Noni Reisner, had dementia I cared for her for 6 years. She was a very funny, witty person, and that sense of humor and wit continued during her dementia. She would say these short sayings and I started to write them down on any piece of paper I could grab. Backs of envelopes, shopping lists, etc. While caring for her I did little artwork but I did make a few drawings. A few years after she died I started the watercolors and drawings that make up this book. It was the book designer Laura Lindgren who suggested that I combine them with Noni’s sayings that I collected and make a book which she helped design. This book is a kind of visual memoir of that difficult yet spiritual time.",
-        "reference": null,
-        "images": [
-            "https://centerforbookarts.org/wp-content/uploads/2022/03/lenny_silverberg_either-way-its-perfect-1.jpeg"
-        ]
-    },
-    {
-        "temp_id": 96,
-        "url": "https://centerforbookarts.org/book-shop/artists-books/red-rabbit-the-opera-game",
-        "pages": 100,
-        "year": 2022,
-        "title": "Red Rabbit & the Opera Game",
-        "author": "Malik Kirkwood",
-        "price": 33.0,
-        "publisher": "The Black Market",
-        "binding": "Perfect Bound Softcover",
-        "dimensions": "5 x 7 inches",
-        "materials": null,
-        "description": "a meditation on mysoginoir, radfem in its most masculine, on dragons, the boogeyman, the other side of the board, cocaine and a bottle of water for breakfast on rabbits for bunnies and bullets 😉 you can’t go to sleep yet —",
-        "reference": null,
-        "images": [
-            "https://centerforbookarts.org/wp-content/uploads/2022/02/image-22-02-23.jpeg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/02/image-22-02-23-1-scaled.jpeg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/02/image-22-02-23-3-scaled.jpeg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/02/image-22-02-23-2-scaled.jpeg"
-        ]
-    },
-    {
-        "temp_id": 97,
-        "url": "https://centerforbookarts.org/book-shop/prints/collective-survival-archive",
-        "pages": 1,
-        "year": 2022,
-        "title": "A Collective Survival Archive",
-        "author": "Lukaza Branfman-Verissimo",
-        "price": 25.0,
-        "publisher": "Childish Books",
-        "edition": "400",
-        "binding": "Poster",
-        "dimensions": "11x17 inches",
-        "materials": [
-            "risograph printed"
-        ],
-        "description": "A Collective Survival Archive is a three color risograph print that holds space for remembering and honoring the work, practices and ways we need each other for the co-creating of our futures. The text comes from a conversation between the artist and their dear friend Lee Rae Walsh about the deep work and nourishment practices around crafting and forming kinship. Naming all the tools, “ingredients” of a giving kinship space….webs, lovers, spiritual lube, quilts, nets, co-breathing. A Collective Survival Archive",
-        "reference": null,
-        "images": [
-            "https://centerforbookarts.org/wp-content/uploads/2023/01/IMG-0953.jpg"
-        ]
-    },
-    {
-        "temp_id": 98,
-        "url": "https://centerforbookarts.org/book-shop/artists-books/motherhood",
-        "pages": 9,
-        "year": 2021,
-        "title": "Motherhood",
-        "author": "Elizabeth Castaldo",
-        "price": null,
-        "publisher": "Elizabeth Castaldo",
-        "edition": "50",
-        "binding": "one sheet book",
-        "dimensions": "5 x 6.5 inches",
-        "materials": null,
-        "description": "Motherhood 2021, cyanotype with letterpress and collagraph. Edition of 50. Motherhood Upon being invited to be a part of (S)mother in 2021, an exhibition addressing parenting, I wondered what had held me back from making work specifically about my experience as a mother. I made this artists book as a first attempt to grapple with what it has felt like to be a mother, addressing the joy and frustration, isolation and connection. The inside folds feature a collagraph made by my child when she was 7 years old. (S)mother",
-        "reference": null,
-        "images": [
-            "https://centerforbookarts.org/wp-content/uploads/2022/12/motherhood.jpeg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/12/motherhood2-2-scaled-e1672850248462.jpeg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/12/motherhood2-scaled-e1672850170659.jpeg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/12/motherhood3-scaled-e1672850273408.jpeg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/12/motherhood4.jpeg",
-            "https://centerforbookarts.org/wp-content/uploads/2022/12/motherhood_inside_2_lowres.jpeg"
-        ]
-    },
-    {
-        "temp_id": 99,
-        "url": "https://centerforbookarts.org/book-shop/broadside/numb-with-grief",
-        "pages": null,
-        "year": 2021,
-        "title": "Numb With Grief From My Mother’s Sudden Death, I Write This Poem About Bottlegourds For A Handsome Farmer",
-        "author": "Benjamin Aleshire",
-        "price": 20.0,
-        "publisher": "Center for Book Arts",
-        "edition": "100",
-        "dimensions": "6 x 10.75 inches",
-        "materials": [
-            "letterpress",
-            "signed and numbered by the poet"
-        ],
-        "description": "About the Broadside This broadside was designed and printed by Center for Book Arts Administrative Assistant and artist Allison Carter-Beaulé for CBA’s 25th Anniversary Chapbook Competition Runner-Up Benjamin Aleshire in 2021. Allison Carter-Beaulé 25th Anniversary Chapbook Competition Benjamin Aleshire CBA’s Annual Chapbook Competition is an open call for poets to submit manuscripts. Submissions are reviewed blindly by a Guest Judge who selects one winner and two runners-up. As part of the awards package, CBA publishes respective limited-edition chapbooks for the Guest Judge and Competition Winner as well as respective limited-edition broadsides for the runners-up. Annual Chapbook Competition Aleshire was selected as 2021 Competition Runner-Up by Guest Judge Simone White. Simone White Carter-Beaulé’s broadside design for Aleshire’s poem, Numb With Grief From My Mother’s Sudden Death, I Write This Poem About Bottlegourds For A Handsome Farmer, was inspired by Pamela Colman Smith’s 1909 Eight of Cups illustration in the Waite-Smith Tarot. umb With Grief From My Mother’s Sudden Death, I Write This Poem About Bottlegourds For A Handsome Farmer In addition to Carter-Beaulé’s broadside for Aleshire, CBA published a limited-edition chapbook for the 2021 Competition Winner, Bianca Rae Messinger, that was designed and produced by artist Yuchen Chang. CBA also published a limited-edition chapbook for White that was designed and produced by 2020-2021 Book Artist-in-Residence Alva Mooses. And lastly, Aleshire’s fellow 2021 Competition Runner-Up, Dujie Tahat, had his poem published as a limited-edition broadside designed and produced by CBA 2020-2021 Book Artist-in-Residence, Oswaldo García. Bianca Rae Messinger Yuchen Chang Book Artist-in-Residence Alva Mooses Dujie Tahat Oswaldo García Colophon Designed and printed by Allison Carter-Beaulé in honor of the poet’s reading. Center for Book Arts, December 9, 2021. In homage to Pamela Coleman Smith’s Waite-Smith Tarot illustrations, first printed 1909 by William Rider & Son.",
-        "reference": null,
-        "images": [
-            "https://centerforbookarts.org/wp-content/uploads/2021/12/Benjamin-Aleshire-scaled.jpg",
-            "https://centerforbookarts.org/wp-content/uploads/2021/12/Image-from-iOS-9-scaled.jpg"
         ]
     }
 ]
