@@ -27,7 +27,6 @@ function ColorSchemesExample() {
                   <Nav.Link href="/search">Search</Nav.Link>
                   <Nav.Link href="#">Contact</Nav.Link>
                   <Nav.Link href="/login">Login</Nav.Link>
-
               </Nav>
           </Navbar.Offcanvas>
         </Container>

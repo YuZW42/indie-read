@@ -12,7 +12,8 @@ import "./module.home.css";
 import handleTitleClick from "./SaveFav";
 import axios from "axios";
 
-import { IoBookOutline, IoBookSharp } from "react-icons/io5";
+import bmClicked from "../../assets/bookmark_clicked.png"
+import bmUnclicked from "../../assets/bookmark_unclicked.png"
 
 export const DisplayFilteredBooks = () => {
   // interface Book {
@@ -36,7 +37,7 @@ export const DisplayFilteredBooks = () => {
 
   const [yearFilter, setYearFilter] = useState<string>("All");
   const [costFilter, setCostFilter] = useState<string>("All");
-  const [formatFilter, setFormatFilter] = useState<string>("All");
+  const [formatFilter, setFormatFilter] = useState<string>("All"); // not being used ... yet
 
 
   // Apply filtering and sorting to the entire dataset
@@ -291,9 +292,9 @@ export const DisplayFilteredBooks = () => {
                       className="bookmark"
                     >
                       {bookmarkStatus[book.temp_id] ? (
-                        <IoBookSharp />
+                        <img src={bmClicked} alt="bookmark button clicked" />
                       ) : (
-                        <IoBookOutline />
+                        <img src={bmUnclicked} alt="bookmark button not clicked" />
                       )}
                     </div>
                   </Col>

@@ -1,21 +1,59 @@
+@import "../../../styles/colors.css";
+
 * {
     padding: 0;
     margin: 0;
-
 }
 
-/* Card Container */
-.card-container {
-    height: 100vh;
-    width: 100vw;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.back-arrow {
+    color: var(--primary-blue);
 }
 
 .card-title {
-    font-style: italic;
-    font-weight: 200;
+    text-align: center;
+
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* TOP LEVEL INFORMATION*/
+
+.top-level-info > *{
+    margin: 0;
+}
+
+#author {
+    margin-bottom: 3em;
+}
+
+/* BOTTOM LEVEL INFORMATION */
+
+.bottom-level-info {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 3em;
+}
+
+/* DESCRIPTION */
+
+#description {
+    width: 50vw;
+}
+
+
+/* SEE ARTBOOK BUTTON */
+
+.see-artbook-btn {
+    margin-top: 2em;
+
+    border-radius: 0;
+    border: 1.5px solid black;
+
+    padding: 1em 4em;
+
+    background-color:var(--primary-blue);
+}
+
+.see-artbook-btn > a{
+    color: var(--primary-white);
 }

@@ -18,7 +18,6 @@ interface UserDetailsProps {
 
 const UserDetails = ({ setUser }: UserDetailsProps) => {
 
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -45,8 +44,6 @@ const UserDetails = ({ setUser }: UserDetailsProps) => {
 
     fetchData();
   }, [setUser]);
-
-
 
   return null
 };

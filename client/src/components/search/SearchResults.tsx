@@ -4,12 +4,14 @@ import axios from "axios";
 import { Container, Card, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { IoBookOutline, IoBookSharp } from "react-icons/io5";
-import placeholder from "../../images/placeholder.png";
 
-import cfba_json from "../../../../server/outputs/cfba.json"
+import Spinner from "react-bootstrap/Spinner";
+
+import placeholder from "../../images/placeholder.png";
+import cfba_json from "../../../../server/outputs/cfba.json";
 
 import "./module.search.css";
-import "../home/module.home.css"
+import "../home/module.home.css";
 
 interface SearchResult {
   title: string;
@@ -28,7 +30,7 @@ interface SearchResultsProps {
 const SearchResults: React.FC<SearchResultsProps> = ({ results, loading }) => {
   const [bookmarkStatus, setBookmarkStatus] = useState({});
 
-  const handleSaveClick = async (bookId: any) => {
+  const handleSaveClick = async (bookId: number) => {
     setBookmarkStatus((prevStatus) => ({
       ...prevStatus,
       [bookId]: !prevStatus[bookId], // Toggle bookmark status for the specific card ID
@@ -73,14 +75,14 @@ const SearchResults: React.FC<SearchResultsProps> = ({ results, loading }) => {
   const getImageSource = (bookID: number) => {
     for (const book of cfba_json) {
       if (book.temp_id == bookID) {
-        return book.images[0]
+        return book.images[0];
       }
     }
-  }
+  };
 
   return (
     <div className="search-result-container">
-      {loading && <p>Loading...</p>}
+      {loading && <Spinner animation="border" variant="primary" />}
       {!loading && results.length === 0 && (
         <p id="no-result-text">No results found.</p>
       )}
@@ -125,10 +127,14 @@ const SearchResults: React.FC<SearchResultsProps> = ({ results, loading }) => {
                   )}
                   <div className="card-footer">
                     <div className="card-info">
-                      <span>{result.author ? result.author : "Author Not Found"}</span>
+                      <span>
+                        {result.author ? result.author : "Author Not Found"}
+                      </span>
                       <span id="divider">-</span>
                       <span>
-                        {result.price ? ("$" + result.price + ".00") : "Price Not Found"}
+                        {result.price
+                          ? "$" + result.price + ".00"
+                          : "Price Not Found"}
                       </span>
                     </div>
                   </div>
