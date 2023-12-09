@@ -23,8 +23,7 @@ interface SearchResult {
 }
 
 interface SearchResultsProps {
-  // results: SearchResult[];
-  results: any[];
+  results: SearchResult[];
   loading: boolean;
 }
 
@@ -90,6 +89,7 @@ const SearchResults: React.FC<SearchResultsProps> = ({ results, loading }) => {
       {!loading && results.length > 0 && ( */}
         <Container>
           <h1>{results.length} Artist's Artbooks Found</h1>
+          {results.length == 0 ? <h1 id="no-result-text">No Results Found.</h1> : ""}
           <Row>
             {results.map((result) => (
               <Col
