@@ -1,6 +1,21 @@
-# Backend 
+## How to start our project:
 
-## Server Side Tools:
-- Webscraping
+install all the packages needs
+```console
+$ npm install 
+```
+
+start the project
+```console
+$ npm run dev 
+```
+
+## Build with:
+- node 
+- express
+- typescript (a sub)
+
+## Database:
+- Prisma
+- Supabase
 - PostgreSQL
-
