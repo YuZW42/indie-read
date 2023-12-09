@@ -47,7 +47,7 @@
     cursor: pointer;
 } */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .hero-info header {
     font-size: 25px;
     font-weight: 300;
@@ -116,7 +116,7 @@
   60% {
     transform: translateY(-15px);
   }
-}
+} */
 
 /********************************** IMAGE CAROUSEL **********************************/
 .carousel-container {

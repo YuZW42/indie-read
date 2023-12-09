@@ -7,6 +7,9 @@ import { Post } from "./pages/Post.tsx"
 import { DetailsPage } from "./pages/DetailsPage.tsx"
 import Search from "./pages/Search.tsx"
 
+import { Contact } from './pages/Contact.tsx';
+import { About } from './pages/About.tsx';
+
 import UserLogin from "../src/pages/Login.tsx"
 
 function App() {
@@ -19,6 +22,9 @@ function App() {
         <Route path='/post-artbook' element={<Post/>}/>
         <Route path="/details/:id" element={<DetailsPage/>} />
         <Route path="/login" element={<UserLogin/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+
       </Routes>
     </>
   )

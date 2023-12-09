@@ -23,8 +23,8 @@ function ColorSchemesExample() {
               <Nav className="justify-content-center flex-grow-1 p-3 fs-5 fw-light gap-3">
                   <Nav.Link href="/">Home</Nav.Link>
                   <Nav.Link href="/resources">Resources</Nav.Link>
-                  <Nav.Link href="#">About</Nav.Link>
-                  <Nav.Link href="#">Contact</Nav.Link>
+                  <Nav.Link href="/about">About</Nav.Link>
+                  <Nav.Link href="/contact">Contact</Nav.Link>
                   
                   {/* Not enough time to add for demo day */}
                   {/* <Nav.Link href="#">Books</Nav.Link> */}
