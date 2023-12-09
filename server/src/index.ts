@@ -10,7 +10,7 @@ import authRoute from './pages/login/google';
 import save_fav from './pages/save_fav/save_fav'
 import display_fav from './pages/save_fav/display_fav'
 const app = express();
-const port: number = parseInt(process.env.PORT as string, 10) || 5002;
+const port: number = process.env.PORT || 5002; 
 
 app.use(
   cookieSession({
