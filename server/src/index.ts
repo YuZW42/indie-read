@@ -10,7 +10,7 @@ import authRoute from './pages/login/google';
 import save_fav from './pages/save_fav/save_fav'
 import display_fav from './pages/save_fav/display_fav'
 const app = express();
-const port = 5002
+const port: number = parseInt(process.env.PORT as string, 10) || 5002;
 
 app.use(
   cookieSession({
@@ -114,4 +114,8 @@ app.get('/api/healthchecker', (_, res) => {
 
 app.use('/auth', authRoute);
 
-app.listen(port, () => console.log(`Server running on port ${port}`));
+
+
+app.listen(port, "0.0.0.0", function () {
+  console.log(`Server running on port ${port}`)
+});
