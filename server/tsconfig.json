@@ -10,7 +10,8 @@
       "express",
       "connect",
       "express-serve-static-core"
-    ]
+    ],
+    "esModuleInterop": true
   },
   "include": ["src/**/*"]
 }
