@@ -14,3 +14,4 @@ $ npm run dev
 - React
 - Typescript
 - React Bootstrap
+  - We are referncing React Boostrap hoping to utilize some styles that already exist which can reduce our workload
