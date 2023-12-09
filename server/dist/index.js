@@ -14,7 +14,7 @@ const google_1 = __importDefault(require("./pages/login/google"));
 const save_fav_1 = __importDefault(require("./pages/save_fav/save_fav"));
 const display_fav_1 = __importDefault(require("./pages/save_fav/display_fav"));
 const app = (0, express_1.default)();
-const port = 5002;
+const port = process.env.PORT || 5002;
 app.use((0, cookie_session_1.default)({
     name: 'session',
     keys: ['indie-book'],
@@ -23,7 +23,7 @@ app.use((0, cookie_session_1.default)({
 app.use(passport_1.default.initialize());
 app.use(passport_1.default.session());
 app.use((0, cors_1.default)({
-    origin: 'http://localhost:5173',
+    origin: 'indie-read-production.up.railway.app',
     methods: 'GET,POST,PUT,DELETE',
     credentials: true,
 }));
@@ -97,5 +97,7 @@ app.get('/api/healthchecker', (_, res) => {
     });
 });
 app.use('/auth', google_1.default);
-app.listen(port, () => console.log(`Server running on port ${port}`));
+app.listen(port, "0.0.0.0", function () {
+    console.log(`Server running on port ${port}`);
+});
 //# sourceMappingURL=index.js.map
