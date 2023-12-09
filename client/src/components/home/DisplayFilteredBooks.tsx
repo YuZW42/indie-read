@@ -91,7 +91,7 @@ export const DisplayFilteredBooks = () => {
     setBookmarkStatus((prevStatus) => ({
       ...prevStatus,
       [bookId]: !prevStatus[bookId], // Toggle bookmark status for the specific card ID
-    }));
+    })); 
 
     try {
       const response = await axios.get(

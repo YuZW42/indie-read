@@ -1,5 +1,4 @@
 import { useState,useEffect } from 'react';
-import NavBar from "../components/shared/NavBar"
 import { Header } from "../components/shared/Header"
 import User from '../components/shared/UserLogin' 
 import logout from "../components/login/Logout"
@@ -61,7 +60,7 @@ interface UserData {
   return (
 <>
       <Header/>
-      <NavBar/>
+    
       <button onClick={google}> Login</button>
       <User setUser={setUser} />
       {user ? (
