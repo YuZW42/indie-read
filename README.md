@@ -6,30 +6,31 @@
 
 # Technology Used: 
 - React
-- JavaScript
-- Postgresql
+  - Bootstrap, Icons
+- Typescript
+- Postgresql (using Supabase)
 - Node
 - Express
 
 # Additional Tools Used:
 - Python
-- Prisma
-- Railway
-- React Bootstrap
-- React Icons
+  - BeautifulSoup, Requests, Regex
+- Prisma ORM
 
-# How to run our App:
+# Running the application:
 - Client: A React based code filed
+  - From the root directory, change directory to "client" folder
   - Start by running "npm i"
   - Run the front end in dev mode by entering "npm run dev"
 - Server: A Node based code file
+  - From the root directory, change directory to "server" folder
   - Start by running "npm i"
   - Run the back end in dev mode by entering "npm run dev"
 
+- Both the "client" and "server" should run simultaneously 
+
 # Landing Page of Our Project
-<img width="1202" alt="Screenshot 2023-11-08 at 5 23 11 PM" src="https://github.com/YuZW42/indie-read/assets/88296782/af82f4f4-e8ca-48df-a0dd-0d90f65a744b">
+<img src="./client/src/assets/opening_desktop-02.png" alt="Hero Section Image">
 
 # Home Page
 <img width="1255" alt="Screenshot 2023-11-08 at 5 23 46 PM" src="https://github.com/YuZW42/indie-read/assets/88296782/82beca41-0452-48d8-99a0-94c5a9537a68">
-
-# More Incoming
