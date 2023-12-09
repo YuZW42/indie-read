@@ -6,9 +6,10 @@ export const Footer = () => {
   return (
     <div className='footer-container' style={{height:'30vh' }}>
         &copy; {new Date().getFullYear()} Copyright: 
+        <a className='text-dark' href='#'> Book Art Collective </a>
 
-        <Nav.Link href="#">About Us</Nav.Link>
-        <a className='text-dark' href='#'> Indie Art Reads </a>
+        <Nav.Link href="#">About</Nav.Link>
+        <Nav.Link href="#">Contact</Nav.Link>
     </div>
   )
 }
