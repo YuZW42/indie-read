@@ -24,7 +24,7 @@ app.use(passport.initialize());
 app.use(passport.session())
 
 app.use(cors({
-  origin: 'indie-read-production.up.railway.app',
+  origin: 'http://localhost:5173',
   methods: 'GET,POST,PUT,DELETE',
   credentials: true,
 }));

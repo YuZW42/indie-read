@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent, KeyboardEvent } from 'react';
-import { Container, Row, Col, Card } from "react-bootstrap";
+//import { Container, Row, Col, Card } from "react-bootstrap";
 
 import "./module.search.css";
 import { HiMagnifyingGlass } from "react-icons/hi2";

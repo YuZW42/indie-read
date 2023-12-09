@@ -24,7 +24,7 @@ const Search: React.FC = () => {
   return (
     <>
       <SearchBar onSearch={handleSearch} />
-      <SearchResults results={searchResults} />
+      <SearchResults results={searchResults} loading={true}/>
     </>
   );
 };

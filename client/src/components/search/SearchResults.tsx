@@ -21,7 +21,7 @@ interface SearchResult {
 }
 
 interface SearchResultsProps {
-  results: SearchResult[];
+  results: any[];
   loading: boolean;
 }
 
