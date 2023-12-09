@@ -11,9 +11,9 @@ $ npm run dev
 ```
 
 ## Build with:
-- node
+- node 
 - express
-- typescript
+- typescript (a sub)
 
 ## Database:
 - Prisma
