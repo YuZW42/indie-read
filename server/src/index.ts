@@ -24,7 +24,7 @@ app.use(passport.initialize());
 app.use(passport.session())
 
 app.use(cors({
-  origin: 'indie-read-tnr3.vercel.app',
+  origin: 'indie-read-production.up.railway.app',
   methods: 'GET,POST,PUT,DELETE',
   credentials: true,
 }));
