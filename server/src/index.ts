@@ -24,7 +24,7 @@ app.use(passport.initialize());
 app.use(passport.session())
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'indie-read-tnr3.vercel.app',
   methods: 'GET,POST,PUT,DELETE',
   credentials: true,
 }));
