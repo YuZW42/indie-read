@@ -5,7 +5,7 @@ import { Container, Card, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { IoBookOutline, IoBookSharp } from "react-icons/io5";
 
-import Spinner from "react-bootstrap/Spinner";
+// import Spinner from "react-bootstrap/Spinner";
 
 import placeholder from "../../images/placeholder.png";
 import cfba_json from "../../../../server/outputs/cfba.json";
@@ -23,6 +23,7 @@ interface SearchResult {
 }
 
 interface SearchResultsProps {
+  // results: SearchResult[];
   results: any[];
   loading: boolean;
 }
@@ -82,11 +83,11 @@ const SearchResults: React.FC<SearchResultsProps> = ({ results, loading }) => {
 
   return (
     <div className="search-result-container">
-      {loading && <Spinner animation="border" variant="primary" />}
+      {/* {loading && <Spinner animation="border" variant="primary" />}
       {!loading && results.length === 0 && (
         <p id="no-result-text">No results found.</p>
       )}
-      {!loading && results.length > 0 && (
+      {!loading && results.length > 0 && ( */}
         <Container>
           <h1>{results.length} Artist's Artbooks Found</h1>
           <Row>
@@ -153,7 +154,7 @@ const SearchResults: React.FC<SearchResultsProps> = ({ results, loading }) => {
             ))}
           </Row>
         </Container>
-      )}
+      {/* )} */}
     </div>
   );
 };

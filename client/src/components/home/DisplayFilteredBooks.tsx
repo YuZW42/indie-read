@@ -179,10 +179,9 @@ export const DisplayFilteredBooks = () => {
       <Container fluid>
         <Container
           className="display-artbooks-container"
-          style={{ marginTop: "2em", marginBottom: "2em" }}
         >
           <Row className="artwork-row">
-            <Col xs={12} md={2} className="filter-option">
+            <Col xs={12} md={2}>
               <button 
                 className="clear-filter-btn" 
                 onClick={() => handleClear()}
@@ -190,9 +189,10 @@ export const DisplayFilteredBooks = () => {
                   Clear Filter
               </button>
 
+              <div className="filter-option">
               <Form.Group
                 controlId="costFilter"
-                className="custom-dropdown-group"
+                className="dropdown-group"
               >
                 <Form.Control
                   as="select"
@@ -209,7 +209,7 @@ export const DisplayFilteredBooks = () => {
                 <Form.Label>{getCostLabel()}</Form.Label>
               </Form.Group>
 
-              <Form.Group className="custom-dropdown-group">
+              <Form.Group className="dropdown-group">
                 <Form.Control
                   as="select"
                   value={yearFilter}
@@ -225,7 +225,7 @@ export const DisplayFilteredBooks = () => {
 
               <Form.Group
                 controlId="costFilter"
-                className="custom-dropdown-group"
+                className="dropdown-group"
               >
                 <Form.Control
                   as="select"
@@ -238,9 +238,10 @@ export const DisplayFilteredBooks = () => {
                 </Form.Control>
                 <Form.Label>{getFormatLabel()}</Form.Label>
               </Form.Group>
+              </div>
             </Col>
 
-            <Col md={10}>
+            <Col xs={12} md={10}>
               <Row>
                 {currentItems.map((book) => (
                   <Col
@@ -248,7 +249,8 @@ export const DisplayFilteredBooks = () => {
                     className="product-col"
                     xs={12}
                     sm={6}
-                    md={3}
+                    md={4}
+                    lg={3}
                     style={{
                       padding: "1em",
                       display: "flex",
