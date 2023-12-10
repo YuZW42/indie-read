@@ -110,7 +110,7 @@ export const DetailsPage = () => {
               {/* {isScrollable && <p className="scroll-info">Scrollable</p>} */}
               <div className="mt-3">
                 <div className="top-level-info">
-                  <div>
+                  <div className="artbook-info">
                     <p id="price">${resultObject.price}.00</p>
                     <p id="author">
                       {resultObject.author
@@ -118,7 +118,7 @@ export const DetailsPage = () => {
                         : "Author Not Found"}
                     </p>
                   </div>
-                  <div>
+                  <div className="btn-container">
                     <div
                       onClick={() => handleSaveClick(id)}
                       className="bookmark"
@@ -132,7 +132,7 @@ export const DetailsPage = () => {
                         />
                       )}
                     </div>
-                    <img src={purchasedBtn} alt="button to purchase art book" />
+                    <a href={resultObject.url} target="_blank"><img src={purchasedBtn} alt="button to purchase art book" /></a>
                   </div>
                 </div>
 

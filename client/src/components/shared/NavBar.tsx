@@ -17,7 +17,7 @@ function ColorSchemesExample() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
-                  Indie Art Reads
+                  Art Book Collective
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Nav className="justify-content-center flex-grow-1 p-3 fs-5 fw-light gap-3">

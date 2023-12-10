@@ -1,17 +1,16 @@
-// import logo from "../../images/logo.jpg"
-import "./module.shared.css"
+import logo from "../../assets/final_logo.png"
 import {CgProfile} from "react-icons/cg"
-// import User from './UserLogin'
-
 import Navbar from "../shared/NavBar"
+
+import "./module.shared.css"
+// import User from './UserLogin'
 
 export const Header = () => {
 
   return (
     <div className='header-section'>
       <div className='logo'>
-        {/* <img src="../../images/logo.jpg" alt="logo" /> */}
-        <h1>Book Arts Catalog</h1>
+        <img src={logo} alt="logo" className="logo"/>
       </div>
 
 

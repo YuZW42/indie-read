@@ -19,7 +19,14 @@
 /* TOP LEVEL INFORMATION*/
 
 .top-level-info > *{
+    display: flex;
+
+
     margin: 0;
+}
+
+.artbook-info p {
+    display: block;
 }
 
 #author {
