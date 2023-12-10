@@ -16,7 +16,25 @@ async function save(id: string, bookId: number) {
           updatedQ = existingPreference.q as string;
         }
 
-        updatedQ = updatedQ ? `${updatedQ},${bookId}` : `${bookId}`;
+              
+              const qArray: string[] = updatedQ.split(',').filter(item => item !== '');
+
+              
+              const bookIdExists = qArray.includes(String(bookId));
+      
+              if (bookIdExists) {
+                
+                const filteredQArray: string[] = qArray.filter(item => item !== String(bookId));
+      
+                
+                updatedQ = filteredQArray.join(',');
+              } else {
+                
+                qArray.push(String(bookId));
+      
+                
+                updatedQ = qArray.join(',');
+              }
 
         const updatedUser = await prisma.user.update({
           where: { id: user.id },
