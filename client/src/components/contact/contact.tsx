@@ -37,8 +37,8 @@ const ContactSection: React.FC = () => {
                 <h2>William Zeng</h2>
                 <p className="title">Technical Developer</p>
                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>mike@example.com</p>
-                <button className="button" onClick={() => handleContactClick('email3@example.com')}>
+                <p>yuzeng@bu.edu</p>
+                <button className="button" onClick={() => handleContactClick('mattiwane@gmail.com')}>
           Contact Email 3
         </button>
               </div>
