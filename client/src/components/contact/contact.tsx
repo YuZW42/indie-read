@@ -1,5 +1,7 @@
 import React from 'react';
-
+import pic1 from '../../assets/AshPic.png'
+import pic2 from '../../assets/MatPic.png'
+import pic3 from '../../assets/YuPic.png'
 const ContactSection: React.FC = () => {
   const handleContactClick = (email: string) => {
     window.location.href = `mailto:${email}`;
@@ -8,23 +10,21 @@ const ContactSection: React.FC = () => {
     <div>
       <section>
         <div className="about-section">
-          <h1>Contact Us Page</h1>
-          <p>Some text about who we are and what we do.</p>
-          <p>Resize the browser window to see that this page is responsive by the way.</p>
-        </div>
+        <h1>Contact Us</h1>
+        
 
-        <h2 style={{ textAlign: 'center' }}>Our Team</h2>
+        
         <div className="row">
           <div className="column">
             <div className="card">
-              <img src="/w3images/team1.jpg" alt="Jane" style={{ width: '100%' }} />
+              <img src={pic1} alt="Jane" style={{ width: '100%' }} />
               <div className="container">
                 <h2>Ash Wei</h2>
                 <p className="title">Project Leader & UI Designer</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>jane@example.com</p>
-                <button className="button" onClick={() => handleContactClick('email3@example.com')}>
-          Contact Email 3
+
+                <a href="https://www.instagram.com/yu.x.w/" target="_blank">Instagram</a>
+                <button className="button" onClick={() => handleContactClick('yuxwater@gmail.com')}>
+           Email 
         </button>
               </div>
             </div>
@@ -32,14 +32,14 @@ const ContactSection: React.FC = () => {
 
           <div className="column">
             <div className="card">
-              <img src="/w3images/team2.jpg" alt="Mike" style={{ width: '100%' }} />
+              <img src={pic3} alt="Mike" style={{ width: '100%' }} />
               <div className="container">
                 <h2>William Zeng</h2>
                 <p className="title">Technical Developer</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>yuzeng@bu.edu</p>
-                <button className="button" onClick={() => handleContactClick('mattiwane@gmail.com')}>
-          Contact Email 3
+               
+                <a href="https://www.linkedin.com/in/yu-zeng-08829a213/" target="_blank">LinkedIn</a>
+                <button className="button" onClick={() => handleContactClick('yuzeng@bu.edu')}>
+          Email
         </button>
               </div>
             </div>
@@ -47,20 +47,21 @@ const ContactSection: React.FC = () => {
 
           <div className="column">
             <div className="card">
-              <img src="/w3images/team3.jpg" alt="John" style={{ width: '100%' }} />
+              <img src={pic2} alt="John" style={{ width: '100%' }} />
               <div className="container">
                 <h2>Matthew Iwane </h2>
                 <p className="title">Technical Developer</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>john@example.com</p>
+                <a href="https://www.linkedin.com/in/matthew-iwane/" target="_blank">LinkedIn</a>
                 <p>          
-                  <button className="button" onClick={() => handleContactClick('email3@example.com')}>
-          Contact Email 3
+                  <button className="button" onClick={() => handleContactClick('mattiwane@gmail.com')}>
+          Email
         </button></p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
       </section>
     </div>
   );

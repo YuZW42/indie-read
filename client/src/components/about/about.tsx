@@ -12,7 +12,7 @@ const About: React.FC = () => {
           <h2>Team</h2>
           <p>Art Book Collective is made possible by the dedicated efforts of:</p>
           <ul>
-            <li>Ash Wei - Innovator, Designer</li>
+            <li>Ash Wei - Innovator, UI Designer</li>
             <li>Matthew Iwane - Developer</li>
             <li>William Zeng - Developer</li>
           </ul>
