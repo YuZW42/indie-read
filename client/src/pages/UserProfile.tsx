@@ -1,19 +1,20 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 // import { useParams } from "react-router-dom";
 
-import { Footer } from '../components/shared/Footer';
-import Navbar from "../components/shared/NavBar"
+import { Footer } from "../components/shared/Footer";
+import Navbar from "../components/shared/NavBar";
 
-import logo from "../assets/final_logo.png"
-import pfp from "../assets/ABC_avatart-02.png"
+import logo from "../assets/final_logo.png";
+import pfp from "../assets/ABC_avatart-02.png";
 
-import User from '../components/shared/UserLogin'
-import Fav from "../components/login/Favorite"
+import User from "../components/shared/UserLogin";
+import Fav from "../components/login/Favorite";
+import logout from "../components/login/Logout";
 
-import axios from 'axios';
+import axios from "axios";
 
-import { Spinner } from 'react-bootstrap';
-import { Nav } from 'react-bootstrap';
+import { Spinner } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 
 import "../components/profile/module.profile.css";
 
@@ -34,24 +35,33 @@ const UserProfile = () => {
 
   const [user, setUser] = useState<UserData | null>(null);
 
+  const google = () => {
+    window.open("http://localhost:5002/auth/google", "_self");
+  };
+
   //experiement
   const fetchUserData = async () => {
-
     try {
-      const response = await axios.get(`http://localhost:5002/user?list=${user?.email}`);
+      const response = await axios.get(
+        `http://localhost:5002/user?list=${user?.email}`
+      );
       if (response.status === 200) {
         const userData = response.data;
-        console.log('sucess')
+        console.log("sucess");
         setUser(userData);
       } else {
-        throw new Error('Failed to fetch user data');
+        throw new Error("Failed to fetch user data");
       }
     } catch (error) {
-      console.error('Error fetching user data:', error);
+      console.error("Error fetching user data:", error);
     }
   };
 
+  const handleLogout = async () => {
+    await logout();
 
+    setUser(null);
+  };
 
   // Function to handle refresh button click
   const handleRefresh = () => {
@@ -65,17 +75,32 @@ const UserProfile = () => {
 
   return (
     <>
-      <div id='header-container'>
-        <Nav.Link href="/"><img src={logo} alt='website logo' /></Nav.Link>
+      <div id="header-container">
+        <Nav.Link href="/">
+          <img src={logo} alt="website logo" />
+        </Nav.Link>
         <Navbar />
       </div>
 
-      <div id='user-profile-container'>
-        <img src={pfp} alt="profile icon of a blue cartoon frog smiling" />
-        {/* <h3>{"Welcome, " + user.name}</h3> */}
-        <button>Edit Profile</button>
-      </div>
-
+        {user ? (
+          <div id="user-profile-container">
+            <img src={pfp} alt="profile icon of a blue cartoon frog smiling" />
+            <h3 className="username">
+              {user ? "Welcome, " + user.name : "Username Not Found."}
+            </h3>
+            <div className="user-btn-container">
+              <button>Edit Profile</button>
+              <button onClick={handleLogout}>Logout</button>
+            </div>
+          </div>
+        ) : (
+          <div id="user-profile-container">
+            <img src={pfp} alt="profile icon of a blue cartoon frog smiling" />
+            <div className="user-btn-container">
+              <button id="login-btn" onClick={google}>Login</button>
+            </div>
+          </div>
+        )}
 
       <User setUser={setUser} />
 
@@ -83,23 +108,23 @@ const UserProfile = () => {
         <div>
           <Fav preference={user.preference} />
 
-          <div className='refresh-container'>
+          <div className="refresh-container">
             <p>Don't see your bookmarks? Try refreshing!</p>
-            <button className="refresh-btn" onClick={handleRefresh}>Refresh</button>
+            <button className="refresh-btn" onClick={handleRefresh}>
+              Refresh
+            </button>
           </div>
-
-
         </div>
       ) : (
         <div className="fav-books-container">
-          <Spinner className='primary' />
+          <Spinner className="primary" />
           <p>To See Latest Data, Please Login</p>
         </div>
       )}
 
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default UserProfile
+export default UserProfile;

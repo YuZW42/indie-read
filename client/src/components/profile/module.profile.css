@@ -22,6 +22,10 @@
     height: 6em;
 }
 
+.username {
+    margin: 1em 0;
+}
+
 #user-profile-container {
     width: 100%;
 
@@ -47,6 +51,17 @@
 
     background-color: var(--primary-blue);
     color: var(--primary-white)
+}
+
+.user-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#login-btn {
+    margin: 1em 0;
 }
 
 /*************** FAVORITES SECTION ***************/

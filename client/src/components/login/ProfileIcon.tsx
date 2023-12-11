@@ -29,6 +29,7 @@ export const ProfileIcon = () => {
     const google = () => {
         window.open("http://localhost:5002/auth/google", "_self")
     }
+    
     const handleLogout = async () => {
         await logout();
 
