@@ -9,39 +9,40 @@ import Search from "../../pages/Search";
 
 import "./module.home.css";
 
-import handleTitleClick from "./SaveFav";
+// import handleTitleClick from "./SaveFav";
 import axios from "axios";
 
 import bmClicked from "../../assets/bookmark_clicked.png"
-import bmUnclicked from "../../assets/bookmark_unclicked.png"
+// import bmUnclicked from "../../assets/bookmark_unclicked.png"
 
 export const DisplayFilteredBooks = () => {
-  // interface Book {
-  //   title: string;
-  //   author: string | null;
-  //   price: number | null;
-  //   edition: string | null;
-  //   year: number | null | undefined;
-  //   binding: string | null;
-  //   dimensions: string | null;
-  //   pages: number | null;
-  //   materials: string | null;
-  //   description: string;
-  //   reference: string | null;
-  //   images: string[];
-  //   publisher: string | null;
-  //   isbn: string | null;
-  // }
+  interface Book {
+    title: string;
+    author: string | null;
+    price: number | null;
+    year: number | null;
+    description: string | null;
+    images: string[] | null;
+    temp_id: number;
 
-  // const books: Book[] = cfba_json;
+    // dimensions: string | null;
+    // isbn: string | null;
+    // binding: string;
+    // pages: number;
+    // materials: string ;
+    // reference: string
+    // publisher: string;
+  }
+
+  const books: Book[] = cfba_json;
 
   const [yearFilter, setYearFilter] = useState<string>("All");
   const [costFilter, setCostFilter] = useState<string>("All");
-  const [formatFilter, setFormatFilter] = useState<string>("All"); // not being used ... yet
+  // const [formatFilter, setFormatFilter] = useState<string>("All"); // not being used ... yet
 
 
   // Apply filtering and sorting to the entire dataset
-  const filteredAndSortedBooks = cfba_json.filter((book) => {
+  const filteredAndSortedBooks = books.filter((book) => {
     return (
       book.price !== null && // Check for non-null prices
       (yearFilter === "All" || // Year filter conditions
@@ -85,13 +86,14 @@ export const DisplayFilteredBooks = () => {
       await handleClick(bookId); // Invoking handleClick method
     };*/
 
-  const [bookmarkStatus, setBookmarkStatus] = useState({});
+  // const [bookmarkStatus, setBookmarkStatus] = useState({});
 
-  const handleSaveClick = async (bookId: any) => {
-    setBookmarkStatus((prevStatus) => ({
-      ...prevStatus,
-      [bookId]: !prevStatus[bookId], // Toggle bookmark status for the specific card ID
-    })); 
+  const handleSaveClick = async (bookId: number) => {
+    
+    // setBookmarkStatus((prevStatus) => ({
+    //   ...prevStatus,
+    //   [bookId]: !prevStatus[bookId], // Toggle bookmark status for the specific card ID
+    // })); 
 
     try {
       const response = await axios.get(
@@ -229,7 +231,7 @@ export const DisplayFilteredBooks = () => {
               >
                 <Form.Control
                   as="select"
-                  value={formatFilter}
+                  // value={formatFilter}
                   className="form-control"
                 >
                   <option value="book">Book</option>
@@ -293,11 +295,12 @@ export const DisplayFilteredBooks = () => {
                       onClick={() => handleSaveClick(book.temp_id)}
                       className="bookmark"
                     >
-                      {bookmarkStatus[book.temp_id] ? (
+                      <img src={bmClicked} alt="" />
+                      {/* {bookmarkStatus[book.temp_id] ? (
                         <img src={bmClicked} alt="bookmark button clicked" />
                       ) : (
                         <img src={bmUnclicked} alt="bookmark button not clicked" />
-                      )}
+                      )} */}
                     </div>
                   </Col>
                 ))}
