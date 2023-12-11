@@ -14,6 +14,7 @@ interface UserData {
 
 const useHandleClick = (bookId: number) => {
   const [user, setUser] = useState<UserData | null>(null);
+  console.log(bookId)
 
   const handleClick = async (bookId: number) => {
     try {
