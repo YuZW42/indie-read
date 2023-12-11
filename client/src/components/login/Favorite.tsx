@@ -7,21 +7,21 @@ import { Link } from "react-router-dom";
 import cfba_json from "../../../../server/outputs/cfba.json";
 import placeholder from "../../images/placeholder.png";
 
-import btnClicked from "../../assets/bookmark_clicked.png"
+// import btnClicked from "../../assets/bookmark_clicked.png"
 import btnUnclicked from "../../assets/bookmark_unclicked.png"
 
 
 
 const Fav = ({ preference }: { preference: any }) => {
   const [favoriteBooks, setFavoriteBooks] = useState<any[]>([]);
-  const [bookmarkStatus, setBookmarkStatus] = useState({});
+  // const [bookmarkStatus, setBookmarkStatus] = useState({});
 
 
   const handleSaveClick = async (bookId: number) => {
-    setBookmarkStatus((prevStatus) => ({
-      ...prevStatus,
-      [bookId]: !prevStatus[bookId], // Toggle bookmark status for the specific card ID
-    }));
+    // setBookmarkStatus((prevStatus) => ({
+    //   ...prevStatus,
+    //   [bookId]: !prevStatus[bookId],
+    // }));
 
     try {
       const response = await axios.get(
@@ -160,12 +160,14 @@ const Fav = ({ preference }: { preference: any }) => {
                       onClick={() => handleSaveClick(result.temp_id)}
                       className="bookmark"
                     >
-                      {bookmarkStatus[result.temp_id] ? (
+                                              <img src={btnUnclicked} alt="" />
+
+                      {/* {bookmarkStatus[result.temp_id] ? (
                         <img src={btnClicked} alt="" />
                       ) : (
                         <img src={btnUnclicked} alt="" />
 
-                      )}
+                      )} */}
                     </div>
                   </Col>
                 ))}
