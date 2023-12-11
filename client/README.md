@@ -10,8 +10,8 @@ start the project
 $ npm run dev 
 ```
 
-## Build with:
-- React
-- Typescript
-- React Bootstrap
-  - We are referncing React Boostrap hoping to utilize some styles that already exist which can reduce our workload
+## Built with:
+
+* **React:**  Enables dynamic content updates on our webpages, enhancing user experience.
+* **Typescript:**  Enforces type safety in our codebase, promoting code quality and maintainability.
+* **React Bootstrap:**  Provides pre-built styles and layouts, reducing development time and effort.
