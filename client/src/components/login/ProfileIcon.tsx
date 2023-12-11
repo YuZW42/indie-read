@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 
 import { Nav } from "react-bootstrap"
 
-import User from '../../components/shared/UserLogin'
-import logout from "../../components/login/Logout"
+import User from '../shared/UserLogin'
+import logout from "./Logout"
 
 import axios from 'axios';
 
@@ -63,8 +63,8 @@ export const ProfileIcon = () => {
 
             {user ? (
                 <div className='pfp-container'>
-                    <Nav.Link href="/profile"><img src={pfp} alt="profile image icon of a cartoon frog smiling" className="pfp-icon" /> </Nav.Link>
-                    <Nav.Link href="/profile"> <button className='view-profile-btn'>View Profile</button> </Nav.Link>
+                    <Nav.Link href={`/profile/${user.id}`}><img src={pfp} alt="profile image icon of a cartoon frog smiling" className="pfp-icon" /> </Nav.Link>
+                    <Nav.Link href={`/profile/${user.id}`}> <button className='view-profile-btn'>View Profile</button> </Nav.Link>
                     <button onClick={handleLogout} className='auth-btn'>Logout</button>
                 </div>
             ) : (

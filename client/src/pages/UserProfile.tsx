@@ -1,17 +1,25 @@
 import { useState, useEffect } from 'react';
-import { Header } from "../components/shared/Header"
+// import { useParams } from "react-router-dom";
+
+import { Footer } from '../components/shared/Footer';
+import Navbar from "../components/shared/NavBar"
+
+import logo from "../assets/final_logo.png"
+import pfp from "../assets/ABC_avatart-02.png"
 
 import User from '../components/shared/UserLogin'
-import logout from "../components/login/Logout"
 import Fav from "../components/login/Favorite"
 
 import axios from 'axios';
 
 import { Spinner } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+
+import "../components/profile/module.profile.css";
 
 interface UserData {
   email: string;
-  name: string;
+  name: string | null;
   createdAt: string;
   id: string;
   isCreator: boolean;
@@ -22,17 +30,10 @@ interface UserData {
 }
 
 const UserProfile = () => {
+  // const { id } = useParams();
+
   const [user, setUser] = useState<UserData | null>(null);
 
-  const google = () => {
-    window.open("http://localhost:5002/auth/google", "_self")
-  }
-  const handleLogout = async () => {
-    await logout();
-
-    setUser(null);
-
-  };
   //experiement
   const fetchUserData = async () => {
 
@@ -64,22 +65,39 @@ const UserProfile = () => {
 
   return (
     <>
-      <Header />
+      <div id='header-container'>
+        <Nav.Link href="/"><img src={logo} alt='website logo' /></Nav.Link>
+        <Navbar />
+      </div>
+
+      <div id='user-profile-container'>
+        <img src={pfp} alt="profile icon of a blue cartoon frog smiling" />
+        {/* <h3>{"Welcome, " + user.name}</h3> */}
+        <button>Edit Profile</button>
+      </div>
+
 
       <User setUser={setUser} />
 
       {user ? (
         <div>
           <Fav preference={user.preference} />
-          <button onClick={handleRefresh}>Refresh</button>
+
+          <div className='refresh-container'>
+            <p>Don't see your bookmarks? Try refreshing!</p>
+            <button className="refresh-btn" onClick={handleRefresh}>Refresh</button>
+          </div>
+
 
         </div>
       ) : (
-        <div>
-          <Spinner className='primary'/>
+        <div className="fav-books-container">
+          <Spinner className='primary' />
           <p>To See Latest Data, Please Login</p>
         </div>
       )}
+
+      <Footer />
     </>
   )
 }

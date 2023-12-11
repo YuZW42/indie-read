@@ -1,36 +1,115 @@
+@import '../../../styles/colors.css';
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-.header-container {
+#header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    margin: 2em 4em;
 
-    margin: 2em;
+    background-color: white;
+
+    z-index: 5;
 }
 
-.profile-container {
+#header-container img {
+    width: 10em;
+    height: 6em;
+}
+
+#user-profile-container {
+    width: 100%;
+
+    margin: 4em 0 6em 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    margin: 2em;
 }
 
-.info-container {
-    display: flex;
+#user-profile-container img {
+    width: 10em;
+    height: 10em;
+}
 
+#user-profile-container button {
+    border: 1.5px solid black;
+
+    border-radius: 0;
+
+    font-style: italic;
+
+    background-color: var(--primary-blue);
+    color: var(--primary-white)
+}
+
+/*************** FAVORITES SECTION ***************/
+
+.fav-books-container {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    
-    gap: 2em;
+    flex-direction: column;
 }
 
-.collections {
-    display: flex;
-    flex-direction: column;
+#no-result-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--primary-blue)
+}
 
-    gap: 1em;
+/* USER BUTTONS */
+#collections-btn {
+    border: 1.5px solid black;
+
+    border-radius: 0;
+
+    font-style: italic;
+
+    background-color: var(--primary-blue);
+    color: var(--primary-white)
+}
+
+#posts-btn {
+    border: 1.5px solid black;
+
+    margin-top: 1em;
+
+    border-radius: 0;
+
+    font-style: italic;
+
+    background-color: var(--primary-blue);
+    color: var(--primary-white)
+}
+
+
+/* REFRESH SECTION */
+.refresh-container {
+    margin: 4em;
+}
+
+.refresh-container p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.refresh-btn {
+    border: 1.5px solid black;
+
+    border-radius: 0;
+
+    font-style: italic;
+
+    background-color: var(--primary-blue);
+    color: var(--primary-white)
 }

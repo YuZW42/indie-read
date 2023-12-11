@@ -5,6 +5,9 @@ import { Container, Card, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { IoBookOutline, IoBookSharp } from "react-icons/io5";
 
+import btnClicked from "../../assets/bookmark_clicked.png"
+import btnUnclicked from "../../assets/bookmark_unclicked.png"
+
 // import Spinner from "react-bootstrap/Spinner";
 
 import placeholder from "../../images/placeholder.png";
@@ -145,9 +148,9 @@ const SearchResults: React.FC<SearchResultsProps> = ({ results, loading }) => {
                   className="bookmark"
                 >
                   {bookmarkStatus[result.temp_id] ? (
-                    <IoBookSharp />
+                    <img src={btnClicked} alt="" />
                   ) : (
-                    <IoBookOutline />
+                    <img src={btnUnclicked} alt="" />
                   )}
                 </div>
               </Col>
