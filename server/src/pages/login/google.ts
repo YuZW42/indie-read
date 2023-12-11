@@ -68,16 +68,25 @@ passport.deserializeUser(function (user, cb) {
 router.use(passport.initialize());
 router.use(passport.session());
 
-router.get('/login/success', (req, res) => {
+router.get('/login/success', async (req, res) => {
   console.log('Request received at /login/success');
 
   if (req.user) {
+    
+    const existingUser =  await  prisma.user.findFirst({
+      where: { email:req.user['email']} 
+    });
+    console.log(1, existingUser)
+    console.log(2, req.user)
+
     res.status(200).json({
       success: true,
       message: 'successful',
-      user: req.user,
+      user: existingUser,
       cookies: req.cookies
     });
+    
+    
   } else {
     res.status(401).json({
       success: false,

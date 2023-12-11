@@ -75,9 +75,7 @@ app.get('/user', async (req, res) => {
         }
         // Retrieve the user data based on the user's email
         const user = await prismaclient_1.default.user.findFirst({
-            where: { email: userEmail },
-            // Include additional fields if needed
-            include: { /* additional fields */}
+            where: { email: userEmail }
         });
         if (!user) {
             return res.status(404).json({ message: 'User not found' });
