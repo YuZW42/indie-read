@@ -13,7 +13,7 @@ interface UserData {
   userPreferenceId: string | null;
 }
 interface UserDetailsProps {
-  setUser: React.Dispatch<React.SetStateAction<UserData| null>>;
+  setUser: React.Dispatch<React.SetStateAction<any>>;
 }
 
 const UserDetails = ({ setUser }: UserDetailsProps) => {
