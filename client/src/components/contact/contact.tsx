@@ -20,7 +20,7 @@ const ContactSection: React.FC = () => {
               <img src={pic1} alt="Jane" style={{ width: '100%' }} />
               <div className="container">
                 <h2>Ash Wei</h2>
-                <p className="title">Project Leader & UI Designer</p>
+                <p className="title">Innovator, Designer</p>
 
                 <a href="https://www.instagram.com/yu.x.w/" target="_blank">Instagram</a>
                 <button className="button" onClick={() => handleContactClick('yuxwater@gmail.com')}>
