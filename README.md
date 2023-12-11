@@ -33,4 +33,7 @@
 <img src="./client/src/assets/opening_desktop-02.png" alt="Hero Section Image">
 
 # Home Page
-<img width="1255" alt="Screenshot 2023-11-08 at 5 23 46 PM" src="https://github.com/YuZW42/indie-read/assets/88296782/82beca41-0452-48d8-99a0-94c5a9537a68">
+<img width="100%" alt="art book section image" src="./client/src/images/README/artbook-section.PNG">
+
+# Search Results
+<img width="100%" src="./client/src/images/README/search-results.PNG">
