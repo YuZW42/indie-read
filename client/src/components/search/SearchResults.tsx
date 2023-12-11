@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import axios from "axios";
 
 import { Container, Card, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 //import { IoBookOutline, IoBookSharp } from "react-icons/io5";
 
-import btnClicked from "../../assets/bookmark_clicked.png"
-import btnUnclicked from "../../assets/bookmark_unclicked.png"
+// import btnClicked from "../../assets/bookmark_clicked.png"
+import btnUnclicked from "../../assets/bookmark_unclicked.png";
 
 // import Spinner from "react-bootstrap/Spinner";
 
@@ -30,15 +30,15 @@ interface SearchResultsProps {
   loading: boolean;
 }
 
-const SearchResults: React.FC<SearchResultsProps> = ({ results, loading }) => {
-  const [bookmarkStatus, setBookmarkStatus] = useState({});
+const SearchResults: React.FC<SearchResultsProps> = ({ results }) => {
+  // const [bookmarkStatus, setBookmarkStatus] = useState({});
 
   const handleSaveClick = async (bookId: number) => {
-   /* setBookmarkStatus((prevStatus) => ({
+    /* setBookmarkStatus((prevStatus) => ({
       ...prevStatus,
       [bookId]: !prevStatus[bookId], // Toggle bookmark status for the specific card ID
     })); */
-     //commented this out
+    //commented this out
 
     try {
       const response = await axios.get(
@@ -91,73 +91,79 @@ const SearchResults: React.FC<SearchResultsProps> = ({ results, loading }) => {
         <p id="no-result-text">No results found.</p>
       )}
       {!loading && results.length > 0 && ( */}
-        <Container>
-          <h1>{results.length} Artist's Artbooks Found</h1>
-          {results.length == 0 ? <h1 id="no-result-text">No Results Found.</h1> : ""}
-          <Row>
-            {results.map((result) => (
-              <Col
-                key={result.temp_id}
-                className="product-col"
-                xs={12}
-                sm={6}
-                md={3}
-                style={{
-                  padding: "1em",
-                  display: "flex",
-                  flexDirection: "column",
-                }}
+      <Container>
+        <h1>{results.length} Artist's Artbooks Found</h1>
+        {results.length == 0 ? (
+          <h1 id="no-result-text">No Results Found.</h1>
+        ) : (
+          ""
+        )}
+        <Row>
+          {results.map((result) => (
+            <Col
+              key={result.temp_id}
+              className="product-col"
+              xs={12}
+              sm={6}
+              md={3}
+              style={{
+                padding: "1em",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <Link
+                to={`/details/${result.temp_id}`}
+                target="_blank"
+                className="product-item"
+                style={{ flex: 1 }}
               >
-                <Link
-                  to={`/details/${result.temp_id}`}
-                  target="_blank"
-                  className="product-item"
-                  style={{ flex: 1 }}
-                >
-                  <div className="book-title">{result.title}</div>
-                  {result.images ? (
-                    <Card.Img
-                      variant="top"
-                      src={getImageSource(result.temp_id)}
-                      className="book-image"
-                      style={{ aspectRatio: "auto" }}
-                      alt="Artwork"
-                    />
-                  ) : (
-                    <img
-                      src={placeholder}
-                      alt="Placeholder Artbook Image"
-                      style={{ width: "100%", height: "100%" }}
-                    />
-                  )}
-                  <div className="card-footer">
-                    <div className="card-info">
-                      <span>
-                        {result.author ? result.author : "Author Not Found"}
-                      </span>
-                      <span id="divider">-</span>
-                      <span>
-                        {result.price
-                          ? "$" + result.price + ".00"
-                          : "Price Not Found"}
-                      </span>
-                    </div>
+                <div className="book-title">{result.title}</div>
+                {result.images ? (
+                  <Card.Img
+                    variant="top"
+                    src={getImageSource(result.temp_id)}
+                    className="book-image"
+                    style={{ aspectRatio: "auto" }}
+                    alt="Artwork"
+                  />
+                ) : (
+                  <img
+                    src={placeholder}
+                    alt="Placeholder Artbook Image"
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                )}
+                <div className="card-footer">
+                  <div className="card-info">
+                    <span>
+                      {result.author ? result.author : "Author Not Found"}
+                    </span>
+                    <span id="divider">-</span>
+                    <span>
+                      {result.price
+                        ? "$" + result.price + ".00"
+                        : "Price Not Found"}
+                    </span>
                   </div>
-                </Link>
-                <div
-                  onClick={() => handleSaveClick(result.temp_id)}
-                  className="bookmark"
-                >
-                  {bookmarkStatus[result.temp_id] ? (
+                </div>
+              </Link>
+              <div
+                onClick={() => handleSaveClick(result.temp_id)}
+                className="bookmark"
+              >
+                <img src={btnUnclicked} alt="" />
+
+                {/* {bookmarkStatus[result.temp_id] ? (
                     <img src={btnClicked} alt="" />
                   ) : (
                     <img src={btnUnclicked} alt="" />
-                  )}
-                </div>
-              </Col>
-            ))}
-          </Row>
-        </Container>
+                  )} */}
+              </div>
+            </Col>
+          ))}
+        </Row>
+      </Container>
       {/* )} */}
     </div>
   );
