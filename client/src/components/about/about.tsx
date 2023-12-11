@@ -1,4 +1,5 @@
 import React from 'react';
+import { Footer } from '../shared/Footer';
 
 const About: React.FC = () => {
   return (
@@ -79,6 +80,8 @@ const About: React.FC = () => {
         </div>
         
       </div>
+
+      <Footer/>
       
     </section>
   );
