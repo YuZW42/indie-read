@@ -45,17 +45,17 @@ const Fav = ({ preference }: { preference: any }) => {
             },
           });
           console.log(result.data);
-          // Handle result.data as needed
+          
         } else {
           console.log("User not logged in");
-          // Handle case where user is not logged in
+         
         }
       } else {
         throw new Error("Failed to fetch user data");
       }
     } catch (error) {
       console.error("Error:", error);
-      // Handle errors as needed
+      
     }
   };
 

@@ -20,7 +20,8 @@ export const DetailsPage = () => {
 
 
   const { id } = useParams();
-  const filteredAndSortedBooks = cfbaJson.filter((book) => book.temp_id == id);
+  const filteredAndSortedBooks = cfbaJson.filter((book) =>  String(book.temp_id) == id);
+  //cast tempid to string
 
   const resultObject =
     filteredAndSortedBooks.length > 0 ? filteredAndSortedBooks[0] : null;
@@ -35,7 +36,7 @@ export const DetailsPage = () => {
 
   const [bookmarkStatus, setBookmarkStatus] = useState({});
 
-  const handleSaveClick = async (bookId: any) => {
+  const handleSaveClick = async (bookId:any) => {
     setBookmarkStatus((prevStatus) => ({
       ...prevStatus,
       [bookId]: !prevStatus[bookId], // Toggle bookmark status for the specific card ID

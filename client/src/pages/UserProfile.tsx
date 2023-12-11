@@ -33,7 +33,7 @@ interface UserData {
 const UserProfile = () => {
   // const { id } = useParams();
 
-  const [user, setUser] = useState<UserData | null>(null);
+  const [user, setUser] = useState<UserData|null>(null);
 
   const google = () => {
     window.open("http://localhost:5002/auth/google", "_self");
