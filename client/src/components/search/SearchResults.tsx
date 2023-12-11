@@ -34,10 +34,11 @@ const SearchResults: React.FC<SearchResultsProps> = ({ results, loading }) => {
   const [bookmarkStatus, setBookmarkStatus] = useState({});
 
   const handleSaveClick = async (bookId: number) => {
-    setBookmarkStatus((prevStatus) => ({
+   /* setBookmarkStatus((prevStatus) => ({
       ...prevStatus,
       [bookId]: !prevStatus[bookId], // Toggle bookmark status for the specific card ID
-    }));
+    })); */
+     //commented this out
 
     try {
       const response = await axios.get(

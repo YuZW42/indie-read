@@ -87,9 +87,7 @@ app.get('/user', async (req, res) => {
 
     // Retrieve the user data based on the user's email
     const user = await prisma.user.findFirst({
-      where: { email: userEmail },
-      // Include additional fields if needed
-      include: { /* additional fields */ }
+      where: { email: userEmail }
     });
 
     if (!user) {
