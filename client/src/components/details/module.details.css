@@ -1,4 +1,5 @@
 @import "../../../styles/colors.css";
+@import "../../index.css";
 
 * {
     padding: 0;
@@ -12,25 +13,41 @@
 .card-title {
     text-align: center;
 
+    font-style: italic;
+
     margin: 1em 0;
     padding: 0;
 }
 
 /* TOP LEVEL INFORMATION*/
 
-.top-level-info > *{
+.top-level-info {
     display: flex;
-
-
+    justify-content: space-between;
+    
     margin: 0;
 }
 
+.artbook-info {
+    display: flex;
+    flex-direction: column;
+}
+
 .artbook-info p {
-    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 #author {
     margin-bottom: 3em;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2em;
 }
 
 /* BOTTOM LEVEL INFORMATION */

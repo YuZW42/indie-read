@@ -10,7 +10,7 @@ import Search from "./pages/Search.tsx"
 import { Contact } from './pages/Contact.tsx';
 import { About } from './pages/About.tsx';
 
-import UserLogin from "../src/pages/Login.tsx"
+import UserProfile from "./pages/UserProfile.tsx"
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <Route path='/search' element={<Search/>}/> 
         <Route path='/post-artbook' element={<Post/>}/>
         <Route path="/details/:id" element={<DetailsPage/>} />
-        <Route path="/login" element={<UserLogin/>}/>
+        <Route path="/profile" element={<UserProfile/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
 

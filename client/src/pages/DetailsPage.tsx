@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { BsArrowLeftCircle } from "react-icons/bs";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
-import NavBar from "../components/shared/NavBar";
+import { Header } from "../components/shared/Header";
 import { Footer } from "../components/shared/Footer";
 
 import cfbaJson from "../../../server/outputs/cfba.json";
@@ -12,11 +11,14 @@ import bmClicked from "../assets/bookmark_clicked.png";
 import bmUnclicked from "../assets/bookmark_unclicked.png";
 import purchasedBtn from "../assets/Purchase.png";
 
+
 import axios from "axios";
 
 import "../components/details/module.details.css";
 
 export const DetailsPage = () => {
+
+
   const { id } = useParams();
   const filteredAndSortedBooks = cfbaJson.filter((book) => book.temp_id == id);
 
@@ -78,16 +80,7 @@ export const DetailsPage = () => {
   return (
     <>
       <Container>
-        <Row className="mt-3">
-          <Col>
-            <a href="/">
-              <BsArrowLeftCircle className="back-arrow" />
-            </a>
-          </Col>
-          <Col>
-            <NavBar />
-          </Col>
-        </Row>
+        <Header/>
 
         <main className="mt-3">
           {resultObject ? (
@@ -110,6 +103,7 @@ export const DetailsPage = () => {
               {/* {isScrollable && <p className="scroll-info">Scrollable</p>} */}
               <div className="mt-3">
                 <div className="top-level-info">
+
                   <div className="artbook-info">
                     <p id="price">${resultObject.price}.00</p>
                     <p id="author">
@@ -118,6 +112,9 @@ export const DetailsPage = () => {
                         : "Author Not Found"}
                     </p>
                   </div>
+
+
+
                   <div className="btn-container">
                     <div
                       onClick={() => handleSaveClick(id)}
@@ -131,9 +128,13 @@ export const DetailsPage = () => {
                           alt="bookmark button not clicked"
                         />
                       )}
+
                     </div>
+
                     <a href={resultObject.url} target="_blank"><img src={purchasedBtn} alt="button to purchase art book" /></a>
+
                   </div>
+
                 </div>
 
                 <ul className="bottom-level-info">
