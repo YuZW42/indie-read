@@ -7,20 +7,22 @@ import { Footer } from "../components/shared/Footer";
 
 import cfbaJson from "../../../server/outputs/cfba.json";
 
-import bmClicked from "../assets/bookmark_clicked.png";
+// import bmClicked from "../assets/bookmark_clicked.png";
 import bmUnclicked from "../assets/bookmark_unclicked.png";
 import purchasedBtn from "../assets/Purchase.png";
-
 
 import axios from "axios";
 
 import "../components/details/module.details.css";
 
 export const DetailsPage = () => {
-
-
   const { id } = useParams();
-  const filteredAndSortedBooks = cfbaJson.filter((book) =>  String(book.temp_id) == id);
+  let pageID = -1;
+
+  const filteredAndSortedBooks = cfbaJson.filter((book) => {
+    pageID = book.temp_id;
+    return String(book.temp_id) == id
+  });
   //cast tempid to string
 
   const resultObject =
@@ -34,13 +36,13 @@ export const DetailsPage = () => {
 
   // const isScrollable = resultObject.images.length > 4 ? true : false;
 
-  const [bookmarkStatus, setBookmarkStatus] = useState({});
+  // const [bookmarkStatus, setBookmarkStatus] = useState({});
 
-  const handleSaveClick = async (bookId:any) => {
-    setBookmarkStatus((prevStatus) => ({
-      ...prevStatus,
-      [bookId]: !prevStatus[bookId], // Toggle bookmark status for the specific card ID
-    }));
+  const handleSaveClick = async (bookId: number) => {
+    // setBookmarkStatus((prevStatus) => ({
+    //   ...prevStatus,
+    //   [bookId]: !prevStatus[bookId], // Toggle bookmark status for the specific card ID
+    // }));
 
     try {
       const response = await axios.get(
@@ -81,7 +83,7 @@ export const DetailsPage = () => {
   return (
     <>
       <Container>
-        <Header/>
+        <Header />
 
         <main className="mt-3">
           {resultObject ? (
@@ -104,7 +106,6 @@ export const DetailsPage = () => {
               {/* {isScrollable && <p className="scroll-info">Scrollable</p>} */}
               <div className="mt-3">
                 <div className="top-level-info">
-
                   <div className="artbook-info">
                     <p id="price">${resultObject.price}.00</p>
                     <p id="author">
@@ -114,28 +115,30 @@ export const DetailsPage = () => {
                     </p>
                   </div>
 
-
-
                   <div className="btn-container">
                     <div
-                      onClick={() => handleSaveClick(id)}
+                      onClick={() => handleSaveClick(pageID)}
                       className="bookmark"
                     >
-                      {bookmarkStatus[id] ? (
-                        <img src={bmClicked} alt="bookmark button clicked" />
+                      <img src={bmUnclicked} alt="bookmark button clicked" />
+
+                      {/* {bookmarkStatus[id] ? (
+                        <img src={bmUnclicked} alt="bookmark button clicked" />
                       ) : (
                         <img
                           src={bmUnclicked}
                           alt="bookmark button not clicked"
                         />
-                      )}
-
+                      )} */}
                     </div>
 
-                    <a href={resultObject.url} target="_blank"><img src={purchasedBtn} alt="button to purchase art book" /></a>
-
+                    <a href={resultObject.url} target="_blank">
+                      <img
+                        src={purchasedBtn}
+                        alt="button to purchase art book"
+                      />
+                    </a>
                   </div>
-
                 </div>
 
                 <ul className="bottom-level-info">
