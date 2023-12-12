@@ -42,6 +42,7 @@ const UserProfile = () => {
   //experiement
   const fetchUserData = async () => {
     try {
+      console.log('email',user?.email)
       const response = await axios.get(
         `https://indie-read-production.up.railway.app/user?list=${user?.email}`
       );
@@ -128,3 +129,5 @@ const UserProfile = () => {
 };
 
 export default UserProfile;
+
+
