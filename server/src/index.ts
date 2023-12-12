@@ -23,11 +23,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session())
 
-app.use(cors({
-  origin: '*',
-  methods: 'GET,POST,PUT,DELETE',
-  credentials: true,
-}));
+app.use(cors());
 
 app.get('/',(req,res) =>{
   res.send('Hello');
