@@ -27,7 +27,7 @@ export const ProfileIcon = () => {
     const [user, setUser] = useState<UserData | null>(null);
 
     const google = () => {
-        window.open("https://indie-read-yuzw42.vercel.app/auth/google", "_self")
+        window.open("https://indie-read-production.up.railway.app/auth/google", "_self")
     }
     
     const handleLogout = async () => {
@@ -40,7 +40,7 @@ export const ProfileIcon = () => {
     const fetchUserData = async () => {
 
         try {
-            const response = await axios.get(`https://indie-read-yuzw42.vercel.app/user?list=${user?.email}`);
+            const response = await axios.get(`https://indie-read-production.up.railway.app/user?list=${user?.email}`);
             if (response.status === 200) {
                 const userData = response.data;
                 console.log('sucess')

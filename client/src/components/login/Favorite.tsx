@@ -25,7 +25,7 @@ const Fav = ({ preference }: { preference: any }) => {
 
     try {
       const response = await axios.get(
-        "https://indie-read-yuzw42.vercel.app/auth/login/success",
+        "https://indie-read-production.up.railway.app/auth/login/success",
         {
           withCredentials: true,
           headers: {
@@ -38,7 +38,7 @@ const Fav = ({ preference }: { preference: any }) => {
         const user = response.data.user;
 
         if (user) {
-          const result = await axios.get("https://indie-read-yuzw42.vercel.app/save_fav", {
+          const result = await axios.get("https://indie-read-production.up.railway.app/save_fav", {
             params: {
               id: user.email,
               bookId: bookId,
@@ -73,7 +73,7 @@ const Fav = ({ preference }: { preference: any }) => {
     const fetchFavoriteBooks = async () => {
       try {
 
-        const response = await axios.get(`https://indie-read-yuzw42.vercel.app/get_fav?list=${preference.q}`);
+        const response = await axios.get(`https://indie-read-production.up.railway.app/get_fav?list=${preference.q}`);
         const fetchedBooks = response.data;
 
         setFavoriteBooks(fetchedBooks);

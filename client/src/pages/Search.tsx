@@ -7,7 +7,7 @@ const Search: React.FC = () => {
 
   const handleSearch = async (keyword: string) => {
     try {
-      const response = await axios.get('https://indie-read-yuzw42.vercel.app/search_keyword', {
+      const response = await axios.get('https://indie-read-production.up.railway.app/search_keyword', {
         params: {
           keyword: keyword,
         },

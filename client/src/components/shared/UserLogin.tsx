@@ -21,7 +21,7 @@ const UserDetails = ({ setUser }: UserDetailsProps) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://indie-read-yuzw42.vercel.app/auth/login/success', {
+        const response = await axios.get('https://indie-read-production.up.railway.app/auth/login/success', {
           withCredentials: true,
           headers: {
             'Content-Type': 'application/json',
