@@ -23,7 +23,13 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session())
 
-app.use(cors());
+
+app.use(cors({
+  origin: 'https://indie-read-yuzw42.vercel.app/',
+  methods: 'GET,POST,PUT,DELETE',
+  credentials: true,
+}));
+
 
 app.get('/',(req,res) =>{
   res.send('Hello');
