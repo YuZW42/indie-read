@@ -18,7 +18,7 @@ const useHandleClick = (bookId: number) => {
 
   const handleClick = async (bookId: number) => {
     try {
-      const response = await axios.get('http://localhost:5002/auth/login/success', {
+      const response = await axios.get('https://indie-read-yuzw42.vercel.app/auth/login/success', {
         withCredentials: true,
         headers: {
           'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ const useHandleClick = (bookId: number) => {
         setUser(response.data.user as UserData);
 
         if (response.data.user) {
-          const result = await axios.get('http://localhost:5002/save_fav', {
+          const result = await axios.get('https://indie-read-yuzw42.vercel.app/save_fav', {
             params: {
               id: response.data.user.email,
               bookId: bookId

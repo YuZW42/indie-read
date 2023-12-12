@@ -36,14 +36,14 @@ const UserProfile = () => {
   const [user, setUser] = useState<UserData|null>(null);
 
   const google = () => {
-    window.open("http://localhost:5002/auth/google", "_self");
+    window.open("https://indie-read-yuzw42.vercel.app/auth/google", "_self");
   };
 
   //experiement
   const fetchUserData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5002/user?list=${user?.email}`
+        `https://indie-read-yuzw42.vercel.app/user?list=${user?.email}`
       );
       if (response.status === 200) {
         const userData = response.data;

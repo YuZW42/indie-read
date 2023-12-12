@@ -97,7 +97,7 @@ export const DisplayFilteredBooks = () => {
 
     try {
       const response = await axios.get(
-        "http://localhost:5002/auth/login/success",
+        "https://indie-read-yuzw42.vercel.app/auth/login/success",
         {
           withCredentials: true,
           headers: {
@@ -110,7 +110,7 @@ export const DisplayFilteredBooks = () => {
         const user = response.data.user;
 
         if (user) {
-          const result = await axios.get("http://localhost:5002/save_fav", {
+          const result = await axios.get("https://indie-read-yuzw42.vercel.app/save_fav", {
             params: {
               id: user.email,
               bookId: bookId,

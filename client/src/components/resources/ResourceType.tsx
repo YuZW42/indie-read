@@ -4,7 +4,7 @@ import  Resource from './ResourceInterface'
 const fetchData = async (): Promise<Resource[]> => {
   try {
   
-    const response = await axios.get('http://localhost:5002/resources_data');
+    const response = await axios.get('https://indie-read-yuzw42.vercel.app/resources_data');
     
     console.log("express")
     return response.data;

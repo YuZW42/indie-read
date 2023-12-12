@@ -5,7 +5,7 @@ import session from 'express-session';
 import prisma from '../shared/prismaclient'
 
 const router = express.Router();
-const CLIENT_URL = 'http://localhost:5173/';
+const CLIENT_URL = 'https://indie-read-yuzw42.vercel.app/';
 
 
 

@@ -4,7 +4,7 @@ import axios from "axios";
 const logout = async () => {
   try {
     
-    const response = await axios.get('http://localhost:5002/auth/logout', {
+    const response = await axios.get('https://indie-read-yuzw42.vercel.app/auth/logout', {
       withCredentials: true,
       headers: {
         'Content-Type': 'application/json',
