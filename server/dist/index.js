@@ -23,7 +23,7 @@ app.use((0, cookie_session_1.default)({
 app.use(passport_1.default.initialize());
 app.use(passport_1.default.session());
 app.use((0, cors_1.default)({
-    origin: 'https://indie-read-yuzw42.vercel.app/',
+    origin: 'https://indie-read-yuzw42.vercel.app',
     methods: 'GET,POST,PUT,DELETE',
     credentials: true,
 }));

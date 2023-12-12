@@ -25,7 +25,7 @@ app.use(passport.session())
 
 
 app.use(cors({
-  origin: 'https://indie-read-yuzw42.vercel.app/',
+  origin: 'https://indie-read-yuzw42.vercel.app',
   methods: 'GET,POST,PUT,DELETE',
   credentials: true,
 }));
