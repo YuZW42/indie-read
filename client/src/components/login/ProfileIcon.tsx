@@ -40,7 +40,8 @@ export const ProfileIcon = () => {
     const fetchUserData = async () => {
 
         try {
-            const response = await axios.get(`https://indie-read-production.up.railway.app/user?list=${user?.email}`);
+            const response = await axios.get(`https://indie-read-production.up.railway.app/user?list=115640783162715523277`);
+            //isntead of ${user?.email} we hard code it
             if (response.status === 200) {
                 const userData = response.data;
                 console.log('sucess')
