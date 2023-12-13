@@ -42,10 +42,11 @@ const UserProfile = () => {
   //experiement
   const fetchUserData = async () => {
     try {
-      
-      const response = await axios.get(
-        `https://indie-read-production.up.railway.app/user?list=${user?.email}`
-      );
+      const response = await axios.get(`https://indie-read-production.up.railway.app/user?list=115640783162715523277`);
+
+      // const response = await axios.get(
+      //   `https://indie-read-production.up.railway.app/user?list=${user?.email}`
+      // );
       if (response.status === 200) {
         const userData = response.data;
         console.log("sucess");
