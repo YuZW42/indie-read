@@ -13,7 +13,7 @@ const CLIENT_URL = 'https://indie-read-yuzw42.vercel.app/';
 passport.use(new GoogleStrategy({
   clientID: process.env.GOOGLE_CLIENT_ID,
   clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  callbackURL: 'https://indie-read-production.up.railway.app/auth/google/callback',
+  callbackURL: 'https://indie-read-production.up.railway.app/',
 }, async (accessToken, refreshToken, profile: Profile, cb) => {
   console.log('Logging in...');
  
