@@ -26,9 +26,9 @@ interface UserData {
 export const ProfileIcon = () => {
     const [user, setUser] = useState<UserData | null>(null);
 
-    const google = () => {
-        window.open("https://indie-read-production.up.railway.app/auth/google", "_self")
-    }
+    // const google = () => {
+    //     window.open("https://indie-read-production.up.railway.app/auth/google", "_self")
+    // }
     
     const handleLogout = async () => {
         await logout();
@@ -56,7 +56,7 @@ export const ProfileIcon = () => {
 
     useEffect(() => {
         // Fetch initial user data when the component mounts
-        fetchUserData();
+        handleLogout()
     }, []);
 
     return (
@@ -72,7 +72,7 @@ export const ProfileIcon = () => {
             ) : (
                 <div className='pfp-container'>
                     <img src={pfp} alt="profile image icon of a cartoon frog smiling" className="pfp-icon" />
-                    <button onClick={google} className='auth-btn'>Login</button>
+                    <button onClick={fetchUserData} className='auth-btn'>Login</button>
                 </div>
             )}
 
