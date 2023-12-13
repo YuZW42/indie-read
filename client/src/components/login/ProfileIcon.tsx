@@ -55,8 +55,7 @@ export const ProfileIcon = () => {
     };
 
     useEffect(() => {
-        // Fetch initial user data when the component mounts
-        handleLogout()
+        fetchUserData();
     }, []);
 
     return (
