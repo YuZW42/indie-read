@@ -13,7 +13,11 @@ import "./module.home.css";
 import axios from "axios";
 
 import bmClicked from "../../assets/bookmark_clicked.png"
-// import bmUnclicked from "../../assets/bookmark_unclicked.png"
+import bmUnclicked from "../../assets/bookmark_unclicked.png"
+
+interface BookmarkStatus {
+  [key: number]: boolean;
+}
 
 export const DisplayFilteredBooks = () => {
   interface Book {
@@ -79,6 +83,8 @@ export const DisplayFilteredBooks = () => {
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
   };
+
+
   /*
     const handleSaveClick = async (bookId:number) => {
       const { handleClick } = handleTitleClick(bookId); // Avoid using hooks conditionally or inside loops
@@ -86,14 +92,21 @@ export const DisplayFilteredBooks = () => {
       await handleClick(bookId); // Invoking handleClick method
     };*/
 
-  // const [bookmarkStatus, setBookmarkStatus] = useState({});
+    const [bookmarkStatus, setBookmarkStatus] = useState<BookmarkStatus>({});
+  
+    const handleSaveClick = async (bookId: number): Promise<void> => {
 
-  const handleSaveClick = async (bookId: number) => {
-    
-    // setBookmarkStatus((prevStatus) => ({
-    //   ...prevStatus,
-    //   [bookId]: !prevStatus[bookId], // Toggle bookmark status for the specific card ID
-    // })); 
+    setBookmarkStatus((prevStatus) => ({
+      ...prevStatus,
+      [bookId]: !prevStatus[bookId],
+    })); 
+
+    setTimeout(() => {
+      setBookmarkStatus((prevStatus) => ({
+        ...prevStatus,
+        [bookId]: !prevStatus[bookId],
+      }));
+    }, 1500);
 
     try {
       const response = await axios.get(
@@ -184,62 +197,62 @@ export const DisplayFilteredBooks = () => {
         >
           <Row className="artwork-row">
             <Col xs={12} md={2}>
-              <button 
-                className="clear-filter-btn" 
+              <button
+                className="clear-filter-btn"
                 onClick={() => handleClear()}
               >
-                  Clear Filter
+                Clear Filter
               </button>
 
               <div className="filter-option">
-              <Form.Group
-                controlId="costFilter"
-                className="dropdown-group"
-              >
-                <Form.Control
-                  as="select"
-                  value={costFilter}
-                  onChange={(e) => setCostFilter(e.target.value)}
-                  className="form-control"
+                <Form.Group
+                  controlId="costFilter"
+                  className="dropdown-group"
                 >
-                  <option value="All">All</option>
-                  <option value="10">$10</option>
-                  <option value="10-25">$10-$25</option>
-                  <option value="25-50">$25-$50</option>
-                  <option value="50+">Over $50</option>
-                </Form.Control>
-                <Form.Label>{getCostLabel()}</Form.Label>
-              </Form.Group>
+                  <Form.Control
+                    as="select"
+                    value={costFilter}
+                    onChange={(e) => setCostFilter(e.target.value)}
+                    className="form-control"
+                  >
+                    <option value="All">All</option>
+                    <option value="10">$10</option>
+                    <option value="10-25">$10-$25</option>
+                    <option value="25-50">$25-$50</option>
+                    <option value="50+">Over $50</option>
+                  </Form.Control>
+                  <Form.Label>{getCostLabel()}</Form.Label>
+                </Form.Group>
 
-              <Form.Group className="dropdown-group">
-                <Form.Control
-                  as="select"
-                  value={yearFilter}
-                  onChange={(e) => setYearFilter(e.target.value)}
-                  className="form-control"
-                >
-                  <option value="All">All</option>
-                  <option value="2023">2023</option>
-                  <option value="Past 3 Years">Past 3 Years</option>
-                </Form.Control>
-                <Form.Label>{getDateLabel()}</Form.Label>
-              </Form.Group>
+                <Form.Group className="dropdown-group">
+                  <Form.Control
+                    as="select"
+                    value={yearFilter}
+                    onChange={(e) => setYearFilter(e.target.value)}
+                    className="form-control"
+                  >
+                    <option value="All">All</option>
+                    <option value="2023">2023</option>
+                    <option value="Past 3 Years">Past 3 Years</option>
+                  </Form.Control>
+                  <Form.Label>{getDateLabel()}</Form.Label>
+                </Form.Group>
 
-              <Form.Group
-                controlId="costFilter"
-                className="dropdown-group"
-              >
-                <Form.Control
-                  as="select"
-                  // value={formatFilter}
-                  className="form-control"
+                <Form.Group
+                  controlId="costFilter"
+                  className="dropdown-group"
                 >
-                  <option value="book">Book</option>
-                  <option value="zine">Zine</option>
-                  <option value="emphemera">Emphemera</option>
-                </Form.Control>
-                <Form.Label>{getFormatLabel()}</Form.Label>
-              </Form.Group>
+                  <Form.Control
+                    as="select"
+                    // value={formatFilter}
+                    className="form-control"
+                  >
+                    <option value="book">Book</option>
+                    <option value="zine">Zine</option>
+                    <option value="emphemera">Emphemera</option>
+                  </Form.Control>
+                  <Form.Label>{getFormatLabel()}</Form.Label>
+                </Form.Group>
               </div>
             </Col>
 
@@ -293,14 +306,13 @@ export const DisplayFilteredBooks = () => {
                     </Link>
                     <div
                       onClick={() => handleSaveClick(book.temp_id)}
-                      className="bookmark"
-                    >
-                      <img src={bmClicked} alt="" />
-                      {/* {bookmarkStatus[book.temp_id] ? (
+                      className={`bookmark ${bookmarkStatus[book.temp_id] ? 'fade-out' : ''}`}
+                      >
+                      {bookmarkStatus[book.temp_id] ? (
                         <img src={bmClicked} alt="bookmark button clicked" />
                       ) : (
                         <img src={bmUnclicked} alt="bookmark button not clicked" />
-                      )} */}
+                      )}
                     </div>
                   </Col>
                 ))}

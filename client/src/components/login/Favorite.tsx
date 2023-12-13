@@ -7,21 +7,30 @@ import { Link } from "react-router-dom";
 import cfba_json from "../../../../server/outputs/cfba.json";
 import placeholder from "../../images/placeholder.png";
 
-// import btnClicked from "../../assets/bookmark_clicked.png"
-import btnUnclicked from "../../assets/bookmark_unclicked.png"
+import bmClicked from "../../assets/bookmark_clicked.png"
+import bmUnclicked from "../../assets/bookmark_unclicked.png"
 
-
+interface BookmarkStatus {
+  [key: number]: boolean;
+}
 
 const Fav = ({ preference }: { preference: any }) => {
   const [favoriteBooks, setFavoriteBooks] = useState<any[]>([]);
-  // const [bookmarkStatus, setBookmarkStatus] = useState({});
 
+  const [bookmarkStatus, setBookmarkStatus] = useState<BookmarkStatus>({});
+  
+  const handleSaveClick = async (bookId: number): Promise<void> => {    
+    setBookmarkStatus((prevStatus) => ({
+      ...prevStatus,
+      [bookId]: !prevStatus[bookId],
+    })); 
 
-  const handleSaveClick = async (bookId: number) => {
-    // setBookmarkStatus((prevStatus) => ({
-    //   ...prevStatus,
-    //   [bookId]: !prevStatus[bookId],
-    // }));
+    setTimeout(() => {
+      setBookmarkStatus((prevStatus) => ({
+        ...prevStatus,
+        [bookId]: !prevStatus[bookId],
+      }));
+    }, 1500);
 
     try {
       const response = await axios.get(
@@ -158,16 +167,13 @@ const Fav = ({ preference }: { preference: any }) => {
                     </Link>
                     <div
                       onClick={() => handleSaveClick(result.temp_id)}
-                      className="bookmark"
-                    >
-                                              <img src={btnUnclicked} alt="" />
-
-                      {/* {bookmarkStatus[result.temp_id] ? (
-                        <img src={btnClicked} alt="" />
+                      className={`bookmark ${bookmarkStatus[result.temp_id] ? 'fade-out' : ''}`}
+                      >
+                      {bookmarkStatus[result.temp_id] ? (
+                        <img src={bmClicked} alt="bookmark button clicked" />
                       ) : (
-                        <img src={btnUnclicked} alt="" />
-
-                      )} */}
+                        <img src={bmUnclicked} alt="bookmark button not clicked" />
+                      )}
                     </div>
                   </Col>
                 ))}

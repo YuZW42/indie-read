@@ -7,7 +7,7 @@ import { Footer } from "../components/shared/Footer";
 
 import cfbaJson from "../../../server/outputs/cfba.json";
 
-// import bmClicked from "../assets/bookmark_clicked.png";
+import bmClicked from "../assets/bookmark_clicked.png";
 import bmUnclicked from "../assets/bookmark_unclicked.png";
 import purchasedBtn from "../assets/Purchase.png";
 
@@ -15,15 +15,18 @@ import axios from "axios";
 
 import "../components/details/module.details.css";
 
+interface BookmarkStatus {
+  [key: number]: boolean;
+}
+
 export const DetailsPage = () => {
   const { id } = useParams();
-  let pageID = -1;
+  // let pageID = -1;
 
   const filteredAndSortedBooks = cfbaJson.filter((book) => {
-    pageID = book.temp_id;
+    // pageID = book.temp_id;
     return String(book.temp_id) == id
   });
-  //cast tempid to string
 
   const resultObject =
     filteredAndSortedBooks.length > 0 ? filteredAndSortedBooks[0] : null;
@@ -36,13 +39,23 @@ export const DetailsPage = () => {
 
   // const isScrollable = resultObject.images.length > 4 ? true : false;
 
-  // const [bookmarkStatus, setBookmarkStatus] = useState({});
 
-  const handleSaveClick = async (bookId: number) => {
-    // setBookmarkStatus((prevStatus) => ({
-    //   ...prevStatus,
-    //   [bookId]: !prevStatus[bookId], // Toggle bookmark status for the specific card ID
-    // }));
+  const [bookmarkStatus, setBookmarkStatus] = useState<BookmarkStatus>({});
+  
+
+  const handleSaveClick = async (bookId: number): Promise<void> => {    
+    setBookmarkStatus((prevStatus) => ({
+      ...prevStatus,
+      [bookId]: !prevStatus[bookId],
+    })); 
+
+    setTimeout(() => {
+      setBookmarkStatus((prevStatus) => ({
+        ...prevStatus,
+        [bookId]: !prevStatus[bookId],
+      }));
+    }, 1500);
+
 
     try {
       const response = await axios.get(
@@ -116,20 +129,15 @@ export const DetailsPage = () => {
                   </div>
 
                   <div className="btn-container">
-                    <div
-                      onClick={() => handleSaveClick(pageID)}
-                      className="bookmark"
-                    >
-                      <img src={bmUnclicked} alt="bookmark button clicked" />
-
-                      {/* {bookmarkStatus[id] ? (
-                        <img src={bmUnclicked} alt="bookmark button clicked" />
+                  <div
+                      onClick={() => handleSaveClick(resultObject.temp_id)}
+                      className={`bookmark ${bookmarkStatus[resultObject.temp_id] ? 'fade-out' : ''}`}
+                      >
+                      {bookmarkStatus[resultObject.temp_id] ? (
+                        <img src={bmClicked} alt="bookmark button clicked" />
                       ) : (
-                        <img
-                          src={bmUnclicked}
-                          alt="bookmark button not clicked"
-                        />
-                      )} */}
+                        <img src={bmUnclicked} alt="bookmark button not clicked" />
+                      )}
                     </div>
 
                     <a href={resultObject.url} target="_blank">

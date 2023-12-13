@@ -1,12 +1,13 @@
-// import React, { useState } from "react";
+import { useState } from "react";
+
 import axios from "axios";
 
 import { Container, Card, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 //import { IoBookOutline, IoBookSharp } from "react-icons/io5";
 
-// import btnClicked from "../../assets/bookmark_clicked.png"
-import btnUnclicked from "../../assets/bookmark_unclicked.png";
+import bmClicked from "../../assets/bookmark_clicked.png"
+import bmUnclicked from "../../assets/bookmark_unclicked.png";
 
 // import Spinner from "react-bootstrap/Spinner";
 
@@ -30,15 +31,27 @@ interface SearchResultsProps {
   loading: boolean;
 }
 
+interface BookmarkStatus {
+  [key: number]: boolean;
+}
+
 const SearchResults: React.FC<SearchResultsProps> = ({ results }) => {
   // const [bookmarkStatus, setBookmarkStatus] = useState({});
 
-  const handleSaveClick = async (bookId: number) => {
-    /* setBookmarkStatus((prevStatus) => ({
+  const [bookmarkStatus, setBookmarkStatus] = useState<BookmarkStatus>({});
+
+  const handleSaveClick = async (bookId: number): Promise<void> => {
+    setBookmarkStatus((prevStatus) => ({
       ...prevStatus,
-      [bookId]: !prevStatus[bookId], // Toggle bookmark status for the specific card ID
-    })); */
-    //commented this out
+      [bookId]: !prevStatus[bookId],
+    }));
+
+    setTimeout(() => {
+      setBookmarkStatus((prevStatus) => ({
+        ...prevStatus,
+        [bookId]: !prevStatus[bookId],
+      }));
+    }, 1500);
 
     try {
       const response = await axios.get(
@@ -150,15 +163,13 @@ const SearchResults: React.FC<SearchResultsProps> = ({ results }) => {
               </Link>
               <div
                 onClick={() => handleSaveClick(result.temp_id)}
-                className="bookmark"
+                className={`bookmark ${bookmarkStatus[result.temp_id] ? 'fade-out' : ''}`}
               >
-                <img src={btnUnclicked} alt="" />
-
-                {/* {bookmarkStatus[result.temp_id] ? (
-                    <img src={btnClicked} alt="" />
-                  ) : (
-                    <img src={btnUnclicked} alt="" />
-                  )} */}
+                {bookmarkStatus[result.temp_id] ? (
+                  <img src={bmClicked} alt="bookmark button clicked" />
+                ) : (
+                  <img src={bmUnclicked} alt="bookmark button not clicked" />
+                )}
               </div>
             </Col>
           ))}
