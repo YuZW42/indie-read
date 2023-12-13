@@ -63,7 +63,7 @@ const Fav = ({ preference }: { preference: any }) => {
         //throw new Error("Failed to fetch user data");
         const result = await axios.get("https://indie-read-production.up.railway.app/save_fav", {
           params: {
-            id: 115640783162715523277,
+            id: "115640783162715523277",
             bookId: bookId,
           },
         });
@@ -72,7 +72,7 @@ const Fav = ({ preference }: { preference: any }) => {
     } catch (error) {
       const result = await axios.get("https://indie-read-production.up.railway.app/save_fav", {
         params: {
-          id: 115640783162715523277,
+          id: "115640783162715523277",
           bookId: bookId,
         },
       });

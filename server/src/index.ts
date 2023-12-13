@@ -57,7 +57,7 @@ app.get('/save_fav',async(req,res) =>{
   console.log(id,bookId)
   try {
     const result = await save_fav(String(id), Number(bookId));
-    
+    console.log()
     res.status(200).json(result); 
   } catch (error) {
     res.status(500).json({ error: error.message });
