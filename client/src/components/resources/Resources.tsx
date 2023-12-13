@@ -40,15 +40,15 @@ const ResourceList: React.FC = () => {
           <div>
             {filteredResources.map((resource, index) => (
               <Accordion.Item key={index} eventKey={`${index}`}>
-                <Accordion.Body>
+                <Accordion.Header>
                   <a href={resource.url}  target="_blank"><strong>{resource.name} </strong></a>
-                </Accordion.Body>
+                </Accordion.Header>
               
                 <Accordion.Body>{resource.caption}</Accordion.Body>
                   
-                {resource.type.split(';').map((label, index) => (
+                {/* {resource.type.split(';').map((label, index) => (
                   <Accordion.Button key={index}><span className="label">{label}</span></Accordion.Button>
-                ))}
+                ))} */}
 
               </Accordion.Item>
             ))}
