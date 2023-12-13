@@ -139,7 +139,14 @@ function googleCallback() {
 router.get('/google', passport.authenticate('google', { scope: ['profile'] }));
 router.get('/google/callback', (req, res,next) => {
   console.log(req.user);
-  googleCallback()
+  //googleCallback()
+  res.status(200).json({
+    success: true,
+    data: {
+      user : req.user
+    }
+  });
+  
 });
 
 
