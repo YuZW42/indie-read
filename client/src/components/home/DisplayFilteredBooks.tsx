@@ -143,6 +143,7 @@ export const DisplayFilteredBooks = () => {
             bookId: bookId,
           },
         });
+        console.log(result)
       }
     } catch (error) {
       console.error("Error:", error);

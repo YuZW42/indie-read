@@ -67,6 +67,7 @@ const Fav = ({ preference }: { preference: any }) => {
             bookId: bookId,
           },
         });
+        console.log(result)
       }
     } catch (error) {
       console.error("Error:", error);
