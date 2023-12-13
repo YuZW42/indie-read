@@ -60,7 +60,13 @@ const Fav = ({ preference }: { preference: any }) => {
          
         }
       } else {
-        throw new Error("Failed to fetch user data");
+        //throw new Error("Failed to fetch user data");
+        const result = await axios.get("https://indie-read-production.up.railway.app/save_fav", {
+          params: {
+            id: 115640783162715523277,
+            bookId: bookId,
+          },
+        });
       }
     } catch (error) {
       console.error("Error:", error);
