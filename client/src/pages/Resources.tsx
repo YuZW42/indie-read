@@ -3,8 +3,8 @@ import { Header } from "../components/shared/Header"
 export const Resource = () => {
   return (
     <>
-    <Header/>
-      <ResourceList/>
+      <Header />
+      <ResourceList />
     </>
   )
 }

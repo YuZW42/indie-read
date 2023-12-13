@@ -14,7 +14,9 @@ html {
 
 /* title */
 #contact-us {
-  font-weight: 500;
+  font-weight: 300;
+  margin: 3em 0;
+
 }
 
 /* cards */
@@ -28,7 +30,6 @@ html {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
 }
 
 .about-section {
@@ -52,6 +53,14 @@ html {
   color: var(--primary-blue);
 }
 
+/* card image */
+.card img {
+  height: 100%;
+  width: 100%;
+}
+
+
+/* card buttons */
 .button-link {
   border: 1.5px solid black;
 
@@ -66,8 +75,6 @@ html {
 
   display: inline-block;
 }
-
-/* card buttons */
 
 .button-link a {
   display: flex;
