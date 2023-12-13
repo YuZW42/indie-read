@@ -35,9 +35,9 @@ const UserProfile = () => {
 
   const [user, setUser] = useState<UserData|null>(null);
 
-  const google = () => {
-    window.open("https://indie-read-production.up.railway.app/auth/google", "_self");
-  };
+  // const google = () => {
+  //   window.open("https://indie-read-production.up.railway.app/auth/google", "_self");
+  // };
 
   //experiement
   const fetchUserData = async () => {
@@ -99,7 +99,7 @@ const UserProfile = () => {
           <div id="user-profile-container">
             <img src={pfp} alt="profile icon of a blue cartoon frog smiling" />
             <div className="user-btn-container">
-              <button id="login-btn" onClick={google}>Login</button>
+              <button id="login-btn" onClick={fetchUserData}>Login</button>
             </div>
           </div>
         )}
