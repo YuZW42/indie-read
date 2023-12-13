@@ -65,7 +65,7 @@ export const ProfileIcon = () => {
             {user ? (
                 <div className='pfp-container'>
                     <Nav.Link href={`/profile/${user.id}`}><img src={pfp} alt="profile image icon of a cartoon frog smiling" className="pfp-icon" /> </Nav.Link>
-                    <Nav.Link href={`/profile/${user.id}`}> <button className='view-profile-btn'>View Profile</button> </Nav.Link>
+                    <Nav.Link href={`/profile/${user.id}`}> <button className='view-profile-btn'>Spark! Profile</button> </Nav.Link>
                     <button onClick={handleLogout} className='auth-btn'>Logout</button>
                 </div>
             ) : (
