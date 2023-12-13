@@ -70,7 +70,8 @@ router.use(passport.session());
 
 router.get('/login/success', async (req, res) => {
   console.log('Request received at /login/success');
-  console.log("req",req)
+  console.log('client id', process.env.GOOGLE_CLIENT_ID);
+  console.log('secret', process.env.GOOGLE_CLIENT_SECRET);
   console.log("-------")
   console.log("req.user",req.user)
 
@@ -132,6 +133,7 @@ router.get('/logout', (req, res,next) => {
 
 router.get('/google', passport.authenticate('google', { scope: ['profile'] }));
 router.get('/google/callback', passport.authenticate('google', {
+  
   successRedirect: CLIENT_URL,
   failureRedirect: '/auth/login/failed'
 }));
