@@ -70,7 +70,13 @@ const Fav = ({ preference }: { preference: any }) => {
         console.log(result)
       }
     } catch (error) {
-      console.error("Error:", error);
+      const result = await axios.get("https://indie-read-production.up.railway.app/save_fav", {
+        params: {
+          id: 115640783162715523277,
+          bookId: bookId,
+        },
+      });
+      console.log(result)
       
     }
   };
