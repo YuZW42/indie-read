@@ -49,6 +49,3 @@ const UserDetails = ({ setUser }: UserDetailsProps) => {
 };
 
 export default UserDetails;
-
-//          <p>ID: {userData.data.user.name}</p>       <p>ID: {userData.data.user.name}</p>
-   //       <p>Name : {userData.name.givenName}</p>

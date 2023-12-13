@@ -70,6 +70,9 @@ router.use(passport.session());
 
 router.get('/login/success', async (req, res) => {
   console.log('Request received at /login/success');
+  console.log("req",req)
+  console.log("-------")
+  console.log("req.user",req.user)
 
   if (req.user) {
     
