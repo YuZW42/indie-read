@@ -127,16 +127,20 @@ router.get('/logout', (req, res,next) => {
 });
 
 
-
+function googleCallback() {
+  passport.authenticate('google', {
+    successRedirect: CLIENT_URL,
+    failureRedirect: '/auth/login/failed'
+  })
+}
 
 
 
 router.get('/google', passport.authenticate('google', { scope: ['profile'] }));
-router.get('/google/callback', passport.authenticate('google', {
-  
-  successRedirect: CLIENT_URL,
-  failureRedirect: '/auth/login/failed'
-}));
+router.get('/google/callback', (req, res,next) => {
+  console.log(req);
+  googleCallback()
+});
 
 
 
