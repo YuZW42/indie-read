@@ -140,7 +140,7 @@ router.get('/google', passport.authenticate('google', { scope: ['profile'] }));
 router.get('/google/callback', (req, res,next) => {
   console.log(req.user);
   //googleCallback()
-  res.redirect(200 , `https://indie-read-yuzw42.vercel.app/?userid=${JSON.stringify(req.user)}|`);
+  res.redirect(200 , `https://indie-read-yuzw42.vercel.app/?userid=${JSON.stringify(req.user)}`);
 
   // res.status(200).json({
   //   success: true,
